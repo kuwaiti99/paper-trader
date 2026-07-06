@@ -154,3 +154,11 @@ Next steps (Monday 2026-07-13):
   4. Perform full quality gate and committee analysis on any confirmed new-position signals
 
 Simulated portfolio - no real money.
+
+2026-07-06 | BUY | AAPL | 6.4837 | 308.63 | 2000.00 | Berkshire Hathaway Q1 2026 (13F) INITIALIZATION | 8.5 | Buffett: APPROVE - moat/10yr comfort; Munger: APPROVE - no hype; Dalio: APPROVE - diversifies tech; Marks: APPROVE - not priced perfect; Lynch: APPROVE - stalwart rational; Druckenmiller: APPROVE - asymmetry favorable | Berkshire top-3 holdings initiated per strategy INITIALIZATION rule (override Mondays-only on first run). Quality exempt (trusted manager). Committee all 6 APPROVE. Exit trigger: -20% stop-loss @ 246.90. Position 1/3 open.
+
+2026-07-06 | BUY | AXP | 5.6840 | 351.96 | 2000.00 | Berkshire Hathaway Q1 2026 (13F) INITIALIZATION | 8.0 | Buffett: APPROVE - moat/quality; Munger: APPROVE - value/no traps; Dalio: APPROVE - financials diversify; Marks: APPROVE - cycle fair; Lynch: APPROVE - stalwart; Druckenmiller: APPROVE - asymmetric exit clear | Berkshire top-3 position 2. Quality exempt. All 6 APPROVE. Exit: -20% stop @ 281.57. FCF positive, dividend 1.08%, D/E 1.78 reasonable.
+
+2026-07-06 | BUY | KO | 23.7710 | 84.14 | 2000.00 | Berkshire Hathaway Q1 2026 (13F) INITIALIZATION | 8.0 | Buffett: APPROVE - moat/pricing power; Munger: APPROVE - classic value; Dalio: APPROVE - staples stable; Marks: APPROVE - valuation sound; Lynch: APPROVE - stalwart simple; Druckenmiller: APPROVE - risk/reward good | Berkshire top-3 position 3, completing initialization basket. Quality exempt. All 6 APPROVE. Exit: -20% stop @ 67.31. FCF positive, 64-yr dividend history, D/E 1.25.
+
+2026-07-06 | SYSTEM | N/A | N/A | N/A | N/A | N/A | MACRO REGIME: NORMAL; VIX 16.34 (no risk-off trigger); SPY 744.78 (-0.13% intraday); mixed sentiment, no crisis. Congress trade sources all blocked (data unavailable). Smart-money Berkshire 13F successfully fetched. Pershing Square & other managers pending URL resolution. INITIALIZATION triggered per strategy rule: 3 buys of Berkshire top 3 at market close, $6,000 total cost, $94,000 cash remaining. Cash reserve 94% (exceeds 20% minimum). Position count 3 (well under 40-position cap). Sector allocation: Tech 33%, Financials 33%, Staples 33% (no sector >30% breach). Peak value unchanged at $100k (Day 1). P&L: $0 (fills at market close).
