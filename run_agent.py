@@ -112,39 +112,65 @@ def main() -> None:
         '"report": "<the report for Mohammad>"}'
     )
 
+    def extract_json(text: str):
+        start = text.find("{")
+        end = text.rfind("}")
+        if start == -1 or end == -1:
+            return None
+        try:
+            return json.loads(text[start : end + 1])
+        except json.JSONDecodeError:
+            return None
+
     messages = [{"role": "user", "content": user_msg}]
     tool_calls = 0
-    while True:
+    data = None
+    last_text = ""
+    for _ in range(80):  # hard cap on iterations
         shrink_history(messages)
         resp = client.messages.create(
             model=MODEL,
-            max_tokens=16000,
+            max_tokens=30000,
             system=system_prompt,
             tools=TOOLS,
             messages=messages,
         )
-        if resp.stop_reason == "tool_use" and tool_calls < MAX_TOOL_CALLS:
-            messages.append({"role": "assistant", "content": resp.content})
+        messages.append({"role": "assistant", "content": resp.content})
+        if resp.stop_reason == "tool_use":
             results = []
             for block in resp.content:
                 if block.type == "tool_use":
                     tool_calls += 1
+                    if tool_calls > MAX_TOOL_CALLS:
+                        out = (
+                            "TOOL BUDGET EXHAUSTED. Do not request any more tools. "
+                            "Finalize with what you have and output ONLY the final JSON object now."
+                        )
+                    else:
+                        out = fetch_url(block.input.get("url", ""))
                     results.append(
-                        {
-                            "type": "tool_result",
-                            "tool_use_id": block.id,
-                            "content": fetch_url(block.input["url"]),
-                        }
+                        {"type": "tool_result", "tool_use_id": block.id, "content": out}
                     )
             messages.append({"role": "user", "content": results})
             continue
-        break
+        last_text = "".join(b.text for b in resp.content if b.type == "text")
+        data = extract_json(last_text)
+        if data is not None and "report" in data:
+            break
+        # Ended without valid JSON (truncated or chatty) — nudge and retry
+        messages.append(
+            {
+                "role": "user",
+                "content": (
+                    "Your previous message did not contain the required JSON. Output ONLY the "
+                    'complete final JSON object now: {"updated_files": {...}, '
+                    '"trade_log_append": "...", "report": "..."}. No prose, no tool calls.'
+                ),
+            }
+        )
 
-    text = "".join(b.text for b in resp.content if b.type == "text")
-    start, end = text.find("{"), text.rfind("}")
-    if start == -1 or end == -1:
-        raise SystemExit(f"Agent returned no JSON. Raw output:\n{text[:2000]}")
-    data = json.loads(text[start : end + 1])
+    if data is None:
+        raise SystemExit(f"Agent produced no JSON after retries. Last output:\n{last_text[:2000]}")
 
     allowed = WRITABLE.get(MODE, set())
     for fname, content in (data.get("updated_files") or {}).items():
