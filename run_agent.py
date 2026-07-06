@@ -128,13 +128,14 @@ def main() -> None:
     last_text = ""
     for _ in range(80):  # hard cap on iterations
         shrink_history(messages)
-        resp = client.messages.create(
+        with client.messages.stream(
             model=MODEL,
             max_tokens=30000,
             system=system_prompt,
             tools=TOOLS,
             messages=messages,
-        )
+        ) as stream:
+            resp = stream.get_final_message()
         messages.append({"role": "assistant", "content": resp.content})
         if resp.stop_reason == "tool_use":
             results = []
