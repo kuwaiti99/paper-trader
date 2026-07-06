@@ -27,8 +27,11 @@ Stop-loss at/below stop_loss_pct (-20%): on >30% single-day drops check for spli
 (adjust instead of sell). Check each position's exit_trigger; close if fired. All closures -> shadow ledger
 entries + rebuy cooldown.
 
-STEP 3 - SIGNALS (Tier 1 only): fetch https://www.capitoltrades.com/trades ; trades PUBLISHED since last_run
-(null -> last 3 days), skip processed_signals. Politician BUYS of US common stocks not held and not in
+STEP 3 - SIGNALS (Tier 1 only): congress trades — try sources in order until one works:
+(1) https://bff.capitoltrades.com/trades?pageSize=50 (JSON API), (2) https://www.capitoltrades.com/trades,
+(3) https://r.jina.ai/https://www.capitoltrades.com/trades (proxy for bot-blocked pages),
+(4) https://www.quiverquant.com/congresstrading/. If ALL fail, log the failure and continue with other steps.
+Use trades PUBLISHED since last_run (null -> last 3 days), skip processed_signals. Politician BUYS of US common stocks not held and not in
 cooldown = candidates. Politician SELLS of congress-sleeve holdings -> close + shadow ledger. Fingerprint all.
 MONDAYS ONLY (or last_13f_check null): for each manager in portfolio.json, fetch their 13f.info page
 (resolve any unresolved URLs via https://13f.info/managers/<letter> and save into portfolio.json).
