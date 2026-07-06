@@ -1,0 +1,29 @@
+name: weekly-review
+on:
+  schedule:
+    - cron: "0 9 * * 6"   # 09:00 UTC = 12:00 Kuwait, Saturdays
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: paper-trader
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python run_agent.py weekly
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ vars.MODEL || 'claude-haiku-4-5-20251001' }}
+      - name: Commit results
+        run: |
+          git config user.name "paper-trader-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git commit -m "weekly review $(date -u +%F)" || echo "no changes"
+          git push
