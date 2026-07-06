@@ -6,6 +6,7 @@ Reads state/ files, lets Claude reason with a fetch_url tool, writes updated
 state + a report. Run by GitHub Actions on a schedule.
 """
 import os
+import re
 import sys
 import json
 import datetime
@@ -31,6 +32,21 @@ WRITABLE = {
 client = Anthropic()  # uses ANTHROPIC_API_KEY env var
 
 
+def clean_html(text: str) -> str:
+    """Strip scripts/styles/tags from HTML to keep token usage sane. JSON passes through."""
+    stripped = text.lstrip()
+    if stripped.startswith("{") or stripped.startswith("["):
+        return text  # JSON API response, keep as-is
+    if "<" in text:
+        text = re.sub(r"(?is)<script[^>]*>.*?</script>", " ", text)
+        text = re.sub(r"(?is)<style[^>]*>.*?</style>", " ", text)
+        text = re.sub(r"(?is)<svg[^>]*>.*?</svg>", " ", text)
+        text = re.sub(r"<[^>]+>", " ", text)
+        text = re.sub(r"[ \t]+", " ", text)
+        text = re.sub(r"\n\s*\n+", "\n", text)
+    return text
+
+
 def fetch_url(url: str) -> str:
     try:
         r = requests.get(
@@ -38,9 +54,23 @@ def fetch_url(url: str) -> str:
             timeout=45,
             headers={"User-Agent": "Mozilla/5.0 (compatible; paper-trading-research/1.0)"},
         )
-        return r.text[:150000]
+        return clean_html(r.text)[:25000]
     except Exception as e:  # noqa: BLE001
         return f"FETCH_ERROR: {e}"
+
+
+def shrink_history(messages: list, keep_last: int = 6) -> None:
+    """Trim older tool results so the conversation never overflows the context window."""
+    locations = []
+    for m in messages:
+        if m.get("role") == "user" and isinstance(m.get("content"), list):
+            for block in m["content"]:
+                if isinstance(block, dict) and block.get("type") == "tool_result":
+                    locations.append(block)
+    for block in locations[:-keep_last]:
+        content = block.get("content")
+        if isinstance(content, str) and len(content) > 2000:
+            block["content"] = content[:2000] + "\n...[older result trimmed to save context]"
 
 
 TOOLS = [
@@ -85,6 +115,7 @@ def main() -> None:
     messages = [{"role": "user", "content": user_msg}]
     tool_calls = 0
     while True:
+        shrink_history(messages)
         resp = client.messages.create(
             model=MODEL,
             max_tokens=16000,
