@@ -33,10 +33,20 @@ STEP 3 - SIGNALS (Tier 1 only): congress trades — try sources in order until o
 (4) https://www.quiverquant.com/congresstrading/. If ALL fail, log the failure and continue with other steps.
 Use trades PUBLISHED since last_run (null -> last 3 days), skip processed_signals. Politician BUYS of US common stocks not held and not in
 cooldown = candidates. Politician SELLS of congress-sleeve holdings -> close + shadow ledger. Fingerprint all.
-MONDAYS ONLY (or last_13f_check null): for each manager in portfolio.json, fetch their 13f.info page
-(resolve any unresolved URLs via https://13f.info/managers/<letter> and save into portfolio.json).
-First run: top 3 holdings each = candidates. Later: new filing since last_13f_check -> diff vs prior quarter;
-NEW positions or >25% increases = candidates (max 10/filing); full exits we hold -> close. Set last_13f_check.
+SMART-MONEY SLEEVE:
+INITIALIZATION (runs on ANY day while initialization_done is false — THIS OVERRIDES the Mondays-only rule):
+for every manager whose most recent 13F filing page you can successfully fetch, their top 3 holdings by value
+ARE buy candidates TODAY. Do NOT defer, do NOT wait for a prior-quarter baseline, do NOT wait for other data
+sources — initialization is a mandatory starter basket, not a diff signal. Candidates still pass the quality
+gate exemption rules and committee as normal. After buying at least Berkshire's basket, set
+initialization_done=true; keep initializing any still-unresolved managers on subsequent runs as they resolve.
+URL RESOLUTION — NEVER GUESS: 13f.info manager URLs look like /manager/0001067983-berkshire-hathaway-inc
+(10-digit CIK + slug). To resolve a manager, fetch the alphabetical index https://13f.info/managers/<first
+letter of FIRM name> (p for Pershing Square, s for Scion, d for Duquesne, a for Appaloosa) and copy the EXACT
+href from the returned list. Save resolved URLs with resolved:true into portfolio.json.
+MONDAYS (after initialization is complete): for each resolved manager, check for a NEW 13F filing since
+last_13f_check; if found, diff vs prior quarter: NEW positions or >25% increases = candidates (max 10/filing);
+full exits we hold -> close. Set last_13f_check.
 Candidates beyond max_new_buys_analyzed_per_day -> shadow ledger CAP_SKIP with price.
 
 STEP 4 - QUALITY GATE: per candidate fetch https://stockanalysis.com/stocks/TICKER/statistics/ (and
