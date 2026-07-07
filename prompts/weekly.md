@@ -10,7 +10,9 @@ congress_default): trades, wins, losses, avg & total P&L %, from closed trades i
 Update signal_sources stats in strategy-memory. Compare vs SPY benchmark since 2026-07-06: beating, matching,
 or losing - say it plainly.
 
-2. GRADE THE SHADOW LEDGER: for every ungraded entry >= 14 days old, fetch current price and apply the
+2. GRADE THE SHADOW LEDGER: include SHADOW_CONGRESS entries — compute what the congress-copy strategy
+would have returned versus the v2 sleeves' actual results; this is a live horse race, report the score.
+For every ungraded entry >= 14 days old, fetch current price and apply the
 grading_rule in shadow-ledger.json (vetoes/skips/rejections WRONG if stock rose >5% since, RIGHT if
 flat/down; stops/sells/exits RIGHT if it fell further >5%, WRONG if recovered >5%). Mark graded + result.
 
