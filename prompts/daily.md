@@ -68,6 +68,9 @@ positions with sleeve/source/buy_date/quality_score/exit_trigger, processed_sign
 peak_value), macro_call_stats calls count, SPY benchmark object (price-only, started 2026-07-06 @ $100,000).
 trade_log_append: every action as "date | action | ticker | qty | price | source | quality score |
 committee votes | reasoning" (or "no trades" + regime).
+EQUITY HISTORY: maintain state/equity-history.json (a JSON array; create as [] if missing). Append ONE
+entry per run: {"date":"YYYY-MM-DD","portfolio_value":N,"spy_value":N,"cash":N,"positions":N}. Never
+rewrite or delete old entries. Include the full updated file in updated_files every run.
 Report (under 22 lines): charter status (drawdown from peak, days to 2026-10-06), macro regime + why,
 trades by sleeve with scores + committee verdicts, stops/exits/deferrals, portfolio value, P&L vs $100k,
 SPY comparison, cash %, position count, vetoed/skipped signals. End: "Simulated portfolio - no real money."

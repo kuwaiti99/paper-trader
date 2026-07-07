@@ -24,8 +24,8 @@ MAX_TOOL_CALLS = 40
 # Which state files each mode is allowed to overwrite (charter and trust
 # registry are human-owned and never machine-writable).
 WRITABLE = {
-    "daily": {"portfolio.json", "strategy-memory.json", "shadow-ledger.json"},
-    "weekly": {"portfolio.json", "strategy-memory.json", "shadow-ledger.json", "lessons-learned.md"},
+    "daily": {"portfolio.json", "strategy-memory.json", "shadow-ledger.json", "equity-history.json"},
+    "weekly": {"portfolio.json", "strategy-memory.json", "shadow-ledger.json", "lessons-learned.md", "equity-history.json"},
     "monthly": {"strategy-memory.json", "shadow-ledger.json", "lessons-learned.md"},
 }
 
