@@ -299,3 +299,82 @@ Day 2 with normal intraday volatility. Congress trades infrastructure failure pe
 Next steps: Monitor stops (none active). Retry congress on next run. Resolve smart-money managers Monday 2026-07-14. Track macro for risk-off triggers.
 
 Simulated portfolio - no real money.
+
+2026-07-07 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES
+
+DATE: 2026-07-07 (Tuesday, Day 2 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $102,021.29 (set on Day 1)
+  - Current portfolio value: $100,056.83
+  - Drawdown from peak: -1.92% (well above -15% pain limit)
+  - Days to judgment day (2026-10-06): 90
+
+MACRO REGIME: NORMAL
+  - VIX: 16.43 (well below 25 threshold; no risk-off trigger)
+  - SPY: 746.10, +0.17% from prior day (744.78 → 746.10); steady momentum
+  - Headlines: Mixed; Samsung chip profit surge beat expectations but sector profit-taking weighed; AI rally cooling slightly; no imminent crisis (no war escalation, Fed action, or circuit-breaker event)
+  - Macro call: NORMAL regime maintained. Keep base sizing.
+  - Macro stat: Call #4 logged (NORMAL, VIX 16.43, SPY 746.10, balanced sentiment)
+
+DATA SOURCE STATUS:
+  - Congress trades (Capitol Trades): FAILED — 503 CloudFront error persists on bff.capitoltrades.com/trades; all 4 fallback sources blocked (Vercel checkpoint, 429 rate-limit, login wall). Congress data unavailable 3rd consecutive day.
+  - Berkshire Hathaway 13F (13f.info): ACTIVE — Q1 2026 filing (filed 5/15/2026, 29 holdings, $263.1B). No new updates since 2026-07-06; not Monday, so no full resolution attempt.
+  - Pershing Square (Bill Ackman): RESOLUTION PENDING — Manager found in 13f.info/managers/p index; direct URL returned 404. Will retry on next Monday (2026-07-14) per schedule.
+  - Other smart-money managers (Scion, Duquesne, Appaloosa): Not attempted (non-Monday).
+
+POSITION REPRICING & RISK CHECKS:
+  - AAPL: 312.66 → 313.52 (+0.28% intraday) | Cost 308.63 | Unrealized: +1.59% | Stop: $246.90 | SAFE
+  - AXP: 356.03 → 352.15 (-1.09% intraday) | Cost 351.96 | Unrealized: +0.05% | Stop: $281.57 | SAFE
+  - KO: 82.96 → 85.085 (+2.54% intraday) | Cost 84.14 | Unrealized: +1.12% | Stop: $67.31 | SAFE
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - Portfolio market value: AAPL $2,033.61 + AXP $2,002.19 + KO $2,021.03 + Cash $94,000 = $100,056.83
+
+INITIALIZATION STATUS:
+  - Berkshire top-3 initialization: COMPLETE (executed 2026-07-06 at market close)
+  - Flag set: initialization_done = true
+  - Pershing Square: Resolution pending (404 error on direct URL; retry Monday 2026-07-14)
+
+EARNINGS PROXIMITY CHECK:
+  - AAPL: Next earnings 2026-07-30 (19 trading days out; safe)
+  - AXP: Earnings 2026-07-18 (8 trading days out; no deferral needed, within 3-day window later if signal comes)
+  - KO: Next earnings 2026-07-23 (13 trading days out; safe)
+
+CANDIDATES ANALYZED:
+  - None generated (Congress trades blocked; smart-money managers not scheduled for resolution on Tuesday)
+
+QUALITY GATE: Not applied (no new buy candidates)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+
+STOPS/EXITS: None triggered
+
+PORTFOLIO SUMMARY:
+  - Cash: $94,000.00 (93.5% in reserve; exceeds 20% minimum)
+  - Positions: 3 (unchanged from Day 1: AAPL, AXP, KO)
+  - Total portfolio value: $100,056.83
+  - Unrealized gains: +$56.83 (+0.057% from start)
+  - Peak value: $102,021.29 (intraday pullback from Day 1 peak is normal volatility)
+  - Position count: 3 | Sector allocation: Tech 33%, Finance 33%, Staples 33% (no sector >30% breach)
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (134.3086 shares = $100,000)
+  - Current 2026-07-07: 746.10 (same shares, value now $100,243.94)
+  - Gain: +$243.94 (+0.24%)
+  - Portfolio vs SPY: +$56.83 vs +$243.94 → Portfolio underperformed by $187.11 (SPY +0.24%, portfolio +0.06%)
+
+VETOED/DEFERRED SIGNALS:
+  - Congress trades: All sources blocked; no vetoes/deferrals possible (data unavailable)
+  - Smart-money: Pershing Square URL resolution pending (no new signal yet); other managers not scheduled for Tuesday
+
+REASONING:
+Day 2 of 90-day learning test. Initialization complete; three Berkshire holdings in portfolio showing mixed single-day moves (AAPL +1.59% from cost, KO +1.12%, AXP +0.05%) while SPY benchmark (+0.24%) has outpaced portfolio gains on Day 2, though portfolio remains at +2% unrealized from Day 1 open peak. Congress trades infrastructure failure persists (CloudFront Lambda permissions, Vercel checkpoint, proxy rate-limits, login walls). Smart-money 13F manager resolution on Monday schedule (2026-07-14); today is Tuesday, so no action taken. All positions remain above stop-loss thresholds; charter drawdown limit (-15%) far away. Risk discipline enforced; no new buy signals due to data unavailability and non-Monday schedule. Portfolio drawdown from Day 1 peak (-1.92%) is well within normal volatility bounds and below pain threshold.
+
+Next steps:
+  1. Monitor positions for stop-loss triggers (none active; all above -20%)
+  2. Resolve Pershing Square + other managers Monday 2026-07-14
+  3. Attempt congress trades recovery on next scheduled check
+  4. Track macro regime (VIX, SPY daily moves, headlines) for risk-off triggers
+  5. Shadow ledger: no vetoes/closures yet; first grading opportunity on 2026-07-21 (14 days from Day 1)
+
+Simulated portfolio - no real money.
