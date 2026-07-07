@@ -378,3 +378,67 @@ Next steps:
   5. Shadow ledger: no vetoes/closures yet; first grading opportunity on 2026-07-21 (14 days from Day 1)
 
 Simulated portfolio - no real money.
+
+2026-07-07 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES
+
+DATE: 2026-07-07 (Tuesday, Day 3 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $102,021.29
+  - Current portfolio value: $99,999.57
+  - Drawdown from peak: -2.01% (well above -15% pain limit; no charter breach)
+  - Days to judgment day (2026-10-06): 90
+
+MACRO REGIME: NORMAL
+  - VIX: 16.13 (well below 25 threshold; no risk-off trigger)
+  - SPY: 747.71, +0.22% from prior close (746.10 → 747.71); steady momentum
+  - Headlines: Mixed; Samsung chip profit-taking, AI sector cooling slightly, no imminent crisis (no war escalation, Fed action, or circuit-breaker event)
+  - Macro call: NORMAL regime maintained. Keep base sizing.
+  - Macro stat: Call #5 logged (NORMAL, VIX 16.13, SPY 747.71, balanced intraday volatility)
+
+DATA SOURCE STATUS:
+  - Congress trades (Capitol Trades): FAILED — 503 CloudFront error persists on bff.capitoltrades.com/trades; all 4 fallback sources blocked (Vercel checkpoint, 429 rate-limit, login wall). Congress data unavailable 3rd consecutive day.
+  - Berkshire Hathaway 13F (13f.info): ACTIVE — Q1 2026 filing (filed 5/15/2026, 29 holdings, $263.1B). No new updates since 2026-07-06; not Monday, so no full resolution attempt.
+  - Pershing Square (Bill Ackman): RESOLUTION PENDING — Manager found in 13f.info/managers/p index; direct URL returned 404. Will retry on next Monday (2026-07-14) per schedule.
+  - Other smart-money managers (Scion, Duquesne, Appaloosa): Not attempted (non-Monday).
+
+POSITION REPRICING & RISK CHECKS:
+  - AAPL: 312.66 → 310.66 (-0.64% intraday) | Cost 308.63 | Unrealized: +0.66% | Stop: $246.90 | SAFE
+  - AXP: 356.03 → 349.58 (-1.79% intraday) | Cost 351.96 | Unrealized: -0.68% | Stop: $281.57 | SAFE
+  - KO: 82.96 → 84.05 (+1.31% intraday) | Cost 84.14 | Unrealized: -0.11% | Stop: $67.31 | SAFE
+  - All positions above -20% stop-loss threshold. No closures triggered.
+
+PORTFOLIO SUMMARY:
+  - Cash: $94,000.00 (94% in reserve; exceeds 20% minimum)
+  - Positions: 3 (unchanged from Day 1)
+  - Total portfolio value: $99,999.57
+  - Unrealized losses: -$21.68 (-0.022% from start)
+  - Peak value: $102,021.29 (intraday pullback from Day 1 peak is normal volatility)
+  - Position count: 3 | Sector allocation: Tech 33%, Finance 33%, Staples 33% (no >30% breach)
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (134.3086 shares = $100,000)
+  - Current 2026-07-07: 747.71 (same shares, value now $100,346.39)
+  - Gain: +$346.39 (+0.35%)
+  - Portfolio vs SPY: -$21.68 vs +$346.39 → Portfolio underperformed by $368.07 (SPY +0.35%, portfolio -0.022%)
+
+CANDIDATES / SIGNALS:
+  - None generated (congress blocked; smart-money managers not scheduled for non-Monday resolution). Initialization complete (Day 1).
+
+QUALITY GATE: Not applied (no new candidates)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered
+VETOES: None (data sources unavailable; no veto opportunity)
+
+REASONING:
+Day 3 of 90-day learning test. Three Berkshire holdings in portfolio showing mixed single-day moves (AAPL +0.66% from cost, AXP -0.68%, KO -0.11%) while SPY benchmark (+0.35%) has outpaced portfolio on day 3, reflecting concentrated sector weighting (three large-cap stocks) vs broad SPY diversification. Congress trades infrastructure failure persists (CloudFront Lambda permissions, Vercel checkpoint, proxy rate-limits, login walls). Smart-money 13F manager resolution on Monday schedule (2026-07-14); today is Tuesday, so no action taken. All positions remain above stop-loss thresholds; charter drawdown limit (-15%) far away. Paused_by_charter remains FALSE; all risk rules enforced.
+
+Next steps:
+  1. Monitor positions for stop-loss triggers (none active; all above -20%)
+  2. Resolve Pershing Square + other managers Monday 2026-07-14
+  3. Attempt congress trades recovery on next scheduled check
+  4. Track macro regime (VIX, SPY daily moves, headlines) for risk-off triggers
+  5. Shadow ledger: no vetoes/closures yet; first grading opportunity on 2026-07-21 (14 days from Day 1)
+
+Simulated portfolio - no real money.
