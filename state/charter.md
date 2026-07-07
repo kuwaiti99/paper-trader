@@ -4,6 +4,20 @@ Signed intent by Mohammad. This document defines success, failure, and permitted
 so no decision gets made in the heat of a good or bad week. Changes to this charter require a written
 reason and a 48-hour cooling-off period.
 
+## AMENDMENT v2 — 2026-07-06 (one-time, evidence-driven)
+After a five-angle deep-research review (~60 sources: academic factor literature, live ETF records,
+post-STOCK-Act congressional studies, insider-trading research, current regime), Mohammad approved
+restructuring to Core-Satellite v2:
+- CORE_SPY 50% with a 200-day-MA trend brake (halve when below) — drawdown insurance for the pain limit
+- MOMENTUM 25% via MTUM, volatility-scaled (25%/15%/7.5% by VIX bucket) — strongest evidenced factor
+- INSIDER_CLUSTERS 15% — replaces congress as the event sleeve (Form 4 cluster buys: peer-reviewed edge,
+  2-day disclosure); full quality gate + committee still apply
+- SMART_MONEY_13F 10% — existing holdings retained
+- CONGRESS demoted to SHADOW tracking (post-2012 evidence ≈ random) — races on paper at zero capital
+- Cash floor lowered 20% -> 5% to fund the cores; all safety rules, pain limit, and judgment day UNCHANGED.
+THIS IS A ONE-TIME CHANGE: no further structural strategy changes before judgment day 2026-10-06.
+The weekly review may still tune source multipliers within its existing bounds.
+
 ## Purpose (agreed 2026-07-06)
 The 90 + 90 days are a LEARNING PERIOD. The primary product is a smarter agent: graded signal sources,
 graded committee members, graded filters, a shadow ledger of counterfactuals, and an accumulated lessons
