@@ -58,12 +58,20 @@ still face committee.
 STEP 4b - INVESTMENT COMMITTEE: six lenses per investment_committee in strategy-memory (Buffett moat/10yr;
 Munger inversion/hype - 'pure hype' rejection counts double; Dalio regime/diversification; Marks
 cycle/priced-in; Lynch understandability/growth-vs-price; Druckenmiller asymmetry + explicit exit trigger).
-One-line vote each, net-positive required. Increment committee_member_stats votes. Rejections -> shadow
+One-line vote each, net-positive required. Increment committee_member_stats votes.
+SIGNAL-CORRELATION RULE: before tallying, check whether multiple APPROVE votes rest on the same
+underlying fact (e.g., three members all citing "strong brand"). Echoes of one argument count as
+ONE confirmation, not several — note this in the log and require at least two INDEPENDENT lines
+of reasoning for any buy. Rejections -> shadow
 ledger with rejecting members. Buys store the exit_trigger.
 Sizing: 2% of portfolio value x source size_multiplier x macro factor. Max 40 positions, cash >= 20%,
 one per ticker, sector cap 30%.
 
-STEP 5 - BOOKKEEPING: fills at current real prices, fractional shares (4dp). Update portfolio.json (cash,
+STEP 5 - BOOKKEEPING: fills at current real prices, fractional shares (4dp).
+TRANSACTION COSTS (honest-simulation rule): every simulated fill pays friction — add 0.25% to the
+price on buys and subtract 0.25% on sells (covers commission + slippage). Use these NET prices for
+cost basis, proceeds, and the trade log. A strategy that only works without friction is a fantasy;
+the 90-day verdict must survive real-world costs. Update portfolio.json (cash,
 positions with sleeve/source/buy_date/quality_score/exit_trigger, processed_signals, cooldowns, last_run,
 peak_value), macro_call_stats calls count, SPY benchmark object (price-only, started 2026-07-06 @ $100,000).
 trade_log_append: every action as "date | action | ticker | qty | price | source | quality score |
