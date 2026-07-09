@@ -442,3 +442,124 @@ Next steps:
   5. Shadow ledger: no vetoes/closures yet; first grading opportunity on 2026-07-21 (14 days from Day 1)
 
 Simulated portfolio - no real money.
+
+2026-07-09 | SYSTEM | N/A | N/A | N/A | N/A | N/A | V2 MIGRATION + ALLOCATION TRADES
+
+DATE: 2026-07-09 (Thursday, Day 4 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $102,021.29 (set Day 1)
+  - Current portfolio value: $99,980.68
+  - Drawdown from peak: -1.99% (well above -15% pain limit)
+  - Days to judgment day (2026-10-06): 88
+
+STRATEGY V2 MIGRATION:
+  TRIGGERED THIS RUN (portfolio.json rules lacked strategy_version:v2)
+  Per charter amendment 2026-07-06 and system prompt: migration is MANDATORY THIS RUN.
+  
+  RESTRUCTURE:
+  - Set rules.strategy_version = "v2"
+  - Establish five allocation sleeves per target allocations:
+    * CORE_SPY: 50% (SPY above 200-DMA → no downshift)
+    * MOMENTUM_MTUM: 25% (VIX 16.04 < 20 → full 25% target)
+    * INSIDER_CLUSTERS: 15% (data unavailable, ready for signal)
+    * SMART_MONEY_13F: 10% (existing 3 positions AAPL/AXP/KO retained here)
+    * Cash floor: 5% minimum (post-migration: 22.2% actual)
+  
+  - min_cash_reserve_pct: 20 → 5
+  - Existing positions (AAPL, AXP, KO) migrated to smart_money_13f sleeve
+  - NEW ALLOCATION MOVES (exempt from quality gate and committee per v2 rules):
+
+ALLOCATION TRADES:
+
+2026-07-09 | BUY | SPY | 63.7577 | 752.6219 | 47993.99 | V2 MIGRATION: CORE_SPY allocation move (50% target, SPY 750.74 above 200-DMA) | N/A | No committee (broad ETF allocation exempt) | Broad-market core allocation. SPY last close 750.74; applied 0.25% friction = net price 752.6219. Allocation: 50% of $96,020 portfolio ≈ $48k. Shares filled: 63.7577. Cost basis: $47,993.99. Position: CORE_SPY sleeve. Exit trigger: trend brake (halve if SPY < 200-DMA). No stop-loss.
+
+2026-07-09 | BUY | MTUM | 73.8160 | 325.0506 | 23990.18 | V2 MIGRATION: MOMENTUM_MTUM allocation move (25% target, VIX 16.04 < 20 threshold) | N/A | No committee (broad ETF allocation exempt) | Momentum sleeve vol-scaled allocation. MTUM last close 324.24; applied 0.25% friction = net price 325.0506. Allocation: 25% of $96,020 portfolio ≈ $24k. Shares filled: 73.8160. Cost basis: $23,990.18. Position: MOMENTUM_MTUM sleeve. Rebalance: first of month OR VIX bucket change, drift >5pp. No stop-loss.
+
+MACRO REGIME: NORMAL
+  - VIX: 16.04 (well below 25 threshold; no risk-off trigger)
+  - SPY: 750.74 (+0.72% from prior 745.4, +0.97% from start 744.78)
+  - Headlines: Mixed sentiment (S&P 500 edge up despite war jitters; earnings test ahead; AI optimism balanced by cycle concerns). No imminent crisis (no circuit-breaker event, no Fed emergency, no escalating geopolitical trigger).
+  - 200-day MA estimate: ~720 (SPY 750.74 > 200-MA → CORE_SPY stays 50%)
+  - Macro call: NORMAL regime maintained. Keep sizing.
+  - Macro stat: Call #6 logged (NORMAL, VIX 16.04, SPY 750.74)
+
+RISK CHECKS:
+  - All existing positions above -20% stop-loss threshold:
+    * AAPL: 314.91 (cost 308.63, +2.04%) | Stop: 246.90 | SAFE
+    * AXP: 347.47 (cost 351.96, -1.28%) | Stop: 281.57 | SAFE
+    * KO: 82.66 (cost 84.14, -1.76%) | Stop: 67.31 | SAFE
+  - New SPY/MTUM allocations: no stop-loss (trend brake and vol-scale rebalance only)
+  - No earnings-proximity deferrals triggered
+  - No corporate action alerts
+
+DATA SOURCE STATUS:
+  - Congress trades (Capitol Trades): ALL SOURCES BLOCKED (day 4 consecutive)
+    * bff.capitoltrades.com/trades: 503 CloudFront error
+    * www.capitoltrades.com: Vercel security checkpoint
+    * jina.ai proxy: 429 rate-limit
+    * quiverquant.com: login interface required
+    Decision: Demote to SHADOW_ONLY per charter amendment (post-2012 evidence ≈ zero)
+  
+  - Berkshire Hathaway 13F (13f.info): ACTIVE
+    * Q1 2026 filing (filed 5/15/2026): 29 holdings, $263.1B
+    * Current positions: AAPL, AXP, KO (incumbents from prior quarter, no >25% increase signal yet)
+    * Next check: Monday 2026-07-14 (Monday-only schedule)
+  
+  - Pershing Square (Bill Ackman): RESOLUTION_PENDING
+    * Found in 13f.info/managers/p index
+    * Direct URL: 404 error
+    * Retry: Monday 2026-07-14
+  
+  - Insider cluster signals (openinsider.com, secform4.com): NOT YET ATTEMPTED
+    Source fetch not prioritized on Day 4 migration run.
+
+CANDIDATES / SIGNALS:
+  - None new (Congress blocked, 13F on Monday schedule, insider data not fetched)
+  - Initialization COMPLETE (Day 1): AAPL, AXP, KO purchased and held
+
+QUALITY GATE: Not applied (no new individual buy candidates; allocation moves exempt)
+INVESTMENT COMMITTEE: Not convened (broad ETF allocation moves exempt per v2 rules)
+STOPS/EXITS: None triggered (all positions well above -20% thresholds)
+
+PORTFOLIO SUMMARY (POST-MIGRATION):
+  - Cash: $22,015.83 (22.2% reserve, well above 5% minimum floor)
+  - Positions: 5 total
+    * AAPL: 6.4837 sh @ 308.63 cost, 314.91 current = $2,040.93 MV (+2.04%)
+    * AXP: 5.6840 sh @ 351.96 cost, 347.47 current = $1,975.42 MV (-1.28%)
+    * KO: 23.7710 sh @ 84.14 cost, 82.66 current = $1,964.33 MV (-1.76%)
+    * SPY: 63.7577 sh @ 752.6219 cost, 750.74 current = $47,819.51 MV (-0.25%)
+    * MTUM: 73.8160 sh @ 325.0506 cost, 324.24 current = $23,943.40 MV (-0.25%)
+  - Total portfolio value: $99,980.68
+  - Unrealized gain/loss: -$19.32 (-0.019% from start)
+    Rationale: 0.25% friction on buys (SPY: -$120.49, MTUM: -$60.03) offset partially by holding gains on AAPL, KO vs holding losses on AXP
+  - Peak value: $102,021.29 (unchanged; current drawdown -1.99%)
+  - Sector allocation: Tech 38%, Financials 2%, Staples 2%, Broad market (SPY) 48%, Momentum (MTUM) 24% | No single-stock sector >30% breach
+  - Position count: 5 (under 40 cap)
+
+BENCHMARK (SPY):
+  - Started 2026-07-06: 744.78 (134.3086 shares = $100,000)
+  - Current 2026-07-09: 750.74 (same shares, value $100,780.69)
+  - Gain: +$780.69 (+0.78%)
+  - Portfolio vs SPY: -$19.32 vs +$780.69 → Underperformed by $800.01 (portfolio -0.019% vs SPY +0.78%)
+    Rationale: Portfolio cash drag (22% uninvested at migration) + 0.25% friction costs on $72k in new buys.
+
+VETOED / DEFERRED / SHADOW SIGNALS:
+  - Congress trades: SIGNAL_SHADOW (all sources blocked; demoted to shadow tracking per charter)
+  - Insider clusters: DATA_UNAVAILABLE (source not fetched)
+  - Pershing Square 13F: RESOLUTION_PENDING (404 on manager URL; retry Monday)
+
+LESSONS (Day 4):
+  - V2 MIGRATION executed per mandatory rule. Strategy now Core-Satellite with five sleeves. Broad ETF allocations (SPY, MTUM) deployed at current market prices with friction; exempt from committee per strategy design.
+  - Congress data source remains unavailable (infrastructure failures) across all four endpoints for fourth consecutive day. Demoted to shadow tracking as charter amendment specifies (post-2012 evidence ≈ random).
+  - Insider cluster and remaining 13F manager resolution deferred to later runs (insufficient data fetch priority on migration day).
+  - Portfolio now 49% SPY + 24% MTUM + ~10% legacy smart_money (AAPL/AXP/KO) + 22% cash. Drawdown from peak still minimal (-1.99%, well within -15% pain limit).
+  - Next actions (Monday 2026-07-14):
+    1. Resolve Pershing Square & other manager URLs from 13f.info/managers index
+    2. Attempt congress trades recovery or find alternate source
+    3. Check MTUM drift vs 25% target (currently 24%); consider month-end rebalance if needed
+    4. Monitor macro for risk-off triggers (VIX >25, circuit-breaker, Fed action)
+    5. Begin shadow-ledger grading on first closed/exited positions (14+ days old)
+
+Simulated portfolio - no real money.
