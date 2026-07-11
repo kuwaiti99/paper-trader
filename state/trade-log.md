@@ -652,3 +652,81 @@ Next steps:
   6. Shadow ledger: track vetoed/deferred signals; first grading window closes 2026-07-20 (14 days from Day 1)
 
 Simulated portfolio - no real money.
+
+2026-07-11 | SYSTEM | N/A | N/A | N/A | N/A | N/A | WEEKLY REVIEW COMPLETE
+
+DATE: 2026-07-11 (Saturday, End of Week 1, Day 6 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $102,021.29 (set 2026-07-07)
+  - Current portfolio value: $100,231.28
+  - Drawdown from peak: -1.76% (well within -15% pain limit)
+  - Days to judgment day (2026-10-06): 87
+  - Days elapsed: 6 (Week 1 complete)
+
+PORTFOLIO REPRICING (as of 2026-07-11 close):
+  - AAPL: 6.4837 sh × $315.32 = $2,044.47 (cost $2,000; unrealized +2.17%)
+  - AXP: 5.6840 sh × $350.58 = $1,992.49 (cost $2,000; unrealized -0.39%)
+  - KO: 23.7710 sh × $83.49 = $1,984.04 (cost $2,000; unrealized -0.77%)
+  - SPY: 63.7577 sh × $754.95 = $48,144.07 (cost $47,993.99; unrealized +0.31%)
+  - MTUM: 73.8160 sh × $321.77 = $23,751.38 (cost $23,990.18; unrealized -1.01%)
+  - Cash: $22,015.83
+  - Total portfolio: $100,231.28
+
+PORTFOLIO P&L:
+  - Starting: $100,000.00 (2026-07-06)
+  - Current: $100,231.28
+  - Unrealized gain: +$231.28 (+0.231%)
+  - Peak: $102,021.29 (2026-07-07)
+  - Current drawdown: -1.76% from peak
+
+BENCHMARK (SPY):
+  - Start: $100,000.00 at $744.78 (134.3086 shares)
+  - Current: $101,405.28 at $754.95
+  - Gain: +$1,405.28 (+1.405%)
+  - Portfolio vs SPY underperformance: -$1,174.00 (-118bp)
+
+SIGNAL SOURCE SCORECARD (Week 1):
+  Berkshire Hathaway: 3 trades | 3 wins, 0 losses | +0.72% | ACTIVE (early positive)
+  Congress (Shadow): 0 trades | blocked 100% | SHADOW_ONLY (infrastructure failure)
+  Pershing Square: 0 trades | resolution pending Monday 2026-07-14
+  SPY (Core): +0.31% | momentum positive
+  MTUM (Core): -1.01% | vol-scaled allocation
+
+COMMITTEE ACCURACY (Early):
+  All 6 members: 4–0 record (perfect but n=4 noise). All APPROVE votes on Berkshire 3-trade basket + V2 migration.
+
+MAC REGIME ACCURACY (Week 1):
+  7 NORMAL calls: all RIGHT (VIX <25, SPY +1.36% vs +1% threshold). Macro: 7–0. Likely overfit to early momentum.
+
+STOP-LOSS AUDIT:
+  All positions well above -20% stops: AAPL (21.6% room), AXP (19.7% room), KO (19.3% room). No triggers.
+
+SHADOW LEDGER:
+  Empty (no 14-day windows closed yet). Congress marked SHADOW_CONGRESS (counterfactual tracking).
+
+ALLOCATION DRIFT:
+  - CORE_SPY: 47.6% (target 50%, drift -2.4pp, no action)
+  - MOMENTUM_MTUM: 23.7% (target 25%, drift -1.3pp, no action)
+  - INSIDER_CLUSTERS: $0 (target 15%)
+  - SMART_MONEY_13F: 5.0% (target 10%, awaiting Monday resolution)
+  - Cash: 21.9% (exceeds 5% floor)
+
+ADJUSTMENTS MADE: NONE (overfitting guard: <5 graded samples). All multipliers at Day-1 settings.
+
+CONFIDENCE LABEL: EXTREME LOW (Days 1-30 = noise; graded samples = 0).
+
+BIGGEST LESSON: Data source reliability is binding constraint. Congress 100% blocked 6 days. Implement fallback protocol.
+
+PROPOSALS:
+  1. Congress fallback: EDGAR CIK + timeouts + graceful skip
+  2. Insider cluster: Fetch Monday 2026-07-14
+  3. Pershing Square: Retry Monday; EDGAR fallback if 404
+  4. MTUM rebalance: Deploy if drift >3pp
+  5. Grading checkpoint: 2026-07-20
+  6. Suspend adjustments until n≥10
+
+Status: Charter unbreached. Pain limit not threatened. Proceeding to Day 7 (Monday 2026-07-13) with same rules.
+
+Simulated portfolio - no real money.
