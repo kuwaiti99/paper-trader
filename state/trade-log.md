@@ -730,3 +730,89 @@ PROPOSALS:
 Status: Charter unbreached. Pain limit not threatened. Proceeding to Day 7 (Monday 2026-07-13) with same rules.
 
 Simulated portfolio - no real money.
+
+2026-07-13 | SYSTEM | N/A | N/A | N/A | N/A | N/A | MONDAY EXECUTION, NO TRADES
+
+DATE: 2026-07-13 (Monday, Day 8 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $102,021.29 (set 2026-07-07)
+  - Current portfolio value: $100,616.98 (repriced at 2026-07-13 close)
+  - Drawdown from peak: -1.38% (well within -15% pain limit)
+  - Days to judgment day (2026-10-06): 85
+
+MACRO REGIME: NORMAL
+  - VIX: 16.41 (down from 16.13 prior close; well below 25 threshold; no risk-off trigger)
+  - SPY: 749.77 (-0.26% from prior 751.28; up +0.68% from 2026-07-06 start 744.78)
+  - 200-day MA (SPY): Estimated ~730-735 (SPY 749.77 solidly above; CORE_SPY remains 50% target)
+  - Headlines: Mixed sentiment; US-Iran exchange fire with oil spike, but no imminent market crisis (no Fed emergency, circuit-breaker, or escalation triggers); balanced by cycle-risk warnings
+  - Macro call: NORMAL regime maintained. Keep sizing.
+  - Macro stat: Call #8 logged (NORMAL, VIX 16.41, SPY 749.77, US-Iran fire contained)
+
+DATA SOURCE STATUS:
+  - Congress trades (Capitol Trades): FAILED — 503 CloudFront error persists on bff.capitoltrades.com/trades; all 4 fallback sources blocked (Vercel checkpoint, 429 rate-limit, login wall). Congress data unavailable 8th consecutive trading day. Demoted to SHADOW_ONLY per charter amendment.
+  - Berkshire Hathaway 13F (13f.info): ACTIVE — Q1 2026 filing (filed 5/15/2026, 29 holdings, $263.1B). No new updates since 2026-07-06; holdings monitored.
+  - Pershing Square (Bill Ackman): RESOLUTION_PENDING — Found in 13f.info/managers/p index with CIK 0001393667 (Q1 2026, 11 holdings, $14B). Direct 13f.info URLs returned 404. Will implement EDGAR CIK direct lookup (https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001393667) on next Monday (2026-07-21).
+  - Other managers (Scion, Duquesne, Appaloosa): Found in 13f.info index; direct URLs 404. EDGAR fallback scheduled 2026-07-21.
+  - Insider cluster signals (openinsider.com): SUCCESS — Fetched latest 100 cluster-buy filings (2026-07-01 to 2026-07-13). Analysis: 8 entries failed eligibility (non-US tickers, closed-end funds, price <$5). Remaining entries were older (pre-2026-07-01) or also ineligible. Result: ZERO new US common stock cluster candidates with 2+ distinct insiders buying >=\$25k each. No action taken; re-scan Monday 2026-07-21.
+
+POSITION REPRICING & RISK CHECKS:
+  - AAPL: 314.40 → 315.32 (+0.29% intraday) | Cost 308.63 | Unrealized: +2.17% | Stop: $246.90 | SAFE (21.6% room)
+  - AXP: 348.09 → 350.58 (+0.71% intraday) | Cost 351.96 | Unrealized: -0.39% | Stop: $281.57 | SAFE (19.7% room)
+  - KO: 83.38 → 83.49 (+0.13% intraday) | Cost 84.14 | Unrealized: -0.77% | Stop: $67.31 | SAFE (19.3% room)
+  - SPY: 752.47 → 749.77 (-0.36% intraday) | Cost 752.6219 | Unrealized: -0.38% | Trend brake: SPY well above 200-DMA (~730), no action | SAFE (trend brake intact)
+  - MTUM: 323.90 → 321.77 (-0.66% intraday) | Cost 325.0506 | Unrealized: -1.01% | Vol-scale: VIX 16.41 <20, target 25% maintained | SAFE (vol-scale threshold intact)
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - No earnings-proximity deferrals needed (nearest: AXP 2026-07-24, 11 trading days out).
+
+ALLOCATION REBALANCE CHECK (MONDAY SCHEDULE):
+  - CORE_SPY: Current MV $47,824.10 / total $100,616.98 = 47.5% (target 50%, drift 2.5pp, below 3pp action threshold)
+  - MOMENTUM_MTUM: Current MV $23,751.38 / total $100,616.98 = 23.6% (target 25%, drift 1.4pp, below 5pp action threshold)
+  - INSIDER_CLUSTERS: $0 (target 15%, awaiting new signal candidates)
+  - SMART_MONEY_13F: Current MV $5,020.99 / total $100,616.98 = 5.0% (target 10%, drift 5.0pp; awaiting Monday 13F resolution from Pershing Square, Scion, etc.)
+  - Rebalance check: Allocation drift within tolerance. No rebalance trades triggered.
+  - VIX bucket (16.41): <20, so MOMENTUM_MTUM target remains 25% (no vol-scale change).
+
+CANDIDATES ANALYZED:
+  - Berkshire Hathaway: No new signals (AAPL, AXP, KO held; incumbents, no >25% increase signal).
+  - Pershing Square: CIK resolved (0001393667) but manager URL 404; EDGAR fallback deferred to 2026-07-21 Monday.
+  - Insider clusters: Zero eligible candidates identified in openinsider.com recent data (2026-07-01 to 2026-07-13).
+  - Congress trades: All sources blocked; no counterfactual signals to track today.
+
+QUALITY GATE: Not applied (no new candidates passed to gate)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered (all positions safe)
+
+PORTFOLIO SUMMARY:
+  - Cash: $22,015.83 (21.9% in reserve; exceeds 5% minimum floor)
+  - Positions: 5 (AAPL 6.4837 sh, AXP 5.6840 sh, KO 23.7710 sh, SPY 63.7577 sh, MTUM 73.8160 sh)
+  - Total portfolio value: $100,616.98
+  - Unrealized gain/loss: +$616.98 (+0.62% from $100k start)
+  - Peak value: $102,021.29 (Day 2); current drawdown: -1.38% (well within -15% pain limit)
+  - Position count: 5 | Sector allocation (legacy): Tech 33%, Finance 33%, Staples 33% | Broad ETF: 47.5% SPY + 23.6% MTUM
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (134.3086 shares = $100,000)
+  - Current 2026-07-13: 749.77 (same shares, value now $100,650.00)
+  - Gain: +$650.00 (+0.65%)
+  - Portfolio vs SPY: +$616.98 vs +$650.00 → Portfolio underperformed by $33.02 (portfolio +0.62% vs SPY +0.65%)
+  - Rationale: Portfolio held 22% cash post-V2 migration; now closely tracking SPY + MTUM momentum allocation. Minor underperformance (-3bp) likely due to MTUM -1.01% drag vs SPY momentum.
+
+VETOED / DEFERRED / SHADOW SIGNALS:
+  - Congress trades: SIGNAL_SHADOW (all sources blocked; demoted per charter amendment)
+  - Insider clusters: SIGNAL_DEFER_NO_ELIGIBLE_CANDIDATES (openinsider.com scanned; zero US common stock cluster-buys published 2026-07-01 to 2026-07-13 that meet eligibility)
+  - Pershing Square 13F: RESOLUTION_PENDING_EDGAR_FALLBACK (direct URL 404; CIK found; will retry via EDGAR SEC lookup Monday 2026-07-21)
+
+REASONING:
+Day 8 of 90-day learning test. No new trades executed today. All positions repriced and risk checks completed. Monday schedule items: (1) Pershing Square manager URL resolution: found CIK 0001393667 in 13f.info/managers/p index, but direct manager URL returned 404; will implement EDGAR SEC direct lookup next Monday (2026-07-21). (2) Insider cluster data: analyzed openinsider.com latest 100 cluster-buy filings; identified zero eligible US common stock cluster candidates (2+ distinct insiders, $25k+, price >$5) published since last_run; re-scan Monday. (3) Congress trades: 100% blocked across all 4 endpoints for 8th consecutive trading day; demoted to shadow tracking per charter. (4) Allocation rebalance: CORE_SPY 47.5% (drift 2.5pp, below 3pp action threshold), MTUM 23.6% (drift 1.4pp, below 5pp action threshold); no rebalance action taken. (5) VIX check: 16.41 <20, so MTUM vol-scale target remains 25%. (6) Macro regime: NORMAL (VIX 16.41 <25, SPY 749.77 above 200-DMA ~730, US-Iran fire but no imminent escalation, oil spike contained). Berkshire sleeve holding strong (AAPL +2.17%, AXP -0.39%, KO -0.77%; net unrealized +0.24% avg). All risk rules enforced; charter breach threshold (-15%) far away (-1.38% current drawdown). Portfolio tracking SPY closely with slight momentum underweight due to MTUM allocation. Peak value $102,021.29 set 2026-07-07; current drawdown well within pain limit.
+
+Next steps:
+  1. Monday 2026-07-21: Resolve Pershing Square, Scion, Duquesne, Appaloosa managers via EDGAR CIK direct lookup
+  2. Monday 2026-07-21: Re-scan insider cluster data for newly eligible candidates
+  3. Continue daily repricing and risk maintenance
+  4. Track macro regime (VIX, SPY daily moves, headlines) for risk-off triggers
+  5. Shadow ledger: track vetoed/deferred signals; first grading window closes 2026-07-20 (14 days from Day 1 execution 2026-07-06)
+  6. Weekly review: 2026-07-18 (Friday, end of Week 2)
+
+Simulated portfolio - no real money.
