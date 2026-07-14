@@ -816,3 +816,17 @@ Next steps:
   6. Weekly review: 2026-07-18 (Friday, end of Week 2)
 
 Simulated portfolio - no real money.
+
+2026-07-14 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES
+
+DATE: 2026-07-14 (Tuesday, Day 9 of 90-day test)
+CHARTER STATUS: Paused=FALSE. Peak $102,021.29 (2026-07-07). Current $99,768.32. Drawdown -2.21% (within -15% pain limit).
+MACRO: NORMAL (VIX 16.29 <25, SPY 752.51 above 200-DMA ~730, CPI cooler=dovish, no crisis). Call #9 NORMAL.
+PORTFOLIO: AAPL 314.90 (+2.04%), AXP 357.76 (+1.65%), KO 83.805 (-0.40%), SPY 752.51 (-0.06%), MTUM 321.555 (-1.05%). Cash 22.1%.
+P&L: Portfolio -0.23% | SPY +1.08% | Underperformance -131bp (cash drag + MTUM underweight).
+ALLOCATIONS: CORE_SPY 48.1% (target 50%, drift 1.9pp), MTUM 23.8% (target 25%, drift 1.2pp), no rebalance. VIX 16.29 <20 → MTUM vol-scale 25% maintained.
+DATA SOURCES: Congress Day 9 blocked (shadow-only per charter). SEC EDGAR blocked automated-tool rate-limit (retry Monday with user-agent). OpenInsider network-unreachable. Pershing Square CIK found (0001393667) but 13f.info URL 404 + EDGAR blocked; retry Monday.
+CANDIDATES: Zero new. Berkshire held 3 positions all profitable avg +1.29% (n=3 noise). No stops triggered.
+STOPS: All positions >-20% thresholds (19.3%-21.6% room).
+NEXT: Monday 2026-07-21: Manager URL resolution + insider re-scan. Friday 2026-07-18: Weekly review.
+Simulated portfolio - no real money.
