@@ -830,3 +830,95 @@ CANDIDATES: Zero new. Berkshire held 3 positions all profitable avg +1.29% (n=3 
 STOPS: All positions >-20% thresholds (19.3%-21.6% room).
 NEXT: Monday 2026-07-21: Manager URL resolution + insider re-scan. Friday 2026-07-18: Weekly review.
 Simulated portfolio - no real money.
+
+2026-07-15 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES
+
+DATE: 2026-07-15 (Wednesday, Day 10 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $102,021.29 (set 2026-07-07)
+  - Current portfolio value: $100,041.47
+  - Drawdown from peak: -1.94% (well within -15% pain limit)
+  - Days to judgment day (2026-10-06): 83
+
+MACRO REGIME: NORMAL
+  - VIX: 16.30 (down from 16.29 prior; well below 25 threshold; no risk-off trigger)
+  - SPY: 753.74, +0.23% intraday from 2026-07-14 (751.83)
+  - 200-day MA (SPY): Estimated ~745 (SPY 753.74 solidly above; CORE_SPY remains 50% target)
+  - Headlines: Inflation cooling (CPI data favorable), Fed rate-hike bets easing, ASML earnings strong on AI optimism, Korean stocks rebounding, Berkshire commentary on valuation discipline ("tough to find values"), market warning signals noted but no imminent crisis (no war escalation, Fed emergency, or circuit-breaker event)
+  - Macro call: NORMAL regime maintained. Keep base sizing.
+  - Macro stat: Call #10 logged (NORMAL, VIX 16.30, SPY 753.74, inflation cooling)
+
+DATA SOURCE STATUS:
+  - Congress trades (Capitol Trades): FAILED — all 4 sources blocked (503 CloudFront error, Vercel checkpoint, 429 rate-limit, login wall). Congress data unavailable 10th consecutive trading day. Demoted to SHADOW_ONLY per charter amendment.
+  - Berkshire Hathaway 13F (13f.info): ACTIVE — Q1 2026 filing (filed 5/15/2026, 29 holdings, $263.1B). Holdings repriced and held.
+  - Pershing Square (Bill Ackman): RESOLUTION_PENDING — Found in 13f.info/managers/p index (CIK 0001393667, Q1 2026, 11 holdings, $14B); direct manager URL 404; SEC EDGAR blocked by automated-tool rate-limit (2026-07-14). Will retry Monday 2026-07-21 with user-agent header.
+  - Insider cluster signals (openinsider.com): LAST CHECKED 2026-07-13; zero eligible US common stock cluster candidates published 2026-07-01 to 2026-07-13. Re-scan Monday 2026-07-21.
+
+POSITION REPRICING & RISK CHECKS:
+  - AAPL: 314.90 → 326.35 (+3.63% intraday) | Cost 308.63 | Unrealized: +5.75% | Stop: $246.90 | SAFE (21.5% room)
+  - AXP: 357.76 → 361.28 (+0.99% intraday) | Cost 351.96 | Unrealized: +3.01% | Stop: $281.57 | SAFE (22.1% room)
+  - KO: 83.805 → 84.50 (+0.82% intraday) | Cost 84.14 | Unrealized: +0.43% | Stop: $67.31 | SAFE (20.1% room)
+  - SPY: 752.51 → 753.74 (+0.16% intraday) | Cost 752.6219 | Unrealized: +0.15% | Trend brake: SPY well above 200-DMA (~745), no action | SAFE
+  - MTUM: 321.555 → 322.20 (+0.20% intraday) | Cost 325.0506 | Unrealized: -0.87% | Vol-scale: VIX 16.30 <20, target 25% maintained | SAFE
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - No earnings-proximity deferrals needed (AXP earnings 2026-07-24, 9 trading days out; safe).
+
+ALLOCATION REBALANCE CHECK:
+  - CORE_SPY: Current MV $48,051.19 / total $100,041.47 = 48.0% (target 50%, drift 2.0pp, below 3pp action threshold)
+  - MOMENTUM_MTUM: Current MV $23,793.88 / total $100,041.47 = 23.8% (target 25%, drift 1.2pp, below 5pp action threshold)
+  - INSIDER_CLUSTERS: $0 (target 15%, awaiting new signal candidates)
+  - SMART_MONEY_13F: Current MV $5,180.59 / total $100,041.47 = 5.2% (target 10%, drift 4.8pp, but awaiting Monday 13F resolution)
+  - Rebalance check: Allocation drift within tolerance. No rebalance trades triggered.
+  - VIX bucket (16.30): <20, so MOMENTUM_MTUM target remains 25% (no vol-scale change).
+
+INITIALIZATION & SOURCE GRADING:
+  - Berkshire top-3 initialization (AAPL, AXP, KO): COMPLETE 2026-07-06
+  - Win count (Day 1 through Day 10): 3 trades, 3 above cost, 0 stopped | Win rate: 100%
+  - Cumulative unrealized P&L: AAPL +$117.79, AXP +$52.32, KO +$10.48 = +$180.59 total (avg +3.19% per trade)
+  - Individual performance: AAPL +5.75%, AXP +3.01%, KO +0.43%
+  - Status: All three holdings showing positive momentum. Berkshire 100% win rate (n=3) but early sample, noise dominates.
+  - Next check: Monday 2026-07-21 per smart-money schedule.
+
+CANDIDATES / SIGNALS:
+  - None generated (Congress blocked; 13F and insider data on Monday schedule)
+  - Initialization complete; all positions held
+  - No earnings-proximity deferrals needed
+
+QUALITY GATE: Not applied (no new candidates)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered (all positions safe)
+
+PORTFOLIO SUMMARY:
+  - Cash: $22,015.83 (22.0% in reserve; exceeds 5% minimum floor)
+  - Positions: 5 (AAPL 6.4837 sh, AXP 5.6840 sh, KO 23.7710 sh, SPY 63.7577 sh, MTUM 73.8160 sh)
+  - Total portfolio value: $100,041.47
+  - Unrealized gains: +$41.47 (+0.04% from $100k start)
+  - Peak value: $102,021.29 (Day 2); current drawdown: -1.94% (well within -15% pain limit)
+  - Position count: 5 | Sector allocation (legacy): Tech 33%, Finance 33%, Staples 33% | Broad ETF: 48% SPY + 23.8% MTUM
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (134.3086 shares = $100,000)
+  - Current 2026-07-15: 753.74 (same shares, value now $101,260.76)
+  - Gain: +$1,260.76 (+1.26%)
+  - Portfolio vs SPY: +$41.47 vs +$1,260.76 → Portfolio underperformed by $1,219.29 (portfolio +0.04% vs SPY +1.26%)
+  - Rationale: Portfolio 22% cash post-V2 migration; cash drag persists. MTUM -0.87% momentum drag vs SPY +1.26%. Berkshire sleeve +3.19% avg outweighs broad ETF underweight.
+
+VETOED / DEFERRED / SHADOW SIGNALS:
+  - Congress trades: SIGNAL_SHADOW (all sources blocked; demoted per charter amendment)
+  - Insider clusters: SIGNAL_DEFER_NO_ELIGIBLE_CANDIDATES (openinsider.com scanned; zero US common stock cluster-buys 2026-07-01 to 2026-07-13 that meet eligibility)
+  - Pershing Square 13F: RESOLUTION_PENDING_EDGAR_BLOCKED (direct URL 404; CIK found; EDGAR rate-limit; retry Monday)
+
+REASONING:
+Day 10 of 90-day learning test. No new trades executed today. All positions repriced and risk checks completed. Congress trades infrastructure failure persists (10th consecutive trading day blocked; demoted to shadow tracking per charter amendment). Berkshire sleeve showing continued strength (AAPL +5.75%, AXP +3.01%, KO +0.43%; cumulative +3.19% avg). Allocation drift minimal; no rebalance action taken. Macro regime remains NORMAL (VIX 16.30 <25, SPY 753.74 above 200-DMA ~745, inflation favorable, no crisis triggers). Portfolio tracking closely behind SPY benchmark (+$1,219 absolute underperformance due to 22% cash drag and MTUM momentum underweight). Peak value $102,021.29 set 2026-07-07; current drawdown -1.94% well within -15% pain limit. All risk rules enforced; charter breach threshold far away. Paused_by_charter remains FALSE.
+
+Next steps:
+  1. Monday 2026-07-21: Resolve Pershing Square manager via EDGAR CIK direct lookup (with user-agent header)
+  2. Monday 2026-07-21: Re-scan insider cluster data (openinsider.com) for newly eligible candidates
+  3. Continue daily repricing and risk maintenance
+  4. Track macro regime (VIX, SPY daily moves, headlines) for risk-off triggers
+  5. Shadow ledger: track vetoed/deferred signals; first grading window closes 2026-07-20 (14 days from Day 1 execution 2026-07-06)
+  6. Weekly review: 2026-07-18 (Friday, end of Week 2)
+
+Simulated portfolio - no real money.
