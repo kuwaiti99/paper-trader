@@ -1016,3 +1016,15 @@ Next steps:
   7. Shadow ledger: track vetoed/deferred signals; first grading window closes 2026-07-20 (14 days from Day 1 execution 2026-07-06)
 
 Simulated portfolio - no real money.
+
+2026-07-18 | SYSTEM | N/A | N/A | N/A | N/A | N/A | WEEKLY REVIEW 2 COMPLETE
+
+DATE: 2026-07-18 (Friday, End of Week 2, Day 12 of 90-day test)
+
+WEEK 2 SUMMARY: CRITICAL REVERSAL. Portfolio -2.18% vs SPY -0.11% = -206bp underperformance (vs Week 1: -118bp underperformance). Peak $102,021.29 → current $97,824.82 = -4.28% drawdown (within -15% pain limit but directional concern rising). Root causes: (1) MTUM momentum allocation at peak -7.03% (-$1,688); (2) 22.6% cash drag amplifies losses on down SPY day (-$1,200 opportunity). Berkshire recovery (AAPL +8.21%) insufficient offset. Macro: VIX 18.77 (up from 15.87), approaching RISK_OFF threshold (>20). All positions >-20% stops SAFE. No new trades. Congress data blocked 12 days. Monday 2026-07-21: manager resolution + insider re-scan MANDATORY.
+
+KEY LESSON: Factor timing beats factor selection. V2 design CORRECT but MTUM entry at momentum peak WRONG. Add RSI oscillator gate to vol-scale allocation. Future momentum buys only when RSI <50, not at >70 peaks.
+
+CHARTER COMPLIANCE: Pain limit unbreached. Paused = FALSE. Proceeding Week 3 with macro monitoring (VIX >20 triggers RISK_OFF).
+
+Simulated portfolio - no real money.
