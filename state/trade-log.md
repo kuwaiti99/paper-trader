@@ -1028,3 +1028,5 @@ KEY LESSON: Factor timing beats factor selection. V2 design CORRECT but MTUM ent
 CHARTER COMPLIANCE: Pain limit unbreached. Paused = FALSE. Proceeding Week 3 with macro monitoring (VIX >20 triggers RISK_OFF).
 
 Simulated portfolio - no real money.
+
+2026-07-20 | BUY | ELV | 5.4601 | 367.32 | 2005.00 | OpenInsider Cluster Buys (2 insiders $1.37M, 7-day window, 2026-07-15 to 2026-07-17) | 8.5 | Buffett: APPROVE - Healthcare moat, employer lock-in, 10-yr comfort; Munger: APPROVE - post-earnings insider buys, valuation rational (PE 16.6); Dalio: APPROVE - defensive recession-proof; Marks: APPROVE - cycle fair, forward PE 13.8 room to run; Lynch: APPROVE - clear business, premium collection + slow pricing growth; Druckenmiller: APPROVE - asymmetry +22% upside to $449 target, -25% downside, exit: below 200-DMA or regulatory cap | Insider-clusters sleeve (2% base sizing = $2,000 target). Quality gate PASS (8.5/10, FCF strong, profitability solid, D/E 0.69 acceptable). Committee: 6 APPROVE, 0 REJECT. Friction applied: $2,005.00 cost basis (0.25% on $2,000 buy). Stop-loss -20% = $293.86/share. Exit trigger: regulatory change or trend break.
