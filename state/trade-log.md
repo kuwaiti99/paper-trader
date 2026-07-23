@@ -1208,3 +1208,19 @@ NEXT STEPS:
   8. Shadow ledger: first full grading window closes 2026-07-20/08-03 (Berkshire 14-day window closed on 2026-07-20; ELV 14-day window opens 2026-08-03)
 
 Simulated portfolio - no real money.
+
+2026-07-23 | SELL | SPY | 31.8788 | 737.10 | -23404.34 | V2 MIGRATION CORE_SPY ALLOCATION: Trend Brake Rebalance | N/A | TREND BRAKE ACTIVATED: SPY 737.26 closed below 200-DMA (~745). Per rules, CORE_SPY reduced 50%→25%. Mechanical allocation move, no committee. Proceeds $23,404 deployed to cash. Dry powder ready for Monday resolution.
+
+2026-07-23 | SYSTEM | N/A | N/A | N/A | N/A | N/A | MACRO RISK_OFF; NO NEW BUYS
+
+DATE: 2026-07-23 (Thursday, Day 18)
+CHARTER: Paused=FALSE. Drawdown -3.18% (within -15% pain limit).
+MAC: RISK_OFF THRESHOLD BREACHED (VIX 19.66, SPY < 200-DMA)
+PORTFOLIO: $98,876 | SPY benchmark: $98,896 | Outperformance: +$20
+CASH: $43,415 (43.81%, dry powder for Monday rebalance)
+POSITIONS: 6 (AAPL +3.82%, AXP -0.75%, KO -2.80%, SPY -2.03%, MTUM -4.50%, ELV +1.33%)
+STOPS: None triggered. All positions >-20% room.
+VETOED: CLBK (earnings 2026-07-29, stock split, RISK_OFF financial skip, quality marginal).
+LESSON: V2 trend-brake design working correctly. MTUM peak-entry error (RSI >70) lesson applies to future rebalances.
+NEXT: Monday 2026-07-24 - Check VIX (if >20 sustained, reduce MTUM 25%→15% vol-scale). Pershing manager retry. AXP earnings watch.
+Simulated portfolio - no real money.
