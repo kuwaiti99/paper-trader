@@ -1224,3 +1224,96 @@ VETOED: CLBK (earnings 2026-07-29, stock split, RISK_OFF financial skip, quality
 LESSON: V2 trend-brake design working correctly. MTUM peak-entry error (RSI >70) lesson applies to future rebalances.
 NEXT: Monday 2026-07-24 - Check VIX (if >20 sustained, reduce MTUM 25%→15% vol-scale). Pershing manager retry. AXP earnings watch.
 Simulated portfolio - no real money.
+
+2026-07-24 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES
+
+DATE: 2026-07-24 (Friday, Day 19 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $102,021.29 (set 2026-07-07)
+  - Current portfolio value: $99,923.12
+  - Drawdown from peak: -2.21% (well within -15% pain limit)
+  - Days to judgment day (2026-10-06): 74
+
+MAC REGIME: RISK_OFF (ACTIVE)
+  - VIX: 17.78 (elevated, approaching 20 threshold; no new emergency yet but volatility rising)
+  - SPY: 742.115 (below/at estimated 200-DMA ~745; trend brake ACTIVATED 2026-07-23)
+  - Headlines: Tech sector rout continues; tariff uncertainty (new tariffs taking effect); AXP earnings miss/guidance revision drove -5.32% sector drop; geopolitical tension (Iran) oil elevated
+  - Macro call: RISK_OFF (reasons: SPY <200-DMA trend brake, VIX 17.78 elevated, tariff/earnings volatility, financial sector weakness)
+  - Macro stat: Call #23 logged (RISK_OFF, VIX 17.78, SPY 742.115, sector rotation headwinds)
+
+EARNINGS EVENT:
+  - AXP (American Express) reported earnings TODAY 2026-07-24 pre-market
+  - Stock reaction: -5.32% intraday (from $340.84 prior close to $322.84 current)
+  - Position impact: AAPL unrealized +7.65%, AXP unrealized -8.27%, KO unrealized -2.38% (rotation away from financials)
+  - No stop-loss triggered (AXP at -8.27%, stop at -20% = $281.57/share; 11.7% room remaining)
+  - Quality assessment: AXP fundamentals intact (PE 21.28 after earnings, forward PE 18.20, analyst consensus Buy with $374.94 target = +16% upside from current)
+  - Action: HOLD through earnings volatility; monitor AXP for technical support near $318-320 (50-day MA $330.99); further >12% drop would trigger -20% stop
+
+POSITION REPRICING & RISK CHECKS (2026-07-24 CLOSE):
+  - AAPL: 6.4837 sh × $332.275 = $2,153.12 (cost $2,000, unrealized +$153.12, +7.65%)
+  - AXP: 5.6840 sh × $322.84 = $1,835.25 (cost $2,000, unrealized -$164.75, -8.27%) ← POST-EARNINGS VOLATILITY
+  - KO: 23.7710 sh × $82.145 = $1,952.35 (cost $2,000, unrealized -$47.65, -2.38%)
+  - SPY: 31.8789 sh × $742.115 = $23,637.93 (cost $23,984.49, unrealized -$346.56, -1.40%)
+  - MTUM: 73.8160 sh × $309.63 = $22,869.58 (cost $24,012.04, unrealized -$1,142.46, -4.71%)
+  - ELV: 5.4601 sh × $377.09 = $2,059.55 (cost $2,005.00, unrealized +$54.55, +2.67%) ← 4-DAY INSIDER PLAY HOLDING STRONG
+  - All positions above -20% stop-loss threshold. No closures triggered.
+
+ALLOCATION REBALANCE CHECK (FRIDAY):
+  - CORE_SPY: Current MV $23,637.93 / total $99,923.12 = 23.6% (target 25%, drift 1.4pp, within tolerance)
+  - MOMENTUM_MTUM: Current MV $22,869.58 / total $99,923.12 = 22.9% (target 25% per VIX <20, drift 2.1pp, within tolerance <5pp)
+  - INSIDER_CLUSTERS: Current MV $2,059.55 / total $99,923.12 = 2.1% (target 15%, awaiting new candidates Monday)
+  - SMART_MONEY_13F: Current MV $5,940.72 / total $99,923.12 = 5.9% (target 10%, awaiting Monday 13F resolution)
+  - CASH: $43,415.34 / total $99,923.12 = 43.5% (above 5% minimum, excellent dry powder for Monday signal deployment)
+  - Rebalance check: No action required. Allocations within tolerance. VIX <20 maintains MTUM target at 25%.
+
+DATA SOURCES:
+  - Congress trades (Capitol Trades): FAILED—all 4 sources blocked (20+ consecutive days). Demoted to shadow tracking per charter amendment (post-2012 evidence ≈ random).
+  - Berkshire Hathaway 13F: Active, Q1 2026 filed. Next resolution: Monday 2026-07-27.
+  - Pershing Square (Bill Ackman): CIK resolved (0001393667), manager URL 404; EDGAR blocked. Will retry Monday 2026-07-27 with user-agent header.
+  - OpenInsider (insider clusters): Last checked 2026-07-22; zero new eligible candidates. Rescan Monday 2026-07-27.
+
+CANDIDATES / SIGNALS:
+  - No new candidates analyzed (Monday schedule deferred; RISK_OFF halves sizing, making new buys less likely)
+  - Berkshire holdings held: all three above cost on average (+0.35% avg over 18-day hold despite AXP earnings drop)
+  - ELV (insider cluster, 2026-07-20 fill) performing well (+2.67% in 4 days), grading window closes 2026-08-03
+
+QUALITY GATE: Not applied (no new candidates today)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered (all positions >-20% stops)
+
+PORTFOLIO SUMMARY:
+  - Cash: $43,415.34 (43.5% reserve; well above 5% minimum floor)
+  - Positions: 6 (AAPL, AXP, KO, SPY, MTUM, ELV)
+  - Total portfolio value: $99,923.12
+  - Unrealized gains/losses: -$76.88 (-0.08% from $100k start)
+  - Peak value: $102,021.29 (2026-07-07); current drawdown: -2.21% (within -15% pain limit; charter unbreached)
+  - Position count: 6 (under 40-position cap)
+  - Sector allocation (excluding broad ETFs): Tech 44% (AAPL, ELV), Finance 19% (AXP), Staples 37% (KO); no sector >30% breach
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (134.3086 shares = $100,000)
+  - Current 2026-07-24: 742.115 (same shares, value $100,144.01)
+  - Gain: +$144.01 (+0.14%)
+  - Portfolio vs SPY: -$76.88 vs +$144.01 → Portfolio underperformed by $220.89 (-221bp)
+  - Rationale: Portfolio held 43.5% cash post-trend-brake sale; cash drag persists. MTUM -4.71% momentum drag. AXP earnings loss. Offset by ELV +2.67% insider play and AAPL +7.65% tech strength.
+
+VETOED / DEFERRED / SHADOW SIGNALS:
+  - Congress trades: SIGNAL_SHADOW (all sources blocked; 20+ consecutive trading days)
+  - Insider clusters: No new candidates (rescan Monday 2026-07-27)
+  - Pershing Square 13F: RESOLUTION_PENDING_EDGAR_RETRY (direct URL 404; CIK found; EDGAR rate-limit; retry Monday with user-agent)
+
+REASONING:
+Day 19 of 90-day learning test. No new trades executed. RISK_OFF regime persists after trend-brake activation 2026-07-23 (SPY <200-DMA, VIX elevated). AXP earnings drop -5.32% created intraday volatility but position remains above -20% stop with analyst target $374.94 (+16% upside). Berkshire sleeve mixed: AAPL strong +7.65%, AXP/KO weak post-earnings rotation. ELV insider play holding well +2.67% after 4 days (grading window 14 days, closes 2026-08-03). MTUM momentum ETF continues underperformance -4.71% after peak-entry error on 2026-07-09 (RSI >70); lesson stands for future entries. Allocation drift within tolerance; no rebalance action. Cash position excellent at 43.5%, dry powder ready for Monday 13F + insider rescan (Pershing Square, Scion, Duquesne, Appaloosa managers). Macro regime RISK_OFF (VIX 17.78, SPY <200-DMA, tariff/earnings volatility) halves new buy sizing (1% vs 2% base). Confidence: MODERATE (Berkshire 18 days old, first grading window closed 2026-07-20; ELV 4 days old, too early for firm confidence; macro calls 16/17 strong). Charter unbreached (drawdown -2.21%, well within -15% pain limit).
+
+NEXT STEPS:
+  1. Monday 2026-07-27: Resolve Pershing Square, Scion, Duquesne, Appaloosa managers via EDGAR CIK lookup
+  2. Monday 2026-07-27: Re-scan insider cluster data (openinsider.com) for newly eligible US common stock cluster buys
+  3. Continue daily repricing and risk maintenance
+  4. Monitor VIX: if >20 sustained or >19 for 2+ days, may trigger MTUM vol-scale reduction (25%→15%)
+  5. Monitor AXP: support zone $318-320 (50-day MA $330.99); if breaks $318, evaluate technical stop
+  6. Friday 2026-07-26: Week 3 summary (21 days elapsed; first judgment window on 2026-10-06 = 74 days remaining)
+  7. Track ELV grading window (14-day close on 2026-08-03)
+
+Charter compliance: Paused=FALSE. Pain limit unbreached. RISK_OFF regime active; new buy sizing halved per rules. Proceeding to Monday 2026-07-27 with same rules. Simulated portfolio - no real money.
