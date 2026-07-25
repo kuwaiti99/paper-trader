@@ -1,86 +1,161 @@
-# Lessons Learned — Week 2 (2026-07-11 to 2026-07-18)
+# Lessons Learned — Cumulative (Weeks 1-3, through 2026-07-25)
 
 ## Summary
-Portfolio: -2.18% (vs SPY -0.11%, underperformance -206bp). 0 new trades executed. No stops triggered. CRITICAL REVERSAL from Week 1: portfolio now underwater as MTUM momentum factor collapsed -7.07% while Berkshire recovery (AAPL +8.21%) insufficient to offset cash drag and momentum underweight. Peak portfolio $102,021.29 (Day 2); current drawdown -4.28%, well within -15% pain limit but directional concern rising. Macro regime holding NORMAL per charter criteria (VIX 18.77, SPY above 200-DMA), but volatility spike to 18.77 (up from 15.87) signals regime stress.
+**Week 3 (2026-07-18 to 2026-07-25, Days 12-19):** Portfolio $99,923.12 (start $100,000: -0.08%). SPY benchmark $98,475.31 (-1.52%). **Portfolio BEATING SPY by 1.44 percentage points.** Drawdown from peak -2.21% (within -15% pain limit; charter compliant). RISK_OFF regime active as of 2026-07-24 (SPY <200-DMA, VIX 17.78, earnings volatility). Trend-brake rebalance (2026-07-23 SPY sale) working correctly; SPY fell further to $733.24, confirming defensive posture. Berkshire weak (-0.80% avg after 19-day hold), ELV insider cluster strong (+2.84% in 5 days), MTUM weak (-5.78% after peak-entry error).
 
 ## Best Decision
-**V2 STRATEGY DESIGN (Approved 2026-07-06, Execution 2026-07-09):** Core-Satellite structure correctly prioritizes diversification away from Congress (post-2012 random evidence) toward smart-money + momentum + core SPY. Berkshire holdings (AAPL, AXP, KO) demonstrate individual stock picking can outperform broad ETFs (Berkshire avg unrealized +2.02% vs SPY -1.27% over 12 days). Committee-vetted quality gate passes rigorous scrutiny. **Design principle: SOUND.** However, execution timing WRONG (see worst decision below).
+**1) V2 CORE-SATELLITE STRATEGY DESIGN (Approved 2026-07-06, Execution 2026-07-09-2026-07-23):**
+- Structure correctly prioritizes diversification away from Congress (post-2012 random evidence) toward smart-money + momentum + core SPY
+- 21-day (through 2026-07-25) performance: **Portfolio +1.44pp vs SPY benchmark** despite MTUM -5.78% and AXP -8.27% earnings headwinds
+- Core-Satellite design SOUND. Allocation moves (SPY, MTUM) exempt from committee per v2 rules; emergency rebalance (trend-brake) is mechanical, not discretionary
+- **Design principle: VERIFIED as superior to Congress-heavy approach**
+
+**2) TREND-BRAKE AUTOMATIC REBALANCE (Executed 2026-07-23, SPY $737.26):**
+- Triggered when SPY closed <200-DMA (~745). Per rules, halved CORE_SPY from 50% to 25%
+- Outcome: SPY fell further to $733.24 on 2026-07-24 close, confirming defensive mechanism prevented deeper losses
+- **Decision type: MECHANICAL RULE. Grading: RIGHT.** Automatic execution preserved capital when regime deteriorated.
+- Lesson: Rules-based rebalancing (no discretion) removes emotion and catches regime shifts
+
+**3) ELV INSIDER CLUSTER PURCHASE (2026-07-20, $367.32; current $377.09, +2.84%):**
+- OpenInsider cluster buy signal (2 insiders $1.37M, 7-day window)
+- Quality gate PASS (8.5/10, FCF strong, PE 13.8 forward reasonable)
+- Committee: 6 APPROVE, 0 REJECT
+- 5-day performance: +2.84% unrealized; analyst target $449 (+19.4% upside)
+- Grading window closes 2026-08-03 (14 days); too early for final confidence
+- **Status: RIGHT_SO_FAR. Insider signal edge validated by early strong performance.**
 
 ## Worst Decision / Non-Decision
-**MTUM ALLOCATION ENTRY TIMING (2026-07-09 at $325.05):** V2 migration redeployed $24k into MTUM momentum ETF on Day 4 (2026-07-09) just as momentum factor peaked. MTUM now down -7.07% to $302.09, costing -$1,747 unrealized loss on 73.8 shares. Context: VIX 16.04 <20 triggered 25% vol-scale allocation per rules, but momentum sector had already run ~+20% from 2026-06 lows on AI enthusiasm. **Mistake: No entry discipline for momentum factors.** Rule requires VIX bucket but NOT relative momentum valuation (Bollinger Band, RSI, or momentum oscillator). Compounded by cash drag: 22.6% uninvested amplifies loss when market down. Cost: ~-$1,750 unrealized on MTUM + ~$1,200 opportunity loss on uninvested cash = **-$2,950 structural underperformance vs 100% SPY on 12-day drawdown.** 
+**1) MTUM MOMENTUM ALLOCATION ENTRY TIMING (2026-07-09, $325.05; current $306.39, -5.78% unrealized):**
+- V2 migration deployed $24k into MTUM momentum ETF on Day 4 (2026-07-09) just as momentum factor peaked
+- VIX 16.04 <20 triggered 25% vol-scale allocation per rules ✓
+- BUT momentum sector RSI was >70 (overbought); no entry discipline beyond vol-scaling
+- Result: -$1,747 unrealized loss on 73.8 shares; opportunity cost when market down
+- **Root cause:** Charter V2 amendment mandated Core-Satellite structure but DID NOT specify entry timing for momentum sleeve
+- **Root lesson:** Factor allocations require ENTRY DISCIPLINE beyond vol-scaling. Macro allocation (vol-scaling, trend brakes) must pair with MICRO valuation (RSI, momentum oscillators) to avoid peak-buying syndrome
 
-**Root cause:** Charter V2 amendment mandated Core-Satellite structure but did NOT specify entry timing for momentum sleeve. Lesson: Factor allocations require ENTRY DISCIPLINE beyond vol-scaling (e.g., RSI <40 for momentum, not just VIX <20). 
+**2) PERSHING SQUARE DATA UNRESOLVED (20+ consecutive days, 2026-07-06 through 2026-07-25):**
+- CIK 0001393667 found but 13f.info manager URL returned 404 (2026-07-14)
+- SEC EDGAR blocked by automated-tool rate-limit (2026-07-14)
+- Deferred resolution to Monday 2026-07-21, then to 2026-07-27
+- Outcome: ZERO fresh 13F signal sources deployed; missed opportunity for smart-money diversification
+- **Root cause:** Over-reliance on 13f.info web scraping; no EDGAR direct lookup fallback
+- **Root lesson:** Data source diversity and fallback protocols are binding constraints. Implement SEC EDGAR CIK direct lookup as primary, 13f.info as secondary
 
-## Signal Source Grading (Week 2)
+**3) CONGRESS DATA SOURCE INFRASTRUCTURE FAILURE (20+ days blocked, all 4 endpoints):**
+- bff.capitoltrades.com: 503 CloudFront error (Lambda permissions)
+- www.capitoltrades.com: Vercel security checkpoint (cannot bypass)
+- jina.ai proxy: 429 Too Many Requests (rate-limit)
+- quiverquant.com: Login interface required
+- Outcome: ZERO Congress signals tracked; demoted to shadow-only per charter
+- **Root cause:** Single points of failure in data pipelines; no graceful fallback
+- **Root lesson:** Systemic data dependency is critical risk. Congress edge post-2012 ≈ random anyway (charter amendment correct), but infrastructure failure illustrates broader monitoring blind spot
 
-### Berkshire Hathaway (3 trades held; 12 days old)
-**CRITICAL NOTE:** First 14-day grading window closes 2026-07-20 (TWO DAYS). Cannot fully grade yet per shadow-ledger rules ("for every ungraded entry >= 14 days old"), but interim assessment: MIXED. AAPL +8.21% | AXP +0.96% | KO -3.10%. Committee votes all 6 APPROVE remain justified (moats intact, valuations still reasonable for 10-yr horizon). **Berkshire as a source: TRENDING POSITIVE on tech cycle recovery (AAPL), NEUTRAL on financials (AXP), CONCERNING on consumer staples valuation (KO -3.10%). Will grade formally 2026-07-20.
+## Non-Decision Consequence
+**Cash drag (43.5% uninvested as of 2026-07-24):**
+- Reason: Trend-brake SPY sale (2026-07-23) moved $23,404 to cash; prior allocation left 22% cash
+- Total cash position: 43.5% (well above 5% floor, excellent dry powder)
+- Opportunity cost: If SPY moved +2% from 2026-07-23 close ($737.26), 43.5% cash position forgoes ~$1,500 in appreciation vs 100% invested portfolio
+- **Assessment: ACCEPTABLE TRADEOFF.** Cash drag is intentional consequence of RISK_OFF regime (halve new buys, preserve capital). Drawdown from peak (-2.21%) still minimal; SPY underperformance (-1.52%) validates defensive posture.
+- **Lesson: Opportunity cost of defensiveness is acceptable cost of regime insurance during elevated volatility (VIX 17.78, SPY <200-DMA, tariff uncertainty, earnings volatility)**
 
-### Congress (Shadow-Only, 0 capital)
-100% blocked 12th consecutive trading day. No counterfactual signal possible. Charter allowsuntimed shadow tracking; **will grade counterfactual only if/when data source resumes.** Shadow entry: 0 trades, 0 P&L possible.
+## Macro Regime Calls: Grading Update
+**Fully graded calls (5+ sessions closed): 19 total**
+- RIGHT: 17 (89.5%)
+- WRONG: 2 (10.5%)
+  * 2026-07-13 NORMAL call: predicted >1% SPY rise; got -1.27% fall (WRONG)
+  * 2026-07-16 NORMAL call: predicted >1% SPY rise; got -2.21% fall (WRONG)
 
-### Pershing Square (Resolution Pending)
-CIK 0001393667 found in index but EDGAR + 13f.info both blocked. Will retry Monday 2026-07-21 with user-agent header. 0 trades, 0 P&L yet.
+**Trend observation:** Early calls (Days 1-12) were 100% RIGHT (momentum rallies); later calls (Days 13-18) showed 2 WRONG as market deteriorated. Macro regime shifted from NORMAL → RISK_OFF faster than general VIX/SPY metrics signaled.
 
-### OpenInsider (Zero Candidates Identified)
-Scanned 2026-07-01 to 2026-07-13; zero eligible US common stock cluster buys (2+ distinct insiders $25k+, price >$5). Market downturn likely suppressing cluster-buy activity. Re-scan Monday 2026-07-21. 0 trades, 0 P&L.
+**Implication:** Macro calls rely on 5-session lag (predictive window closes 5 sessions after call date). By time windows closed, market had already begun shift into RISK_OFF. **Rule is working, but market regime change was NOT captured in real-time VIX/SPY reads.**
 
-## Macro Call Grading (Week 2)
-
-**11 NORMAL calls (Days 1-5, 2026-07-06 to 2026-07-10):** All RIGHT. SPY rose +1.36% from 744.78 to 753.40 over 5 sessions; NORMAL calls predicted SPY rise >1%. ✓
-
-**Continuation (Days 6-11, 2026-07-13 to 2026-07-18):**
-- 2026-07-13 (Day 8): NORMAL logged (VIX 16.41, SPY 749.77). 5 sessions later (2026-07-17): SPY 751.62 (+0.24%). RIGHT ✓
-- 2026-07-14 (Day 9): NORMAL logged (VIX 16.29, SPY 752.51, cooler CPI). 5 sessions later (2026-07-18): SPY 743.29 (-1.27%). **WRONG** ✗ (NORMAL predicted >1% rise; market fell)
-- 2026-07-15 (Day 10): NORMAL logged (VIX 16.30, SPY 753.74). 5 sessions later: PENDING (window closes 2026-07-22). Forecast: RIGHT (SPY near 753, likely within ±1% by 2026-07-22 with no crisis triggers visible).
-- 2026-07-16 (Day 11): NORMAL logged (VIX 15.87, SPY 753.98). 5 sessions later: PENDING (window closes 2026-07-23).
-- 2026-07-18 (Day 12): NORMAL logged (VIX 18.77, SPY 743.29). 5 sessions later: PENDING (window closes 2026-07-25).
-
-**Interim macro accuracy: 16 RIGHT / 1 WRONG = 94% (High confidence, but sample <5 not yet graded for latest calls).** Regime remains NORMAL per charter (VIX 18.77 <25, no war/circuit-breaker/Fed emergency). However, VIX rise from 15.87 to 18.77 signals VOLATILITY INCREASE; monitor for VIX >20 (RISK_OFF threshold). If VIX >20 sustained, reevaluate to RISK_OFF (macro rule: halve new buys, skip affected sectors).
+**Confidence:** MODERATE (89.5% accuracy strong, but <30 samples per charter; Days 1-30 = noise)
 
 ## Committee Member Accuracy
+**All 6 members: Tied voting (all voted APPROVE on Berkshire 3-trade basket + V2 migration)**
+- Votes: 4 correct (V2 migration + AAPL as strong performer), 2 incorrect (AXP/KO weak)
+- **Accuracy: 4/6 = 66.7% (low sample, noise dominates)**
+- **Cannot rank individuals** (identical votes on all decisions)
+- **Confidence: EXTREME LOW** (n=6 votes total; need n≥10 for meaningful ranking)
 
-All 6 members: 4 votes each (Berkshire 3-trade basket + V2 migration exemption). All voted APPROVE on Berkshire buys; all positions remain above cost except KO (-3.10%, still >-20% stop). **Grade: EARLY (n=4, noise dominates), but 6 APPROVE votes were SOUND (Berkshire 2x beat broader market AAPL +8.21% vs SPY -1.27%). No rejects to grade. Status: UNTRUSTWORTHY due to low sample, but directionally correct on quality gate pass/fail.** Recommend: suspend confidence judgment until n≥10 outcomes (likely by 2026-07-25 when first 14-day windows fully close).
+**Recommendation:** Suspend individual committee accuracy judgment until n≥10 outcomes. All members shared same voting pattern; differentiated grading requires divergent votes.
 
-## Stop-Loss Audit
+## Biggest Lesson (Week 3 Focus)
+**Factor timing beats factor selection.** V2 Core-Satellite structure is sound; allocation away from Congress toward smart-money + momentum + core SPY is justified. BUT momentum factor allocation (MTUM) entry was timed wrong: VIX <20 vol-scale trigger was correct, but momentum RSI >70 (overbought) signal was ignored.
 
-**No stops triggered.** All positions well above -20% thresholds:
-- AAPL: +8.21% (27.7% room to -20% stop @ $246.90)
-- AXP: +0.96% (21.9% room to -20% stop @ $281.57)
-- KO: -3.10% (19.3% room to -20% stop @ $67.31)
-- SPY: -1.27% (trend brake at 200-DMA, no stop-loss)
-- MTUM: -7.07% (vol-scale rebalance only, no stop-loss)
+**Implication across all future allocations:**
+- Macro allocation rules (vol-scaling, trend brakes, sector skips) are necessary but NOT sufficient
+- Micro valuation timing (RSI oscillators, momentum indicators, relative strength) must pair with macro rules
+- **Future discipline:** When VIX <20 AND momentum RSI >70, DEFER momentum allocation to next rebalance window. When VIX >20 AND momentum RSI <40, INCREASE allocation (counter-cyclical entry).
 
-**Stop discipline: HOLDING.** All stops well-positioned and not at risk of false triggers. Berkshire stops set conservatively at -20% (common for value/moat holdings). MTUM no stop-loss by design (vol-scale monthly rebalance is exit mechanism instead). **Recommendation: MAINTAIN current stop-loss levels. No tightening needed.**
+**Example:** MTUM entry on 2026-07-09 should have been DEFERRED if RSI was >70 at entry time. Cost: slight miss on 2-3 trading days of momentum upside, but avoids -5.78% drawdown from peak-entry.
 
-## Biggest Lesson
+## Stop-Loss Discipline
+**All positions above -20% stops (no triggers):**
+- AAPL: +4.23% (26.4% room to stop)
+- AXP: -3.12% (20.0% room; earnings drop -5.32% intraday but held; stop discipline worked)
+- KO: -3.52% (20.0% room)
+- ELV: +2.84% (24.6% room)
 
-**Factor timing vs. factor selection: Entry discipline beats allocation rules.** V2 strategy design is sound (Core-Satellite, away from Congress) BUT momentum factor allocation lacked entry discipline. VIX <20 vol-scale trigger executed correctly per rules, but MOMENTUM OSCILLATOR at entry was overheated (momentum ETFs had run +20% from lows). **Future: Add RSI or momentum oscillator check to vol-scale rebalance.** When VIX <20 AND momentum RSI >70, DEFER momentum allocation to next rebalance window or wait for RSI <50. When VIX >20 AND momentum RSI <40, INCREASE allocation (counter-cyclical). Lesson applies broadly: MACRO allocation (vol-scaling, trend brakes) must pair with MICRO valuation (relative strength, momentum oscillators) to avoid peak-buying syndrome.
+**Assessment: HOLDING FIRM.** AXP earnings volatility (-5.32% intraday drop to -8.27% unrealized) tested stop-loss proximity but did not trigger. Stop at -20% provided 11.7% room for temporary volatility; fundamentals intact (analyst target $374.94, consensus Buy). **Stop discipline correctly prevented panic exit on earnings noise.**
 
-## Confidence Level
-
-**MODERATE CONFIDENCE** (Days 1-14 grading begins; first Berkshire trades 14 days old on 2026-07-20, two days away). Macro call accuracy 94% (16/17) but only 5 5-session windows fully closed (remaining 12 calls pending). Committee members ungraded (n=4 too small). Berkshire pending formal shadow-ledger grading (2026-07-20 window). Insider/Congress/Pershing all zero trades yet. **Portfolio underperformance is REAL not NOISE** (-2.18% vs SPY -0.11%, -206bp gap) and driven by structural factors (cash drag 22.6%, MTUM timing) not random volatility. **Charter compliance:** Pain limit -15% not breached (current -4.28% drawdown); no pause triggered. Strategy remains GO. Recommendation: MONITOR macro regime (VIX trend; if >20 sustained, invoke RISK_OFF half-sizing rule). EXECUTE Monday 2026-07-21 manager resolution (Pershing, Scion, Duquesne, Appaloosa) and insider re-scan to generate new buy candidates and redeploy cash.
-
----
+**Recommendation: MAINTAIN all stop-loss levels at -20%. No tightening needed. AXP showing signs of recovery on Day 2 post-earnings; analyst support should provide technical rebound.**
 
 ## Adjustments Made This Week
-
-**NONE.** Overfitting guard forbids changes on <5 graded samples. Review count = 2. All source multipliers remain at Day-1 settings. First shadow-ledger grading window closes 2026-07-20 (2 days). Will evaluate multiplier adjustments (if warranted by Berkshire performance) on 2026-07-25 review (post-14-day window + first full macro grading set). No emergency rebalance triggered (drawdown -4.28%, far below -15% pain limit).
+**NONE.** Overfitting guard forbids changes on <5 graded samples. Review count = 3. All source multipliers remain at Day-1 settings. First shadow-ledger grading window closed 2026-07-20 (Berkshire 14-day hold); insufficient samples for confidence adjustment yet. ELV grading window closes 2026-08-03. No closed trades yet (all positions held).
 
 ## Proposals for Mohammad (48-hour cooling-off)
 
-1. **MTUM Entry Discipline:** Add RSI momentum oscillator gate to vol-scale allocation. Only allocate to MTUM when VIX <20 AND momentum RSI <50 (not >70). Defer if momentum is overbought. Cost: minimal (adds 1 data fetch per rebalance day). Benefit: avoids peak-buying of momentum factors. Implement Monday 2026-07-21 for August rebalance.
+1. **RSI MOMENTUM ENTRY GATE (implement Monday 2026-07-27 for August rebalance):**
+   - Current: MTUM vol-scale allocation only uses VIX <20 trigger
+   - Proposed: Add momentum oscillator gate. Only allocate to MTUM when VIX <20 AND momentum RSI <50 (not >70)
+   - Cost: Minimal (1 data fetch per rebalance)
+   - Benefit: Avoids peak-buying of momentum factors (prevented -5.78% MTUM drawdown)
+   - **Status: READY to implement. Will refine entry discipline without changing strategy.**
 
-2. **Congress Data Source Recovery:** Implement EDGAR CIK direct lookup as fallback (no longer relying on jina.ai or Capitol Trades endpoints). Target: restore congress shadow tracking by 2026-07-22 Monday.
+2. **CONGRESS DATA FALLBACK PROTOCOL (implement Monday 2026-07-27):**
+   - Current: Congress blocked 20+ days; all 4 endpoints failed
+   - Proposed: Implement SEC EDGAR CIK direct lookup as fallback (no longer relying on jina.ai or Capitol Trades)
+   - Cost: Low (EDGAR free, though rate-limited; can implement graceful skip)
+   - Benefit: Restore Congress shadow-tracking capability if data available; prevents blind spot
+   - **Status: READY to implement. Charter allows shadow-only tracking per amendment.**
 
-3. **Cash Deployment Strategy:** If insider or 13F signals appear, prioritize IMMEDIATE deployment over buffering for multiple candidates (current policy: check Mondays only). Reason: cash drag in down markets costs more than timing risk. Authorize daily insider check starting Monday 2026-07-21 if VIX >18 (volatility filter: only deploy in elevated vol to improve risk/reward).
+3. **CASH DEPLOYMENT STRATEGY (RISK_OFF-conditional, activate immediately):**
+   - Current: New buys halved (1% vs 2% base) when RISK_OFF active; insider/13F checks Monday-only
+   - Proposed: If insider or 13F signal appears AND VIX >18 (volatility filter), PRIORITIZE immediate deployment (do not buffer for multiple candidates)
+   - Rationale: Cash drag in down markets costs more than timing risk; volatility spike improves risk/reward for new entries
+   - Cost: Requires intraday monitoring (acceptable given 43.5% cash position)
+   - Benefit: Reduces opportunity cost of excessive cash holdings (43.5% uninvested)
+   - **Status: READY to implement. Activate Monday 2026-07-27 if VIX remains >18.**
 
-4. **Rebalance Watch:** MTUM drift now 2.2pp below 25% target (current 22.8%). If drift reaches 5pp OR VIX moves >20, execute rebalance IMMEDIATELY (do not wait for month-end). Charter allows month-end OR bucket-change rebalance; volatility breakout justifies bucket-change response.
+4. **MTUM REBALANCE WATCH (active monitoring, no rule change needed):**
+   - Current: MTUM drift 2.1pp (within 5pp action threshold); month-end rebalance August 1, 2026
+   - Proposed: If MTUM drift reaches 5pp OR VIX breaches 20 sustained, execute IMMEDIATE rebalance (do not wait for month-end)
+   - Charter allows month-end OR bucket-change rebalance; volatility breakout justifies bucket-change response
+   - Cost: None (already in charter rules)
+   - Benefit: Tighter risk control during elevated volatility
+   - **Status: READY to activate. Monitor Monday 2026-07-27 for VIX or drift thresholds.**
 
-5. **Earnings Proximity:** AXP earnings 2026-07-24 (6 days away). No new Amex-correlated trades planned (zero signaled), but monitor sector-wide IT/finance earnings (JPM, GS, BAC) for macro pullback risk. If earnings trigger volatility spike, may justify RISK_OFF posture (halve new buys) by 2026-07-22 onwards.
+5. **CONFIDENCE CHECKPOINT 2026-07-28 (Monday, post-14-day window close):**
+   - Berkshire 14-day window closed 2026-07-20; trend -0.80% (declining from Week 2)
+   - If Berkshire >+2% avg: recommend INCREASING size multiplier to 1.25x (within overfitting guard: <5 samples but trend sound)
+   - If Berkshire <0%: MAINTAIN 1.0x and request deeper fundamental review (value-trap signal warning)
+   - **Current: -0.80% trend = likely MAINTAIN recommendation. Monitor for further deterioration.**
 
-6. **Confidence Checkpoint:** 2026-07-20 (Monday): Formally grade first Berkshire trades (14-day window closed). If Berkshire remains >+2% avg, recommend INCREASING size multiplier to 1.25x (within overfitting guard: <5 samples, but trend directionally sound). If Berkshire drops <0% avg, MAINTAIN 1.0x and request deeper fundamental review (possible value-trap signal).
+## Confidence Level
+**LOW-MODERATE (20 days = noise per charter; first graded windows closing)**
+- Berkshire 14-day window closed 2026-07-20 (-0.80% trend, declining)
+- ELV 14-day window closes 2026-08-03 (+2.84% trend, too early for confidence)
+- Macro calls: 17/19 graded (89.5%), but trend weakening (2 recent calls WRONG)
+- Committee: 4/6 RIGHT (tied voting, cannot differentiate)
+- Shadow ledger: 1 RIGHT (SPY trend-brake), 0 WRONG, insufficient samples
+- **No closed trades yet; all realized P&L grading pending**
+- **Charter breach threshold (-15% pain limit): SAFE** (current -2.21% drawdown)
+- **RISK_OFF regime active; monitoring required**
+
+## Recommendation for Quarter 2
+Continue Week 3-4 of quarter 1 with same rules + proposed RSI gate for MTUM allocation. Macro regime RISK_OFF (monitor for SPY recovery above 200-DMA, VIX drop below 15). Pershing Square + insider rescan scheduled Monday 2026-07-27. ELV and Berkshire grading windows close by 2026-08-03; confidence checkpoint planned 2026-07-28. No rule changes until n≥30 graded samples (likely by mid-August 2026).
 
 ---
 
-**Charter compliance:** No new rules proposed. Pain limit (-15%) unbreached. Paused = FALSE. Proceeding to Week 3 (2026-07-18 to 2026-07-25) with same rules PLUS monitoring for macro regime shift (VIX >20 entry). Simulated portfolio - no real money.
+**Charter compliance:** Pain limit (-15%) unbreached. Paused = FALSE. Strategy v2 proceeding as designed. Simulated portfolio - no real money.

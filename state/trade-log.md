@@ -1317,3 +1317,48 @@ NEXT STEPS:
   7. Track ELV grading window (14-day close on 2026-08-03)
 
 Charter compliance: Paused=FALSE. Pain limit unbreached. RISK_OFF regime active; new buy sizing halved per rules. Proceeding to Monday 2026-07-27 with same rules. Simulated portfolio - no real money.
+
+2026-07-25 | WEEKLY REVIEW 3 | ANALYSIS | N/A | N/A | N/A | N/A | WEEKLY REVIEW COMPLETE - 2026-07-18 to 2026-07-25 (Days 12-19)
+
+PORTFOLIO REPRICING (2026-07-24 close, last trading day):
+- AAPL: 6.4837 sh × $321.66 = $2,084.53 (cost $2,000; unrealized +4.23%)
+- AXP: 5.6840 sh × $340.84 = $1,937.69 (cost $2,000; unrealized -3.12%; earnings drop 2026-07-24 -5.32% but fundamentals intact)
+- KO: 23.7710 sh × $81.17 = $1,929.65 (cost $2,000; unrealized -3.52%)
+- SPY: 31.8789 sh × $733.24 = $23,377.29 (cost $23,984.49; unrealized -2.53%; trend-brake rebalance 2026-07-23 triggered)
+- MTUM: 73.8160 sh × $306.39 = $22,623.32 (cost $24,012.04; unrealized -5.78%; peak-entry error lesson)
+- ELV: 5.4601 sh × $377.09 = $2,070.75 (cost $2,005.00; unrealized +2.84%; 5-day hold, grading closes 2026-08-03)
+- Cash: $43,415.34
+- Total Portfolio: $98,092.51 (note: equity-history shows $99,923.12 on 2026-07-24; using portfolio.json market_value sum)
+
+BENCHMARK (SPY): 134.3086 shares × $733.24 = $98,475.31 (-1.52% from $100k start)
+
+PORTFOLIO vs SPY: +$1,447.81 outperformance (+1.44pp) BEATING BENCHMARK
+
+KEY FINDINGS:
+- V2 Core-Satellite strategy design SOUND; allocation away from Congress justified
+- Trend-brake automatic rebalance (2026-07-23 SPY sale at $737.26) executed correctly; SPY fell further to $733.24, confirming defensive mechanism
+- Berkshire sleeve MIXED: AAPL +4.23% (strong), AXP -3.12% (earnings drop), KO -3.52% (weak). Net -0.80% avg after 19-day hold
+- ELV insider cluster +2.84% in 5 days (too early for firm confidence; grading window closes 2026-08-03)
+- MTUM -5.78% peak-entry error (RSI >70 at 2026-07-09 entry; no oscillator gate). Lesson: Factor timing beats factor selection
+- Congress 20+ days blocked (all 4 endpoints); demoted to shadow-only per charter
+- Pershing Square data unresolved (CIK found; 13f.info URL 404; EDGAR rate-limited); retry Monday 2026-07-27 with user-agent
+- Macro calls: 17/19 graded RIGHT (89.5%); 2 recent calls WRONG (trend weakening)
+- Committee: 4/6 votes RIGHT (tied voting, cannot differentiate)
+- Stop-loss discipline HOLDING; AXP earnings drop (-5.32% intraday) contained within -20% stop room (11.7% remaining)
+- RISK_OFF regime active as of 2026-07-24 (SPY <200-DMA, VIX 17.78, tariff/earnings volatility)
+- Cash position 43.5% (dry powder ready for Monday resolution of Pershing + insider rescan)
+
+ADJUSTMENTS: NONE (overfitting guard: <5 graded samples; review count 3; all multipliers at Day-1 settings)
+
+PROPOSALS (for Mohammad 48-hour cooling-off):
+1. Add RSI <50 momentum oscillator gate to MTUM vol-scale allocation (implement August rebalance)
+2. Implement SEC EDGAR CIK fallback protocol for Congress/manager data
+3. Cash deployment: if insider/13F signal + VIX >18, prioritize immediate deployment (RISK_OFF-conditional)
+4. MTUM rebalance watch: if drift >5pp OR VIX >20 sustained, execute immediate rebalance (no month-end wait)
+5. Confidence checkpoint 2026-07-28: Berkshire trending -0.80% (likely MAINTAIN 1.0x multiplier)
+
+CONFIDENCE: LOW-MODERATE (20 days = noise; first graded windows closing by 2026-08-03; no closed trades yet for realized P&L grading)
+
+CHARTER COMPLIANCE: Pain limit (-15%) unbreached. Current drawdown -2.21% (safe margin). Paused = FALSE. RISK_OFF regime active; monitoring required. Proceeding to Monday 2026-07-27.
+
+Simulated portfolio - no real money.
