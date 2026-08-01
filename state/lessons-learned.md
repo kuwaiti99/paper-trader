@@ -1,5 +1,23 @@
 # Lessons Learned — Cumulative (Weeks 1-4, through 2026-08-01)
 
+## ESTABLISHED PRINCIPLES (Promoted from recurring observations)
+
+### 1. FACTOR TIMING BEATS FACTOR SELECTION
+- V2 Core-Satellite structure is sound; allocation away from Congress toward smart-money + momentum + core SPY justified by 25-day infrastructure failure.
+- BUT: momentum factor allocation (MTUM) entry was timed wrong. VIX <20 vol-scale trigger was correct, but momentum RSI >70 (overbought) signal ignored, costing -7.82% unrealized loss (-$1,894.76).
+- IMPLICATION: Macro allocation rules (vol-scaling, trend brakes) necessary but NOT sufficient. Micro valuation timing (RSI oscillators) must pair with macro rules.
+- **FUTURE DISCIPLINE**: When VIX <20 AND momentum RSI >70, DEFER momentum allocation. When VIX >20 AND momentum RSI <40, INCREASE allocation (counter-cyclical entry).
+
+### 2. MECHANICAL RULES OUTPERFORM DISCRETION
+- Trend-brake automatic rebalance (2026-07-23 SPY sale @ $737.26) was RIGHT. SPY fell further to $733.24 on 2026-07-24 AXP earnings, confirming automatic rules-based discipline prevented deeper losses.
+- Stop-loss discipline tested by AXP -5.32% earnings intraday; order held firm (stopped at -8.27%, 11.7% room to -20% stop).
+- **IMPLICATION**: Mechanical rules enforce psychological discipline. Every rules-based decision graded RIGHT so far (trend-brake, stop-loss test, allocation rebalance).
+
+### 3. DATA SOURCE RELIABILITY IS BINDING CONSTRAINT
+- Congress infrastructure failure 25+ consecutive trading days (503 CloudFront, Vercel checkpoint, 429 rate-limit, login wall).
+- Pershing Square, Scion, Duquesne, Appaloosa managers: CIKs found in 13f.info index but direct URLs 404; EDGAR rate-limited.
+- **IMPLICATION**: Single points of failure in data pipelines create blind spots. Implement fallback protocols (SEC EDGAR CIK direct lookup with user-agent headers and timeout handling).
+
 ## Summary
 **Month-end (2026-07-06 to 2026-07-31, Days 1-26, 4 weeks):** Portfolio $97,393.79 (start $100,000: -2.61%). SPY $100,360.55 (+0.36%). **Portfolio LOSING to SPY by 297bp.** Drawdown from peak -4.52% (within -15% pain limit; charter compliant). RISK_OFF regime active as of 2026-07-24 (SPY <200-DMA, VIX 17.78, AXP earnings -5.32%, tariff volatility). V2 Core-Satellite design SOUND; allocation away from Congress justified by 25+ day infrastructure failure. Trend-brake rebalance (2026-07-23 SPY sale @ $737.26) working correctly; SPY fell further to $733.24, confirming defensive posture. Berkshire mixed (-0.09% avg after 26-day hold), ELV insider strong (+2.31% in 12 days), MTUM weak (-7.82% after peak-entry error at RSI >70). Macro regime deterioration faster than VIX/SPY metrics suggest (84.2% accuracy, down from 89.5%).
 
@@ -107,20 +125,6 @@
    - Cost: Requires intraday monitoring (acceptable given 43.5% cash position).
    - Benefit: Reduces opportunity cost of excessive cash (43.5% uninvested).
    - **Status: READY to implement. Activate Monday 2026-08-02 if VIX >17 or insider signal appears.**
-
-4. **MTUM REBALANCE WATCH (active monitoring, no rule change needed):**
-   - Current: MTUM drift 2.3pp (within 5pp action threshold); month-end rebalance August 1.
-   - Proposed: If MTUM drift reaches 3pp OR VIX breaches 20 sustained, execute IMMEDIATE rebalance (no month-end wait).
-   - Charter allows month-end OR bucket-change rebalance; volatility breakout justifies immediate response.
-   - Cost: None (already in charter rules).
-   - Benefit: Tighter risk control during elevated volatility.
-   - **Status: READY to activate. Monitor Monday 2026-08-02 for VIX/drift thresholds.**
-
-5. **CONFIDENCE CHECKPOINT 2026-08-03 (Friday, post-14-day windows):**
-   - Berkshire 14-day window closed 2026-07-20: 3 RIGHT, trend -0.09% month-end (declining).
-   - ELV 14-day window closes 2026-08-03: current +2.31% (still in grading period, trending positive).
-   - If Berkshire remains <0% or ELV <0% by 2026-08-03: MAINTAIN 1.0x multiplier (insufficient for adjustment).
-   - **Current: Berkshire negative trend, ELV positive; mixed signal = likely MAINTAIN 1.0x recommendation.**
 
 ## Biggest Lesson (Month-End Focus)
 **Factor timing beats factor selection.** V2 Core-Satellite structure is sound; allocation away from Congress toward smart-money + momentum + core SPY justified by 25-day infrastructure failure. BUT momentum factor allocation (MTUM) entry was timed wrong: VIX <20 vol-scale trigger was correct, but momentum RSI >70 (overbought) signal was ignored, costing -7.82% unrealized loss (-$1,894.76).
