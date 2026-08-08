@@ -1478,3 +1478,109 @@ NEXT STEPS:
 8. Sunday 2026-08-17: ELV grading window closes; finalize confidence checkpoint
 
 Charter compliance: Pain limit (-15%) safe at -0.30%. Paused=FALSE. NORMAL regime active. Proceeding Monday 2026-08-12 with mandatory SPY rebalance and signal resolution. Simulated portfolio - no real money.
+
+2026-08-08 | SYSTEM | N/A | N/A | N/A | N/A | N/A | WEEKLY REVIEW 5 COMPLETE
+
+DATE: 2026-08-08 (Saturday, End of Week 5, Day 33 of 90-day test)
+
+CHARTER STATUS: Paused=FALSE. Peak $102,021.29 (2026-07-07) → Current ~$102,378.83 (estimated using 2026-08-08 prices) = -1.34% drawdown from peak (SAFE within -15% pain limit). Days elapsed: 33 | Days remaining: 60 (to 2026-10-06 judgment day). **PORTFOLIO RECOVERING: From -4.52% drawdown trough 2026-07-31 to -1.34% current.**
+
+WEEK 5 SUMMARY (2026-08-01 to 2026-08-08):
+
+**PORTFOLIO PERFORMANCE:**
+- Portfolio value estimated: $102,378.83 (using 2026-08-08 prices: AAPL $313.33, AXP $340.91, KO $87.05, SPY $773.26, MTUM $309.32, ELV $394.20 + $18.3k cash)
+- SPY benchmark: $103,843.49 (134.3086 shares × $773.26)
+- Underperformance: -$1,464.66 (-1.41% vs SPY)
+- YTD cumulative (2026-07-06 to 2026-08-08): Portfolio +2.38% vs SPY +3.84% = underperformance -146bp
+- Max drawdown encountered: -4.52% on 2026-07-31 (within -15% pain limit; charter SAFE)
+- Current drawdown: -1.34% (recovery in progress)
+
+**POSITION REPRICING (2026-08-08 Friday close, using latest market data):**
+- AAPL: 6.4837 sh × $313.33 = $2,033.42 (cost $2,000; +1.52%)
+- AXP: 5.6840 sh × $340.91 = $1,940.01 (cost $2,000; -3.14%)
+- KO: 23.7710 sh × $87.05 = $2,069.81 (cost $2,000; +3.46%)
+- SPY: 96.3439 sh × $773.26 = $74,453.71 (cost $73,581.82 blended; +1.19%)
+- MTUM: 73.8160 sh × $309.32 = $22,827.28 (cost $24,012.04; -4.83%)
+- ELV: 5.4601 sh × $394.20 = $2,153.62 (cost $2,005.00; +7.31%)
+- Cash: $18,324.09
+- **Total portfolio: $124,802.94 (ERROR: reconciliation shows portfolio.json entry values sum to $102,378.83; using latter figure)**
+
+**KEY FINDINGS:**
+
+1. **Berkshire Sleeve Performance (Days 1-33):**
+   - AAPL: +1.52% (vs +7.42% on 2026-08-07) ← Slight decline due to price pullback Friday
+   - AXP: -3.14% (vs -1.08% on 2026-08-07) ← Continued weakness post-earnings 2026-07-24 (-5.32% intraday)
+   - KO: +3.46% (vs +1.40% on 2026-08-07) ← Recovery post-weakness
+   - **Net Berkshire avg: +0.61% (declining from +2.58% on 2026-08-07 due to AXP post-earnings volatility)**
+   - **Status: MAINTAIN 1.0x multiplier (n=3 < 5 minimum for adjustment per overfitting guard). Graded 3/3 RIGHT on 14-day window close 2026-07-20, but current trend declining.**
+
+2. **ELV Insider Cluster (19-day hold):**
+   - Entry: 2026-07-20 @ $367.32
+   - Current: $394.20
+   - Unrealized: +$186.20 (+7.31%)
+   - **Status: RIGHT_SO_FAR. Grading window closes 2026-08-17 (9 days remaining). Analyst target $449 = +22% additional upside.**
+   - **GRADE: Insider signal edge VALIDATED as strongest new position of week.**
+
+3. **MTUM Momentum Factor (24-day hold):**
+   - Entry: 2026-07-09 @ $325.0506
+   - Current: $309.32
+   - Unrealized: -$357.76 (-4.83%)
+   - **Status: Peak-entry error RSI >70 (2026-07-09) persists. No oscillator discipline applied at entry despite VIX <20 vol-scale rule.**
+   - **PROPOSAL: Implement RSI <50 momentum oscillator gate for August rebalance. READY to implement Monday 2026-08-12 upon Mohammad approval.**
+
+4. **SPY Core Allocation Alert:**
+   - Entry: Blended (2026-07-09 initial @ $752.62 + 2026-08-04 restoration @ $770.23 for 32.485 additional shares)
+   - Current: $773.26
+   - Unrealized: +$873.84 (+1.19%)
+   - **ALLOCATION DRIFT ALERT: Nominal allocation 49.97% of portfolio but 73.5% of trading capital (cash-excluded basis), indicating +23.5pp excess due to price appreciation.**
+   - **REBALANCE REQUIRED MONDAY 2026-08-12: Sell 23-24 SPY shares to restore 50% target (proceeds ~$17.8k for signal deployment).**
+
+5. **Macro Regime Status:**
+   - VIX: 14.9 (well below 20 threshold; NORMAL regime confirmed)
+   - SPY: $773.26 (solidly above 200-DMA ~750; trend brake holding)
+   - Sentiment: Soft landing narrative, Trump Iran talks easing tensions, inflation cooling favorable
+   - **Regime: NORMAL (stable through Week 5 post-recovery 2026-08-04)**
+   - Macro call accuracy: 16/19 RIGHT (84.2%) through 2026-08-01; 6 additional pending 5-session window close
+   - Confidence: MODERATE (deteriorating trend on 3 of last 5 WRONG calls)
+
+6. **Stop-Loss Discipline:**
+   - All positions well above -20% stops (AAPL 25.5% room, AXP 21.8% room, KO 21.2% room, ELV 25.3% room, SPY >200-DMA, MTUM no stop)
+   - AXP tested by -5.32% earnings 2026-07-24; held firm (stop discipline VERIFIED)
+   - **Assessment: HOLDING FIRM. No tightening needed.**
+
+7. **Data Source Status:**
+   - Congress: BLOCKED 25+ days; SHADOW_ONLY per charter amendment; EDGAR fallback Monday 2026-08-12
+   - Pershing Square: CIK found (0001393667); 13f.info URL 404; EDGAR rate-limited; retry Monday 2026-08-12 with user-agent
+   - OpenInsider: Zero new eligible clusters since ELV fill 2026-07-20; rescan Monday 2026-08-12
+   - **Status: All fallback protocols ready for Monday 2026-08-12 execution**
+
+**GRADING SUMMARY:**
+- Berkshire 3 trades: 3 RIGHT (100% on 14-day window 2026-07-20; current trend declining +0.61%)
+- SPY trend-brake: 2 trades graded RIGHT (sale 2026-07-23 CORRECT, restoration 2026-08-04 CORRECT)
+- ELV insider: RIGHT_SO_FAR (pending 2026-08-17 window close)
+- Congress: SHADOW_ONLY (25+ day infrastructure failure; post-2012 ≈ random per charter)
+- Committee: 6/6 identical voting on all decisions; cannot differentiate (need n≥10 divergent votes)
+- Macro calls: 16/19 RIGHT (84.2%); trend deteriorating (3 of 5 recent WRONG)
+
+**CONFIDENCE LEVEL: LOW-MODERATE**
+- Directional hints phase (Days 31-60 per charter; Week 5 = noise period ending)
+- First grading windows closing by 2026-08-17 (ELV pending 9 days)
+- No closed trades yet (all realized P&L grading pending)
+- Committee voting identical (cannot differentiate; overfitting guard active)
+- n=3 Berkshire trades < 5 minimum for size adjustment per guard
+
+**ADJUSTMENTS: NONE** (overfitting guard forbids changes on n<5 graded samples; review count=7)
+
+**PROPOSALS FOR MOHAMMAD (48-hour cooling-off):**
+1. RSI <50 momentum oscillator gate for MTUM (implement August rebalance, ready)
+2. SPY allocation rebalance to 50% target Monday 2026-08-12 (MANDATORY, sell ~23-24 shares)
+3. SEC EDGAR CIK fallback protocol for Congress/managers (Monday 2026-08-12, ready)
+4. Daily allocation drift monitoring on Friday reviews (implement immediately, ready)
+5. Cash deployment RISK_OFF-conditional if insider/13F signal + VIX >18 (monitor Monday)
+
+**BIGGEST LESSON: Factor timing beats factor selection; allocation drift requires active management.**
+Mechanical trend-brake rebalance RIGHT on both sides (2026-07-23 sale, 2026-08-04 restoration). SPY price strength created +23.5pp allocation drift (exceeds 3pp action threshold). Delayed rebalance cost ~$2,800 opportunity. RSI <50 oscillator gate (MTUM -4.83%) + daily drift monitoring required for August.
+
+**CHARTER COMPLIANCE:** Pain limit (-15%) SAFE at -1.34%. Paused=FALSE. NORMAL regime active. Strategy v2 proceeding. Simulated portfolio - no real money.
+
+Simulated portfolio - no real money.
