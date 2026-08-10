@@ -1584,3 +1584,5 @@ Mechanical trend-brake rebalance RIGHT on both sides (2026-07-23 sale, 2026-08-0
 **CHARTER COMPLIANCE:** Pain limit (-15%) SAFE at -1.34%. Paused=FALSE. NORMAL regime active. Strategy v2 proceeding. Simulated portfolio - no real money.
 
 Simulated portfolio - no real money.
+
+2026-08-10 | SELL | SPY | 24.0873 | 773.785 | -18640.72 | ALLOCATION REBALANCE DRIFT CORRECTION (Mandatory per rules) | SPY allocation had drifted to 73.5% due to price appreciation post-2026-08-04 restoration. Sold 24.0873 shares @ $773.78 net to restore 50% target. Proceeds $18,640.72 added to cash reserve for Monday 13F/insider resolution. Post-rebalance allocation 49.98% (excellent whipsaw control <1pp). All positions above stops. NORMAL regime (VIX 15.19, SPY >>200-DMA). Berkshire +0.61% avg (35-day), ELV +7.31% (grading window 7 days pending). Charter unbreached (-0.68% drawdown). No new buy candidates (Congress blocked 25+ days; insider/13F Monday-only). Simulated portfolio - no real money.
