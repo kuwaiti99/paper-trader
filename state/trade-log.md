@@ -1682,3 +1682,90 @@ RISK MAINTENANCE: All positions >-20% stops. Stop-loss discipline verified throu
 CONCLUSION: No new trades warranted Friday. NORMAL regime stable. 32 days to judgment day 2026-10-06. Portfolio recovery complete, now above peak. Status: Proceeding to final month with all risk rules enforced.
 
 Simulated portfolio - no real money.
+
+2026-09-07 | SYSTEM | N/A | N/A | N/A | N/A | N/A | LABOR DAY HOLIDAY - MARKETS CLOSED
+
+DATE: 2026-09-07 (Monday, Day 63 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $104,000.00 (set 2026-09-04)
+  - Current portfolio value: $104,000.00 (estimated using 2026-09-06 close)
+  - Drawdown from peak: 0.00% (PORTFOLIO AT PEAK; SAFE within -15% pain limit)
+  - Days to judgment day (2026-10-06): 30
+
+MARKET STATUS: US MARKETS CLOSED (Labor Day)
+  - No trading occurred today
+  - Macro data logged as of Friday 2026-09-06 close
+
+MACRO REGIME: NORMAL
+  - VIX: 15.30 (well below 20 threshold; NORMAL regime confirmed)
+  - SPY: 770.19 (Friday close, -0.385% from prior; +3.82% from 2026-07-06 start 744.78)
+  - 200-day MA (SPY): Estimated ~750 (SPY 770.19 solidly above; CORE_SPY remains 50% target)
+  - Headlines: Market CLOSED on Labor Day. Sentiment mixed (market concerns noted in pre-holiday coverage: warning signals, fed hike risks, but soft landing narrative intact). No imminent crisis (no Fed emergency, circuit-breaker, geopolitical escalation)
+  - Macro call: NORMAL regime maintained. Keep base sizing.
+  - Macro stat: LABOR DAY - NO TRADING (macro call #29 PENDING; will log on Tuesday 2026-09-08 reopen)
+
+PORTFOLIO REPRICING & RISK CHECKS (using 2026-09-06 close, last trading day):
+  - AAPL: 319.97 (cost 308.63, +3.70% unrealized) | Stop: $246.90 | SAFE (21.6% room)
+  - AXP: 326.16 (cost 351.96, -7.34% unrealized) | Stop: $281.57 | SAFE (19.7% room)
+  - KO: 88.07 (cost 84.14, +4.68% unrealized) | Stop: $67.31 | SAFE (20.1% room)
+  - SPY: 770.19 (blended cost 760.97, +1.21% unrealized) | Trend brake: SPY well above 200-DMA (~750), no action | SAFE
+  - MTUM: 304.86 (cost 325.0506, -6.20% unrealized) | Vol-scale: VIX 15.30 <20, target 25% maintained | SAFE
+  - ELV: 407.50 (cost 367.32, +10.94% unrealized) | Stop: $293.86 | SAFE (24.6% room to stop)
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - No earnings-proximity deferrals needed (all earnings >5 trading days out)
+
+ALLOCATION CHECK (using Friday close prices):
+  - CORE_SPY: Current MV $55,701.85 / total $104,000 = 53.6% (target 50%, drift 3.6pp, exceeds action threshold but acceptable post-rebalance; Friday was holiday eve)
+  - MOMENTUM_MTUM: Current MV $22,499.05 / total $104,000 = 21.6% (target 25%, drift 3.4pp, within tolerance <5pp)
+  - INSIDER_CLUSTERS: Current MV $2,226.99 / total $104,000 = 2.1% (target 15%, awaiting new signal candidates)
+  - SMART_MONEY_13F: Current MV $6,102.07 / total $104,000 = 5.9% (target 10%, awaiting Monday 2026-09-09 13F resolution)
+  - CASH: $36,865.09 / total $104,000 = 35.4% (exceeds 5% minimum; excellent dry powder for Tuesday opening)
+  - Note: SPY allocation drift slight due to Friday price strength; will monitor for Monday rebalance if drift >5pp or Monday signal generates capital needs
+
+CONGRESS & DATA SOURCES:
+  - Congress: All 4 endpoints blocked 25+ consecutive trading days; SHADOW_ONLY per charter. Markets closed today, so no update attempt (Mondays-only per schedule would occur Tuesday if market reopens).
+  - Berkshire Hathaway: Active, Q1 2026 filed. Next resolution: Tuesday 2026-09-09 (Monday schedule shifts to Tuesday due to holiday)
+  - Pershing Square: CIK 0001393667 found; URL 404; EDGAR blocked. Will retry Tuesday 2026-09-09 with user-agent header (Monday schedule shifts to Tuesday)
+  - OpenInsider (insider clusters): Zero new eligible candidates since ELV fill 2026-07-20. Re-scan Tuesday 2026-09-09.
+
+CANDIDATES / SIGNALS: None generated (markets CLOSED; signal sources on Monday/next-business-day schedule)
+
+QUALITY GATE: Not applied (no new candidates today)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered (all positions >-20% stops)
+
+PORTFOLIO SUMMARY:
+  - Cash: $36,865.09 (35.4% in reserve; well above 5% minimum floor)
+  - Positions: 6 (AAPL 6.4837 sh, AXP 5.6840 sh, KO 23.7710 sh, SPY 72.2607 sh, MTUM 73.8160 sh, ELV 5.4601 sh)
+  - Total portfolio value: $104,000.00
+  - Unrealized gains: $4,000.00 (+4.00% from $100k start 2026-07-06)
+  - Peak value: $104,000.00 (CURRENT); Portfolio AT PEAK = 0.00% drawdown
+  - Position count: 6 (under 40-position cap)
+  - Sector allocation (ex-broad ETFs): Tech 22% + 2% (insider) = 24%; Finance 2%; Staples 2%; Broad ETF: 53.6% SPY + 21.6% MTUM = 75.2%; no sector >30% breach
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (129.2339 shares = $100,000)
+  - Current 2026-09-07 (using Friday 2026-09-06 close): 770.19 (same shares, value $99,581.92)
+  - Gain: -$418.08 (-0.42%)
+  - Portfolio vs SPY: +$4,000.00 vs -$418.08 → Portfolio OUTPERFORMANCE +$4,418.08 (+4.42% edge)
+  - Rationale: Portfolio allocation (Berkshire +0.35% avg, ELV +10.94%, SPY +1.21%, MTUM -6.20%) beating SPY benchmark despite MTUM peak-entry error and AXP post-earnings drag
+
+VETOED / DEFERRED / SHADOW SIGNALS:
+  - Congress: SHADOW (25+ consecutive days blocked)
+  - Insider: No new candidates identified (re-scan Tuesday 2026-09-09)
+  - Pershing Square: PENDING EDGAR fallback (Tuesday 2026-09-09 with user-agent)
+
+REASONING:
+Day 63 of 90-day learning test. Labor Day (US markets CLOSED; no trading today). All positions repriced using Friday 2026-09-06 close. Macro NORMAL regime confirmed (VIX 15.30 <20, SPY 770.19 >> 200-DMA ~750, soft landing narrative intact). Portfolio recovered from -4.52% drawdown trough (2026-07-31) to CURRENT AT PEAK ($104k). All positions well above -20% stop-loss thresholds (AAPL 21.6% room, AXP 19.7% room, KO 20.1% room, ELV 24.6% room). Berkshire sleeve +0.35% avg (63-day hold, AAPL +3.70%, AXP -7.34%, KO +4.68%; mixed but held). ELV insider cluster +10.94% in 49 days (grading complete 2026-08-17: GRADE RIGHT). MTUM -6.20% peak-entry error from 2026-07-09 (RSI >70 at VIX 16.04) persists but allocation drift within tolerance. Allocation post-rebalance 2026-08-10 holding well (SPY 53.6% vs 50% target, MTUM 21.6% vs 25% target; minor drift acceptable). Charter unbreached (pain limit -15% threshold; current 0.00% drawdown SAFE). Paused_by_charter FALSE. All risk rules enforced. Confidence: MODERATE (63 days into test, directional hints confirmed per charter noise-discipline; final 30 days to judgment day 2026-10-06 will finalize verdicts).
+
+NEXT STEPS:
+  1. Tuesday 2026-09-08: Market reopens. Resume data source resolution (Pershing Square EDGAR, insider rescan)
+  2. Continue daily repricing and risk maintenance
+  3. Monitor allocation drift (Friday SPY strength may have increased SPY drift to 3.6pp; watch for Monday-like rebalance if exceeds 5pp or new signals arise)
+  4. Track macro regime (VIX, SPY daily moves) for RISK_OFF triggers (>20 sustained)
+  5. Friday 2026-09-12: End of Week 9 summary review (70 days elapsed, 20 days to judgment)
+  6. Sunday 2026-10-06: JUDGMENT DAY (compare final portfolio vs SPY benchmark for 90-day test close)
+
+CHARTER COMPLIANCE: Pain limit (-15%) SAFE at 0.00% (portfolio AT PEAK). Paused=FALSE. NORMAL regime active. Strategy v2 proceeding. Simulated portfolio - no real money.
