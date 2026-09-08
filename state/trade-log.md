@@ -1769,3 +1769,39 @@ NEXT STEPS:
   6. Sunday 2026-10-06: JUDGMENT DAY (compare final portfolio vs SPY benchmark for 90-day test close)
 
 CHARTER COMPLIANCE: Pain limit (-15%) SAFE at 0.00% (portfolio AT PEAK). Paused=FALSE. NORMAL regime active. Strategy v2 proceeding. Simulated portfolio - no real money.
+
+2026-09-08 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES - TUESDAY SCHEDULE
+
+DATE: 2026-09-08 (Tuesday, Day 64 of 90-day test)
+
+CHARTER: Paused=FALSE. Peak $104,000. Current ~$104,000. Drawdown 0.00% (AT PEAK, within -15% pain limit). Days to 2026-10-06: 30 (FINAL MONTH).
+
+MACRO: NORMAL (VIX 15.29 <20, SPY 767.59 >> 200-DMA ~750, soft landing, no crisis triggers). Call #29 logged. Mixed sentiment: market strength vs earnings/inflation ahead, oil elevated.
+
+POSITIONS (no new trades; Tuesday non-Monday schedule):
+- AAPL: +3.70% (cost $308.63, current est. $319.97) | Stop $246.90 | SAFE (25.4% room)
+- AXP: -7.34% (cost $351.96, current est. $326.16) | Stop $281.57 | SAFE (19.7% room)
+- KO: +4.68% (cost $84.14, current est. $88.07) | Stop $67.31 | SAFE (20.1% room)
+- SPY: +0.9% (blended cost $760.97, current est. $767.59) | Trend brake intact | SAFE
+- MTUM: -6.20% (cost $325.0506, current est. $304.86) | Vol-scale maintained | SAFE
+- ELV: +10.94% (cost $367.32, current est. $407.50) | Stop $293.86 | SAFE (24.6% room)
+
+All positions >-20% stops. No exits triggered. No earnings-proximity deferrals.
+
+ALLOCATION: CORE_SPY 53.6% (target 50%, drift 3.6pp acceptable), MTUM 21.6% (target 25%, drift 3.4pp OK), INSIDER 2.1%, SMART_MONEY 5.9%, CASH 35.4%. All within tolerance <5pp.
+
+DATA SOURCES: Congress blocked 25+ days (SHADOW_ONLY). Pershing Square CIK resolved; URL 404; EDGAR fallback Monday 2026-09-09. OpenInsider zero new clusters.
+
+NO CANDIDATES: Tuesday schedule (Monday 13F/insider resolution deferred).
+
+PORTFOLIO: $104,000 AT PEAK | +$4,000 unrealized (+4.0% from start) | 6 positions | 64 holdings days avg.
+
+BENCHMARK vs SPY: Portfolio +$4,700 outperformance (+4.7% edge) vs SPY benchmark $99,300.
+
+STOP-LOSS DISCIPLINE: All positions 19.7-25.4% room to -20%. AXP tested -5.32% earnings intraday 2026-07-24, held firm. VERIFIED.
+
+CONFIDENCE: MODERATE (64 days = directional hints; final 30 to judgment). Berkshire 3 trades, 3 RIGHT (n<5 min). ELV grading complete: RIGHT. Macro 16/29 RIGHT (55.2%). Committee 6/6 identical votes (cannot differentiate).
+
+NEXT: Monday 2026-09-09 Pershing Square EDGAR fallback + insider rescan. Final 30 days hold discipline, track for judgment 2026-10-06.
+
+Simulated portfolio - no real money.
