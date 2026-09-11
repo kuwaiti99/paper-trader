@@ -1805,3 +1805,5 @@ CONFIDENCE: MODERATE (64 days = directional hints; final 30 to judgment). Berksh
 NEXT: Monday 2026-09-09 Pershing Square EDGAR fallback + insider rescan. Final 30 days hold discipline, track for judgment 2026-10-06.
 
 Simulated portfolio - no real money.
+
+2026-09-11 | SYSTEM | N/A | N/A | N/A | N/A | N/A | FRIDAY MONITORING - NO TRADES. NORMAL regime (VIX 15.66, SPY 765.855 >> 200-DMA). All stops safe. Portfolio AT PEAK $104,022.51 (+$5,011 outperformance vs SPY). No new signals (Friday schedule, Monday-only 13F/insider). Allocation drift minimal (CORE_SPY 53.2%, MTUM 21.6%). Final 25 days to judgment 2026-10-06. Simulated portfolio - no real money.
