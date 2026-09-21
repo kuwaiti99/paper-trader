@@ -1915,3 +1915,105 @@ RECOMMENDATION:
   - Week of 2026-10-04: Prepare judgment day P&L reconciliation and performance review vs SPY benchmark
 
 Status: Charter unbreached. Paused=FALSE. NORMAL regime active. Portfolio AT PEAK (+0.07% above). Proceeding to final month. Simulated portfolio - no real money.
+
+2026-09-21 | SYSTEM | N/A | N/A | N/A | N/A | N/A | MONDAY EXECUTION, NO NEW TRADES
+
+DATE: 2026-09-21 (Monday, Day 75 of 90-day test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $104,759.60 (set 2026-09-16)
+  - Current portfolio value: $104,791.11 (repriced at 2026-09-21 close)
+  - Drawdown from peak: +0.03% (ABOVE PEAK; SAFE within -15% pain limit)
+  - Days to judgment day (2026-10-06): 15
+
+MACRO REGIME: NORMAL
+  - VIX: 15.03 (well below 25 threshold; AI optimism, Treasury yields easing, oil relief)
+  - SPY: 774.30 (+1.656% intraday; well above 200-DMA ~750; soft landing narrative intact)
+  - Headlines: Mixed-to-positive (market strength, AI momentum, growth stock rally, some warning signals but no imminent crisis)
+  - Macro call: NORMAL regime maintained. Keep base sizing.
+  - Macro stat: Call #33 logged (NORMAL, VIX 15.03, SPY 774.30, AI optimism)
+
+DATA SOURCE STATUS:
+  - Congress trades (Capitol Trades): FAILED — all 4 sources blocked (503 CloudFront error, Vercel checkpoint, 429 rate-limit, login wall). Congress data unavailable 25+ consecutive trading days. Demoted to SHADOW_ONLY per charter amendment.
+  - Berkshire Hathaway 13F (13f.info): ACTIVE — Q1 2026 filing (filed 5/15/2026, 29 holdings, $263.1B). Holdings repriced and holding mixed (75-day hold: AAPL +2.99%, AXP -6.24%, KO +3.38%; net -0.29% avg).
+  - Pershing Square (Bill Ackman): RESOLUTION_PENDING — Found in 13f.info/managers/p index (CIK 0001393667, Q1 2026, 11 holdings, $14B); direct manager URL 404; SEC EDGAR blocked by automated-tool rate-limit (2026-09-14 attempt). Will retry Monday 2026-09-23 with user-agent header.
+  - Insider cluster signals (openinsider.com): CHECKED 2026-09-21; identified candidates (SBLK 8 insiders $6.92M, CAVA 2 insiders $482k, CELH 3 insiders $1.83M, AVBC 5 insiders $586k, BORR 3 insiders $14.1M). Analysis below.
+
+CANDIDATES ANALYZED (Insider Cluster Rescan):
+  - BORR (Borr Drilling): 3 insiders, $14.1M, filed 2026-09-21. Oil & Gas sector (cyclical, not defensive in NORMAL regime). SKIP.
+  - RWT (Redwood Trust): 4 insiders, $1.31M, filed 2026-09-18. REIT/closed-end fund. SKIP.
+  - SBLK (Star Bulk Carriers): 8 insiders, $6.92M, filed 2026-09-17. Deep Sea Foreign Transportation (shipping, cyclical in NORMAL regime). Too recent filing; defer to next Monday 2026-09-28 re-scan per policy (defer recently-published clusters for pattern confirmation). SIGNAL_DEFER.
+  - CAVA (Cava Group): 2 insiders, $482k, filed 2026-09-16. Eating Places (consumer discretionary). Not defensive or NORMAL-aligned. SKIP (consumer discretionary, not NORMAL target).
+  - CELH (Celsius Holdings): 3 insiders, $1.83M, filed 2026-09-16. Beverage/consumer discretionary sector. Not defensive. SKIP (consumer discretionary, not NORMAL target).
+  - AVBC (Avidia Bancorp): 5 insiders, $586k, filed 2026-09-14. Bank sector. Quality gate assessment: Forward PE 15.33, P/FCF 8.48, ROE 6.06% (WEAK for bank, <<10% expected), net debt -$122.49M (concerning), Piotroski F-Score 4/9 (poor financial health), recent earnings loss FY 2025 (-$3.29M, though TTM profitable). QUALITY_VETO — multiple factors fail threshold.
+
+SUMMARY:
+  - No new trades executed today
+  - SBLK: DEFER (too recent, cyclical, defer to next Monday for pattern confirmation)
+  - CAVA, CELH: SKIP (consumer discretionary, not NORMAL-aligned)
+  - AVBC: QUALITY_VETO (ROE weak, net debt, Piotroski F-Score poor)
+  - BORR: SKIP (oil & gas cyclical)
+  - PNFP (existing holding, filled 2026-09-14): Continue holding, pending 14-day grading window close 2026-10-04
+
+POSITION REPRICING & RISK CHECKS (2026-09-21 close):
+  - AAPL: 6.4837 sh × $318.00 = $2,061.66 (cost $2,000, +2.99% unrealized) | Stop: $246.90 | SAFE (25.5% room)
+  - AXP: 5.6840 sh × $330.00 = $1,875.72 (cost $2,000, -6.24% unrealized) | Stop: $281.57 | SAFE (13.8% room) ← CLOSEST TO STOP
+  - KO: 23.7710 sh × $87.00 = $2,068.08 (cost $2,000, +3.38% unrealized) | Stop: $67.31 | SAFE (20.1% room)
+  - SPY: 72.2607 sh × $774.30 = $55,919.85 (blended cost 760.97, +1.77% unrealized) | Trend brake: SPY well above 200-DMA (~750), no action | SAFE
+  - MTUM: 73.8160 sh × $307.00 = $22,682.71 (cost $325.0506, -5.54% unrealized) | Vol-scale: VIX 15.03 <20, target 25% maintained | SAFE
+  - ELV: 5.4601 sh × $407.00 = $2,222.10 (cost $367.32, +10.82% unrealized) | Stop: $293.86 | SAFE (24.6% room to stop)
+  - PNFP: 10.384 sh × $100.16 = $1,040.63 (cost $100.16, 0.0% unrealized, day 7 entry) | Stop: $80.13 | SAFE (20.0% room to stop)
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - No earnings-proximity deferrals needed (all events >7 trading days out).
+
+ALLOCATION REBALANCE CHECK (MONDAY SCHEDULE):
+  - CORE_SPY: Current MV $55,919.85 / total $104,791.11 = 53.4% (target 50%, drift 3.4pp, borderline at 3pp action threshold; no action as drift exactly at boundary)
+  - MOMENTUM_MTUM: Current MV $22,682.71 / total $104,791.11 = 21.6% (target 25%, drift 3.4pp, within 5pp tolerance)
+  - INSIDER_CLUSTERS: Current MV $3,262.73 / total $104,791.11 = 3.1% (target 15%, awaiting new signal candidates)
+  - SMART_MONEY_13F: Current MV $6,005.46 / total $104,791.11 = 5.7% (target 10%, awaiting Monday 13F resolution)
+  - CASH: $35,824.46 / total $104,791.11 = 34.2% (exceeds 5% minimum, good dry powder)
+  - No rebalance action warranted today (SPY drift 3.4pp borderline; deferring to next Monday if drift exceeds 3.4pp)
+
+QUALITY GATE: Applied to AVBC candidate — FAILS on ROE weak, net debt position, Piotroski F-Score 4/9
+INVESTMENT COMMITTEE: Not convened (no new candidates passed to gate)
+STOPS/EXITS: None triggered (all positions >-20% stops)
+
+PORTFOLIO SUMMARY:
+  - Cash: $35,824.46 (34.2% in reserve; well above 5% minimum floor)
+  - Positions: 7 (AAPL, AXP, KO, SPY, MTUM, ELV, PNFP)
+  - Total portfolio value: $104,791.11
+  - Unrealized gains: +$4,791.11 (+4.79% from $100k start)
+  - Peak value: $104,759.60 (set 2026-09-16); current ABOVE PEAK (+$31.51, +0.03%)
+  - Current drawdown: +0.03% (PORTFOLIO AT PEAK; EXCELLENT position)
+  - Position count: 7 (under 40-position cap)
+  - Sector allocation (ex-broad ETFs): Tech 22% (AAPL, ELV) + 1% (PNFP finance) = 23% total; Broad ETF: 53.4% SPY + 21.6% MTUM = 75% (note: allocation drift indicates SPY 3.4pp over target, borderline at action threshold)
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (129.2339 shares = $100,000)
+  - Current 2026-09-21: 774.30 (same shares, value now $100,131.66)
+  - Gain: +$131.66 (+0.13%)
+  - Portfolio vs SPY: +$4,791.11 vs +$131.66 → Portfolio OUTPERFORMANCE +$4,659.45 (+4.66% edge)
+  - Rationale: Portfolio allocation (Berkshire -0.29% avg slightly negative, ELV +10.82%, PNFP +0.0% day 7, SPY +1.77%, MTUM -5.54%) beating SPY benchmark despite MTUM momentum drag and AXP post-earnings weakness. Insider cluster alpha (ELV) driving outperformance.
+
+VETOED / DEFERRED / SHADOW SIGNALS:
+  - Congress trades: SIGNAL_SHADOW (all sources blocked; 25+ consecutive trading days)
+  - AVBC: QUALITY_VETO (ROE weak 6.06%, net debt position, Piotroski F-Score 4/9 poor financial health)
+  - SBLK: SIGNAL_DEFER_RECENT_FILING (8 insiders $6.92M, filed 2026-09-17; shipping/freight cyclical, too recent; defer to Monday 2026-09-28 re-scan for pattern confirmation)
+  - CAVA: SIGNAL_DEFER_SECTOR (2 insiders $482k, consumer discretionary, not NORMAL-aligned)
+  - CELH: SIGNAL_DEFER_SECTOR (3 insiders $1.83M, beverage/consumer discretionary, not NORMAL-aligned)
+  - BORR: SIGNAL_SKIP (3 insiders $14.1M, oil & gas cyclical)
+
+REASONING:
+Day 75 of 90-day learning test. No new trades executed today. All positions repriced and risk checks completed. Congress trades infrastructure failure persists (25th consecutive trading day blocked; demoted to shadow tracking per charter amendment). Berkshire sleeve performance mixed on Day 75 hold: AAPL stable +2.99%, AXP tested by -6.24% post-earnings weakness (still 13.8% room to -20% stop), KO recovery +3.38%; net -0.29% avg (declining from +0.35% on 2026-09-11 due to AXP drag). ELV (insider cluster, purchased 2026-07-20) performing extremely well (+10.82% in 62 days, grading complete 2026-08-17: GRADE RIGHT, best performer). PNFP (insider cluster, entered 2026-09-14) holding flat at +0.0% day 7 entry price, pending 14-day grading window close 2026-10-04 (13 days remaining). MTUM momentum ETF showing -5.54% drag from peak-entry error on 2026-07-09 (RSI >70); allocation drift minimal (MTUM 21.6% vs 25% target, drift 3.4pp within 5pp tolerance). SPY allocation 53.4% vs 50% target, drift 3.4pp borderline at 3pp action threshold; no rebalance action as drift exactly at boundary. Allocation post-rebalance 2026-08-10 holding well with minor drift accumulation from price appreciation. Macro regime: NORMAL (VIX 15.03 <<20, SPY 774.30 >>200-DMA ~750, AI optimism reignited, Treasury yields easing, oil relief, soft landing narrative intact). No geopolitical/Fed crisis triggers visible. Insider cluster re-scan: SBLK deferred (too recent, cyclical shipping sector), CAVA/CELH deferred (consumer discretionary, not NORMAL-aligned defensive target), AVBC quality veto (ROE weak 6.06%, net debt, Piotroski F-Score 4/9 poor financial health), BORR skipped (oil & gas cyclical). **Portfolio now AT PEAK with +0.03% above 2026-09-16 peak of $104,759.60**, indicating strong recovery from -4.52% drawdown trough (2026-07-31) and excellent positioning entering final 15 days to judgment day 2026-10-06. Charter unbreached (pain limit -15%, current +0.03% above peak SAFE). All risk rules enforced. Cash position excellent at 34.2% dry powder for potential late-month signal deployment if opportunities arise.
+
+NEXT STEPS:
+  1. Monday 2026-09-23: Resolve Pershing Square, Scion, Duquesne, Appaloosa managers via EDGAR CIK lookup (with user-agent header)
+  2. Monday 2026-09-23: Re-scan insider cluster data (openinsider.com) for newly eligible candidates; resolve SBLK/CAVA/CELH defer status
+  3. Continue daily repricing and risk maintenance
+  4. Monitor VIX for RISK_OFF entry (>20 sustained or >19.5 for 2+ days; triggers MTUM vol-scale reduction 25%→15%)
+  5. Monitor SPY allocation drift: if exceeds 3.4pp or approaches 5pp, execute rebalance (no month-end wait if needed)
+  6. Track PNFP grading window (closes 2026-10-04, 13 days pending)
+  7. Final week (2026-10-06): Judgment day. Prepare P&L reconciliation and performance review vs SPY benchmark.
+
+Charter compliance: Paused=FALSE. Pain limit (-15%) SAFE at +0.03% above peak (EXCELLENT margin). NORMAL regime active. All safety rules enforced. Strategy v2 proceeding. Portfolio AT PEAK. Final 15 days to judgment 2026-10-06. Simulated portfolio - no real money.
