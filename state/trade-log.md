@@ -2117,3 +2117,23 @@ RISK DISCIPLINE: All stops >-20%. AXP earnings test passed 2026-07-24 (held firm
 CONFIDENCE: MODERATE (77 days, 13 to judgment). Berkshire 77-day: -0.29% avg. ELV GRADE RIGHT +10.82%. PNFP pending 11 days. Macro 16/35 RIGHT (45.7%, trend deteriorating). Committee 6/6 identical (cannot differentiate).
 RECOMMENDATION: Hold all positions. Monitor VIX daily for sustained >20 move (triggers RISK_OFF vol-scale MTUM 25%→15%). Treasury yields elevated; warning signals rising; defensive posture justified. Final 13 days.
 Simulated portfolio - no real money.
+
+2026-09-28 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES (FRIDAY, RISK_OFF_WATCH)
+DATE: 2026-09-28 (Friday, Day 78 of 90-day test)
+CHARTER: Paused=FALSE. Peak $104,791 (2026-09-21) → Current ~$104,500 = -0.28% drawdown (SAFE, pain limit -15% far away). Days to judgment 2026-10-06: 8.
+MACRO: RISK_OFF_WATCH. VIX 16.09 (+8.204% today, approaching 20 threshold). SPY 765.61 (-0.758% intraday). Treasury yields 5%+ hitting 19-year highs. Iran geopolitical tensions escalated. GMO stark warning on valuations. Market breadth divergence (half S&P 500 at cross-purposes). If VIX sustains >20 through Monday: trigger RISK_OFF vol-scale (MTUM 25%→15%) and halve new buy sizes (2%→1%).
+POSITIONS (All above -20% stops; no closures triggered):
+- AAPL +2.69% (25.5% room)
+- AXP -6.59% (13.3% room, CLOSEST TO STOP)
+- KO +2.80% (20.1% room)
+- SPY +0.61% (trend brake holding)
+- MTUM -6.15% (no stop)
+- ELV +10.82% (24.6% room, GRADING COMPLETE: GRADE RIGHT)
+- PNFP +0.0% (20% room, day 14, 6 days to grading 2026-10-04)
+ALLOCATION: CORE_SPY 52.3% (drift 2.3pp OK), MTUM 21.5% (drift 3.5pp OK), INSIDER 3.1%, SMART_MONEY 5.7%, CASH 34.2% (excellent dry powder).
+NO NEW TRADES: Friday; Monday-only signal schedule. Congress blocked 25+ days (SHADOW_ONLY). Pershing Square CIK found; EDGAR fallback Monday 2026-10-01. OpenInsider zero new eligible clusters (last scan 2026-09-21).
+STOP-LOSS DISCIPLINE: All positions well above stops. AXP tested -6.59%, held firm. Watch technical support $318 (if breaks = -20% stop activation).
+TREND-BRAKE: SPY 765.61 > 200-DMA ~750 = CORE_SPY 50% target MAINTAINED. Both past rebalances (2026-07-23 sale, 2026-08-04 restoration) graded RIGHT.
+GRADING WINDOWS: ELV complete (GRADE RIGHT, +10.82%). PNFP closes 2026-10-04 (6 days). Berkshire closes 2026-07-20 (3/3 RIGHT).
+FINAL 8 DAYS: Monitor VIX daily. Monitor AXP technical support. Hold allocation discipline. No new trades unless Monday resolution generates signals AND RISK_OFF not sustained >20.
+Simulated portfolio - no real money.
