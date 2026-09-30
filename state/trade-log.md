@@ -2229,3 +2229,38 @@ NEXT STEPS:
   7. Sunday 2026-10-06: JUDGMENT DAY. Prepare final P&L reconciliation and performance review vs SPY benchmark over 90-day test period.
 
 Charter compliance: Paused=FALSE. Pain limit (-15%) SAFE at -0.28% below peak (EXCELLENT margin). NORMAL regime active. All safety rules enforced. Strategy v2 proceeding. Portfolio well-positioned for final 6 days to judgment. Simulated portfolio - no real money.
+
+2026-09-30 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES (WEDNESDAY SCHEDULE)
+
+DATE: 2026-09-30 (Wednesday, Day 85 of 90-day test) | FINAL WEEK APPROACHING
+
+PORTFOLIO: $104,850 (ABOVE PEAK $104,791) | SPY benchmark: $100,361.78 | Outperformance: +$4,488.22 (+4.48%)
+
+CHARTER: Paused=FALSE. Drawdown +0.06% (ABOVE PEAK). Pain limit -15% SAFE. All positions >-20% stops (AXP 8.2% closest). Charter unbreached. Final 6 days to judgment 2026-10-06.
+
+MAC REGIME: NORMAL (VIX 15.97 <20, SPY 766.72 >> 200-DMA ~755, soft inflation relief, no crisis triggers). Call #38 logged NORMAL.
+
+POSITIONS (Day-end repricing):
+- AAPL: +9.12% (strong recovery) | 26.7% room to stop
+- AXP: -13.39% (post-earnings, 8.2% room to stop) ← MONITOR SUPPORT $281-285
+- KO: +2.65% (stable) | 21.8% room to stop
+- SPY: +0.76% (trend brake holding) | no stop
+- MTUM: -5.54% (momentum drag) | no stop
+- ELV: +10.82% (GRADED RIGHT, best performer) | 26.0% room to stop
+- PNFP: +0.0% day 16 (4 days to grading close 2026-10-04) | 20% room to stop
+
+ALLOCATION: CORE_SPY 52.8% (drift 2.8pp OK), MTUM 21.6% (drift 3.4pp OK), INSIDER 3.1%, SMART_MONEY 5.7%, CASH 34.2%. No rebalance needed.
+
+DATA SOURCES: Congress blocked 25+ days (SHADOW_ONLY per charter). Pershing Square CIK found; EDGAR fallback Monday 2026-10-01. Insider: no new candidates. OpenInsider re-scan Monday 2026-10-01.
+
+NO TRADES EXECUTED (Wednesday schedule—all data sources Monday-only). All positions held. All risk rules enforced.
+
+BEST PERFORMER: ELV +10.82% (72-day hold, GRADED RIGHT 2026-08-17). WORST: MTUM -5.54% (peak-entry error RSI >70, 2026-07-09). Berkshire net -0.54% avg (AAPL +9.12%, AXP -13.39%, KO +2.65%).
+
+WATCH: AXP technical support $281-285 zone (8.2% room to -20% stop at $281.57). Monitor daily final week. PNFP grading window closes 2026-10-04 (4 days). Final 6 days: hold discipline, all positions monitored.
+
+CONFIDENCE: MODERATE (6 days to judgment). 85-day cumulative: Portfolio +4.85% vs SPY +0.36%. Outperformance +4.48% confirmed. Charter SAFE.
+
+Next: Monday 2026-10-01 Congress EDGAR fallback + insider rescan. Thursday 2026-10-04 PNFP grading window closes. Sunday 2026-10-06 JUDGMENT DAY.
+
+Simulated portfolio - no real money.
