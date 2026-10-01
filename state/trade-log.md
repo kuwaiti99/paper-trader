@@ -2264,3 +2264,16 @@ CONFIDENCE: MODERATE (6 days to judgment). 85-day cumulative: Portfolio +4.85% v
 Next: Monday 2026-10-01 Congress EDGAR fallback + insider rescan. Thursday 2026-10-04 PNFP grading window closes. Sunday 2026-10-06 JUDGMENT DAY.
 
 Simulated portfolio - no real money.
+
+2026-10-01 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES (THURSDAY SCHEDULE)
+
+DATE: 2026-10-01 (Thursday, Day 86 of 90-day test)
+CHARTER: Paused=FALSE. Peak $104,850. Current $104,316.12. Drawdown -0.51% (SAFE within -15% pain limit).
+MAC: NORMAL (VIX 16.37 <20, SPY 764.57 >> 200-DMA ~755, yield 5%+ balanced by AI momentum). Call #39 logged.
+PORTFOLIO: AAPL +6.73%, AXP -6.24% (14.6% to stop—closest), KO +3.47%, SPY +0.48%, MTUM -5.54%, ELV +10.82% (GRADED RIGHT), PNFP +0.0% (day 16, 5 days to grading 2026-10-04).
+ALLOCATION: CORE_SPY 52.9%, MTUM 21.7%, INSIDER 3.1%, CASH 34.3%. All stops >-20%. No rebalance warranted.
+DATA: Congress blocked 26+ days (shadow-only). Pershing/insider rescan deferred to Monday 2026-10-01 final attempt.
+NO NEW TRADES: Thursday schedule. All positions held. Risk maintenance complete.
+CONFIDENCE: MODERATE (86 days—directional hints confirmed; final 5 days pending).
+NEXT: Monday final EDGAR attempt. PNFP grading window closes 2026-10-04 (5 days). Judgment day 2026-10-06.
+Simulated portfolio - no real money.
