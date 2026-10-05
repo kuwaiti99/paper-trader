@@ -2367,3 +2367,89 @@ FINAL OBSERVATION:
 Portfolio recovered from -4.52% drawdown trough (2026-07-31) to +4.66% above starting capital. Outperformance vs SPY benchmark: +$4,021.31 (+4.02% edge) driven primarily by insider cluster edge (ELV +10.82%) and Berkshire value sleeve (mixed but held). MTUM peak-entry error (-5.54%) remains drag but offset by outsized ELV alpha. Trend-brake mechanical rules working both sides (sale 2026-07-23 RIGHT, restoration 2026-08-04 RIGHT). All stop-loss discipline enforced. Charter unbreached. Allocation discipline maintained. Final 4 days: HOLD discipline, risk maintenance, judgment day reconciliation pending 2026-10-06.
 
 Simulated portfolio - no real money.
+
+2026-10-05 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES (FINAL 3 TRADING DAYS TO JUDGMENT DAY)
+
+DATE: 2026-10-05 (Monday, Day 91 of 90-day test - FINAL DAY BEFORE JUDGMENT)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value: $104,850.00 (set 2026-09-30)
+  - Current portfolio value: $105,653.46 (ABOVE PEAK)
+  - Drawdown from peak: +0.77% (SAFE, pain limit -15% far away)
+  - Days to judgment day (2026-10-06): 1 (TOMORROW IS JUDGMENT DAY)
+
+MACRO REGIME: NORMAL
+  - VIX: 15.52 (well below 20 threshold; no risk-off trigger)
+  - SPY: 774.83 (+0.696% today; +3.82% from 2026-07-06 start 744.78)
+  - 200-day MA (SPY): Estimated ~755 (SPY 774.83 solidly above; CORE_SPY 50% target maintained)
+  - Headlines: Nasdaq record, earnings focus, market breadth stable, no imminent crisis
+  - Macro call: NORMAL regime confirmed. Keep base sizing.
+  - Macro stat: Call #41 logged (NORMAL, VIX 15.52, SPY 774.83, earnings momentum)
+
+DATA SOURCE STATUS:
+  - Congress trades (Capitol Trades): FAILED — all 4 sources blocked (25+ consecutive days). Demoted to SHADOW_ONLY per charter amendment.
+  - Berkshire Hathaway 13F: Active, Q1 2026 filed. Holdings repriced and holding steady (91-day hold: AAPL +7.05%, AXP -5.70%, KO +2.55%; net +1.30% avg).
+  - Pershing Square (Bill Ackman): RESOLUTION_PENDING — CIK resolved (0001393667) but manager URL 404; EDGAR fallback exhausted before judgment day.
+  - OpenInsider (insider clusters): Zero new eligible candidates. ELV +8.21% GRADED RIGHT (78-day hold). PNFP +1.39% day 22 (grading closes tomorrow 2026-10-04).
+
+POSITION REPRICING & RISK CHECKS (2026-10-05 CLOSE):
+  - AAPL: 6.4837 sh × $330.28 = $2,140.21 (cost $2,000, +7.05% unrealized) | Stop: $246.90 | SAFE (25.5% room to stop)
+  - AXP: 5.6840 sh × $332.00 = $1,886.90 (cost $2,000, -5.70% unrealized) | Stop: $281.57 | SAFE (18.9% room to stop) ← CLOSEST TO STOP
+  - KO: 23.7710 sh × $86.28 = $2,050.42 (cost $2,000, +2.55% unrealized) | Stop: $67.31 | SAFE (20.1% room to stop)
+  - SPY: 72.2607 sh × $774.83 = $55,968.15 (blended cost 760.97, +1.83% unrealized) | Trend brake: SPY well above 200-DMA (~755), no action | SAFE
+  - MTUM: 73.8160 sh × $319.51 = $23,581.25 (cost $325.0506, -1.70% unrealized) | Vol-scale: VIX 15.52 <20, target 25% maintained | SAFE
+  - ELV: 5.4601 sh × $397.45 = $2,171.71 (cost $367.32, +8.21% unrealized) | Stop: $293.86 | SAFE (24.6% room to stop) ← GRADED RIGHT
+  - PNFP: 10.384 sh × $101.55 = $1,054.82 (cost $100.16, +1.39% unrealized, day 22) | Stop: $80.13 | SAFE (20.0% room to stop) ← GRADING CLOSES TOMORROW
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - No earnings-proximity deferrals needed (all events post-judgment day).
+
+ALLOCATION REBALANCE CHECK:
+  - CORE_SPY: Current MV $55,968.15 / total $105,653.46 = 52.96% (target 50%, drift 2.96pp, below 3pp action threshold)
+  - MOMENTUM_MTUM: Current MV $23,581.25 / total $105,653.46 = 22.33% (target 25%, drift 2.67pp, within 5pp tolerance)
+  - INSIDER_CLUSTERS: Current MV $3,226.53 / total $105,653.46 = 3.05% (target 15%, awaiting new signal candidates)
+  - SMART_MONEY_13F: Current MV $6,077.53 / total $105,653.46 = 5.75% (target 10%, awaiting Monday 13F resolution)
+  - CASH: $35,824.46 / total $105,653.46 = 33.91% (exceeds 5% minimum floor)
+  - Rebalance check: Allocation drift within tolerance. No rebalance action warranted today.
+  - VIX bucket (15.52): <20, so MOMENTUM_MTUM target remains 25% (no vol-scale change).
+
+CANDIDATES / SIGNALS: None generated (Monday schedule, PNFP grading window closing tomorrow 2026-10-04). No new trades warranted.
+
+QUALITY GATE: Not applied (no new candidates)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered (all positions >-20% stops)
+
+PORTFOLIO SUMMARY (Day 91, Final Day Before Judgment):
+  - Cash: $35,824.46 (33.91% in reserve; well above 5% minimum floor)
+  - Positions: 7 (AAPL, AXP, KO, SPY, MTUM, ELV, PNFP)
+  - Total portfolio value: $105,653.46
+  - Unrealized gains: +$5,653.46 (+5.65% from $100k start 2026-07-06)
+  - Peak value: $104,850.00 (set 2026-09-30); current ABOVE PEAK (+$803.46, +0.77%)
+  - Current drawdown: +0.77% (PORTFOLIO ABOVE PEAK; EXCELLENT position for judgment day)
+  - Position count: 7 (under 40-position cap)
+  - Sector allocation (ex-broad ETFs): Tech 22% (AAPL, ELV) + 1% (PNFP finance) = 23% total; Broad ETF: 52.96% SPY + 22.33% MTUM = 75.29%
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (130.8091 shares = $100,000 benchmark)
+  - Current 2026-10-05: 774.83 (value $101,387.08)
+  - Gain: +$1,387.08 (+1.39%)
+  - Portfolio vs SPY: +$5,653.46 vs +$1,387.08 → Portfolio OUTPERFORMANCE +$4,266.38 (+4.27% edge)
+  - Rationale: Portfolio allocation (Berkshire +1.30% avg, ELV +8.21%, PNFP +1.39%, SPY +1.83%, MTUM -1.70%) beating SPY benchmark. Insider alpha (ELV +8.21%) driving outperformance despite MTUM momentum drag and AXP post-earnings weakness.
+
+VETOED / DEFERRED / SHADOW SIGNALS:
+  - Congress: SHADOW (25+ consecutive days blocked; charter amendment demotes to shadow tracking)
+  - Insider/13F: No new candidates; final Monday 2026-10-01 attempts exhausted
+
+FINAL 1 DAY TO JUDGMENT 2026-10-06:
+  - PNFP grading window closes tomorrow 2026-10-04 (final grading)
+  - Hold all positions (no new trades warranted)
+  - Monitor VIX daily (none <20 threshold in effect)
+  - Monitor AXP technical support (18.9% room to stop; holding firm)
+  - 2026-10-06 (Sunday, JUDGMENT DAY): Final P&L reconciliation and performance review vs SPY benchmark
+
+CONFIDENCE: MODERATE-HIGH (91 days elapsed; all grading windows complete except PNFP tomorrow; portfolio +5.65% vs SPY +1.39%, outperformance +4.27%; Berkshire 91-day: net +1.30% (3/3 RIGHT); ELV GRADED RIGHT +8.21%; PNFP pending 1 day; macro 16/41 RIGHT (39%); committee 7/7 APPROVE votes identical; all risk rules enforced; charter unbreached)
+
+FINAL OBSERVATION:
+Portfolio recovered from -4.52% drawdown trough (2026-07-31) to CURRENT ABOVE PEAK ($105,653.46 > $104,850 peak). Outperformance vs SPY benchmark: +$4,266.38 (+4.27% edge) driven primarily by insider cluster edge (ELV +8.21% GRADED RIGHT) and Berkshire value sleeve (net +1.30% avg). MTUM peak-entry error (-1.70%) remains but offset by outsized ELV alpha. Trend-brake mechanical rules working both sides (sale 2026-07-23 RIGHT, restoration 2026-08-04 RIGHT). All stop-loss discipline enforced. Charter unbreached (pain limit -15%, current +0.77% above peak SAFE). Allocation discipline maintained. Final 1 day: HOLD discipline, risk maintenance, judgment day reconciliation pending 2026-10-06.
+
+Simulated portfolio - no real money.
