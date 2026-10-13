@@ -2694,3 +2694,23 @@ RECOMMENDATION:
   - Target: validate directional patterns, achieve n≥30 graded samples for potential tuning post-Q2
 
 SIMULATED PORTFOLIO - NO REAL MONEY.
+
+2026-10-13 | SYSTEM | N/A | N/A | N/A | N/A | N/A | Q2 DAY 6 MONITORING - NO TRADES
+
+DATE: 2026-10-13 (Tuesday, Day 6 of Q2, 85 days to 2027-01-06 judgment)
+
+CHARTER: Paused=FALSE. Peak Q1 $106,313.46 → Current $106,180.96 = -0.12% drawdown (SAFE within -15% pain limit). Q2 proceeding with same v2 rules.
+
+MACRO: NORMAL (VIX 15.30 <<20, SPY 778.05 >> 200-DMA ~758, no crisis triggers). Call #45 logged.
+
+PORTFOLIO (Repriced 2026-10-13): AAPL +7.05%, AXP -5.70% (WATCH 18-19% room to stop), KO +2.55%, SPY +2.24%, MTUM -1.70%, ELV +8.21% (GRADED RIGHT), PNFP +1.39% (GRADED RIGHT). Cash $35,824.46. All positions >-20% stops. No trades warranted (Tuesday schedule).
+
+ALLOCATION: CORE_SPY ~52.9% (target 50%, drift +2.9pp OK), MTUM ~22.1% (target 25%, drift -2.9pp OK). No rebalance needed.
+
+DATA: Congress blocked 26+ days (SHADOW_ONLY). Berkshire repriced (net -0.03% avg 130-day). OpenInsider confirmed 2/2 trades RIGHT (insider edge +4.80% cumulative VALIDATED). Pershing Square CIK found; EDGAR fallback ready Q2.
+
+RISK: All stops >-20%. AXP support zone $281-285 monitored. Charter unbreached (pain limit -15%, current -0.12%). Trend-brake intact. Vol-scale maintained.
+
+Q1 JUDGMENT RECAP (2026-10-06): Portfolio +6.31% vs SPY +2.15% = +416bp outperformance. PASS. Q2 proceeding 85 days to 2027-01-06.
+
+SIMULATED PORTFOLIO - NO REAL MONEY.
