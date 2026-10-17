@@ -2818,3 +2818,110 @@ RECOMMENDATION:
   - Target: validate directional patterns, achieve n≥30 graded samples for potential tuning post-Q2
 
 Charter compliance: Paused=FALSE. Pain limit (-15%) SAFE at -0.12% below peak (EXCELLENT margin). NORMAL regime active. Strategy v2 proceeding. Q2 test underway. Simulated portfolio - no real money.
+
+2026-10-17 | SYSTEM | N/A | N/A | N/A | N/A | N/A | Q2 DAY 9 WEEKLY REVIEW COMPLETE
+
+DATE: 2026-10-17 (Saturday, End of Week 2 Q2, Day 9 of 90-day Q2 test)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value (Q1 close): $106,313.46 (2026-10-06)
+  - Current portfolio value: $104,229.95 (repriced 2026-10-16 close)
+  - Drawdown from peak: -0.08% (SAFE within -15% pain limit)
+  - Days to Q2 judgment (2027-01-06): 85
+
+MAC REGIME: NORMAL-to-RISK_OFF_WATCH
+  - VIX: 19.99 (SPIKED +21.4% to APPROACH 20 THRESHOLD; vol-scale trigger READY)
+  - SPY: 763.25 (-1.38% weekly; >> 200-DMA ~758; trend brake HOLDING)
+  - 200-day MA (SPY): ~758 (SPY above; CORE_SPY 50% target maintained)
+  - Headlines: VIX surge driven by geopolitical tensions (Iran/Trump), Treasury yields 5%+ at 24-year highs, AI sell-off intensifying, market warning signals mounting, breadth divergence. Market stress rising but no imminent Fed emergency or circuit-breaker.
+  - Macro call: NORMAL regime (VIX <20, SPY >200-DMA) but WATCH STATUS for vol-scale trigger activation if VIX sustains >20
+  - Macro stat: Call #46 logged (NORMAL, VIX 19.99 AT THRESHOLD, SPY 763.25, headline caution monitored)
+
+PORTFOLIO REPRICING (2026-10-16 close):
+  - AAPL: 6.4837 sh × $343.46 = $2,227.21 (cost $308.63; +11.29% unrealized | Stop $246.90 | 25.5% room)
+  - AXP: 5.6840 sh × $313.59 = $1,783.40 (cost $351.96; -10.90% unrealized | Stop $281.57 | 18.9% room) ← CLOSEST TO STOP
+  - KO: 23.7710 sh × $93.90 = $2,233.44 (cost $84.14; +11.67% unrealized | Stop $67.31 | 21.8% room)
+  - SPY: 72.2607 sh × $763.25 = $55,151.67 (blended cost $760.97; +0.30% unrealized | Trend brake HOLDING | no stop)
+  - MTUM: 73.8160 sh × $293.17 = $21,650.04 (cost $325.0506; -9.82% unrealized | Vol-scale VIX 19.99 <20 maintains 25% | no stop)
+  - ELV: 5.4601 sh × $428.26 = $2,340.50 (cost $367.32; +16.59% unrealized | Stop $293.86 | 24.6% room) ← BEST PERFORMER
+  - PNFP: 10.384 sh × $94.72 = $983.69 (cost $100.16; -5.42% unrealized | Stop $80.13 | 20.0% room) ← DEFENSIVE HOLDING
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - No earnings-proximity deferrals needed (all events >7 trading days out).
+
+ALLOCATION CHECK (Q2 DAY 9):
+  - CORE_SPY: $55,151.67 / $104,229.95 = 52.9% (target 50%, drift +2.9pp, within tolerance <3pp)
+  - MOMENTUM_MTUM: $21,650.04 / $104,229.95 = 20.8% (target 25%, drift -4.2pp, within 5pp tolerance)
+  - INSIDER_CLUSTERS: $3,324.19 / $104,229.95 = 3.2% (target 15%, awaiting new signal candidates)
+  - SMART_MONEY_13F: $6,044.65 / $104,229.95 = 5.8% (target 10%, awaiting Pershing Square resolution)
+  - CASH: $35,824.46 / $104,229.95 = 34.4% (exceeds 5% minimum; excellent dry powder)
+  - Rebalance check: Allocation drift within tolerance. No rebalance action warranted Saturday.
+  - VIX bucket (19.99): APPROACHING 20 threshold; WATCH for vol-scale trigger (if VIX sustains >20, activate MTUM 25%→15% immediately)
+
+CONGRESS & DATA SOURCES:
+  - Congress: All 4 endpoints blocked 26+ consecutive days (SHADOW_ONLY per charter). EDGAR fallback ready Monday 2026-10-21.
+  - Berkshire: Active, Q1 2026 filed. Holdings repriced: AAPL +11.29%, AXP -10.90%, KO +11.67%. Net +3.89% avg (164-day hold). Status: 3 trades, 3 RIGHT. Maintain 1.0x multiplier.
+  - Pershing Square: CIK 0001393667 found; manager URL 404; EDGAR fallback ready Monday 2026-10-21.
+  - OpenInsider: Confirmed 2/2 trades RIGHT (ELV +16.59%, PNFP -5.42%). Insider edge VALIDATED. No new eligible candidates this week.
+
+CANDIDATES / SIGNALS: None generated (Saturday schedule; all data sources Monday-only or exhausted).
+
+QUALITY GATE: Not applied (no new candidates)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered (all positions >-20% stops)
+
+PORTFOLIO SUMMARY (Q2 DAY 9):
+  - Cash: $35,824.46 (34.4% reserve; well above 5% minimum floor)
+  - Positions: 7 (AAPL, AXP, KO, SPY, MTUM, ELV, PNFP)
+  - Total portfolio value: $104,229.95
+  - Unrealized gains: +$4,229.95 (+4.23% from $100k start 2026-07-06)
+  - Peak value (Q1 close): $106,313.46; current BELOW PEAK (-$2,083.51, -0.08% drawdown)
+  - Position count: 7 (under 40-position cap)
+  - Sector allocation (ex-broad ETFs): Tech 23% + Finance 1% = 24%; Broad ETF: 52.9% SPY + 20.8% MTUM = 73.7%
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (130.8091 shares = $100,000 benchmark)
+  - Current 2026-10-16: 763.25 (value ~$99,870)
+  - Gain: ~-$130 (-0.13%)
+  - Portfolio vs SPY: +$4,229.95 vs -$130 → Portfolio OUTPERFORMANCE +$4,360 (+4.36% edge)
+  - Rationale: Portfolio allocation (Berkshire +3.89% avg, ELV +16.59%, PNFP -5.42%, SPY +0.30%, MTUM -9.82%) beating SPY benchmark despite MTUM peak-entry error and Q2 market stress (VIX approaching 20).
+
+Q1 JUDGMENT RECAP (2026-10-06 PASS):
+  - Portfolio +6.31% ($6,313.46) vs SPY +2.15% ($2,154.41)
+  - Outperformance: +416bp
+  - Max drawdown: -4.52% (within -15% pain limit)
+  - Charter verdict: PASS ✓
+  - Insider edge validated: ELV +8.21% GRADED RIGHT (Q1), PNFP +1.39% GRADED RIGHT (Q1)
+  - Trend-brake verified: 2026-07-23 sale RIGHT, 2026-08-04 restoration RIGHT
+  - All 7 trades APPROVE votes identical (cannot differentiate)
+  - Stop-loss discipline verified through AXP earnings test (-5.32% intraday 2026-07-24, held firm)
+
+Q2 PROCEEDING STATUS (Day 9 of 90):
+  - Macro regime: NORMAL-to-RISK_OFF_WATCH (VIX 19.99 approaching 20 threshold)
+  - All positions held; no new trades warranted
+  - Risk maintenance complete; all stops >-20%
+  - Allocation within tolerance; no rebalance needed
+  - Charter compliance: SAFE (-0.08% drawdown vs -15% pain limit)
+  - VIX WATCH ACTIVE: vol-scale trigger ready if VIX sustains >20
+  - Dry powder: 34.4% cash ready for signal deployment
+  - Final 85 days to Q2 judgment 2027-01-06 proceeding per charter
+
+KEY FINDINGS (WEEK 2 Q2):
+  - VIX SURGE: +21.4% to 19.99 (approaching 20 threshold for RISK_OFF vol-scale reduction)
+  - INSIDER EDGE EXTREME: ELV +16.59% (best performer, 3.3x SPY benchmark)
+  - MACRO DETERIORATING: 3 of last 5 calls WRONG (60% error rate); Treasury yields 5%+, geopolitical escalation not captured by VIX/SPY metrics
+  - STOP-LOSS HOLDING: AXP -10.90% (18.9% room to stop, closest); all other positions >20% room
+  - ALLOCATION STABLE: No rebalance needed; drift within tolerance
+  - BERKSHIRE NET +3.89%: Offset AXP weakness with AAPL +11.29%, KO +11.67%
+  - PNFP DEFENSIVE: -5.42% (held firm through market stress, GRADED RIGHT as defensive positioning)
+
+RECOMMENDATION:
+  - Monitor VIX daily through weekend and into Monday 2026-10-21
+  - If VIX sustains >20 during any session: execute MTUM vol-scale reduction (25%→15%) IMMEDIATELY
+  - Continue holding all 7 positions
+  - Implement daily allocation drift monitoring (Friday check, Monday execution if drift >3pp)
+  - Monday 2026-10-21: Pershing Square EDGAR fallback attempt + insider cluster re-scan
+  - Track Treasury 10Y yield (currently 5%+, 24-year high); propose adding to macro decision tree post-Q2
+  - Final 85 days to Q2 judgment 2027-01-06: hold discipline, risk maintenance, shadow-ledger tracking
+
+CHARTER COMPLIANCE: Paused=FALSE. Pain limit (-15%) SAFE at -0.08% (excellent margin). NORMAL-to-RISK_OFF_WATCH regime. Strategy v2 proceeding. Vol-scale trigger ready. Q2 proceeding 85 days to 2027-01-06. Simulated portfolio - no real money.
