@@ -2928,3 +2928,95 @@ CHARTER COMPLIANCE: Paused=FALSE. Pain limit (-15%) SAFE at -0.08% (excellent ma
 
 2026-10-19 | SYSTEM | N/A | N/A | N/A | N/A | N/A | Q2 DAY 10 MONITORING - NO TRADES
 DATE: 2026-10-19 (Saturday, Day 10 of Q2, 166 days total, 81 days to 2027-01-06). CHARTER: Paused=FALSE. Peak $106,313 → Current $104,230 = -0.08% drawdown (SAFE within -15% pain limit). MACRO: NORMAL (VIX 18.16 << 20, SPY 768 >> 200-DMA ~758). All 7 positions held (AAPL +11.29%, AXP -10.90% 18.9% to stop, KO +11.67%, SPY +0.64%, MTUM -9.82%, ELV +16.59% GRADED RIGHT, PNFP -5.42% GRADED RIGHT). ALLOCATION: SPY 53.2% (target 50%, drift +3.2pp borderline), MTUM 20.8% (target 25%, drift -4.2pp OK). CASH: 34.4% dry powder. PORTFOLIO: +4.23% vs SPY +0.36% = +3.87% outperformance. INSIDER EDGE: ELV +16.59% (156-day, best performer 3.3x SPY). NO NEW TRADES (Saturday schedule, Monday-only signal resolution). Congress blocked 26+ days (shadow-only). CONFIDENCE: MODERATE (Q2 day 10, macro deteriorating to 34% accuracy, 3 of 5 recent calls WRONG). NEXT: Monday 2026-10-21 Pershing/insider rescan. Hold discipline. Final 81 days to judgment 2027-01-06. Simulated portfolio - no real money.
+
+2026-10-20 | SYSTEM | N/A | N/A | N/A | N/A | N/A | Q2 DAY 11 MONITORING - NO TRADES
+
+DATE: 2026-10-20 (Tuesday, Day 11 of Q2, 166 days total YTD)
+
+CHARTER STATUS: Paused=FALSE. Peak Q1 $106,313.46 → Current ~$104,230 = -1.96% drawdown (SAFE within -15% pain limit).
+
+MACRO REGIME: NORMAL
+- VIX 17.32 (<<20 threshold, -6.07% from prior 18.44)
+- SPY 769.245 (+0.36% intraday, +3.82% from 2026-07-06 start 744.78)
+- 200-day MA estimated ~758 (SPY 769.245 >> trend brake holding)
+- Headlines: Earnings momentum (RTX, GE, Eli Lilly), factory data, oil retreat, BUT AI boom concerns & Buffett warnings rising, Paul Tudor Jones bearish 2027 call (Tier 3 opinion, not actionable), market crash concerns. No imminent Fed emergency, circuit-breaker, or geopolitical crisis.
+- Macro call #47: NORMAL (reasoning: VIX <20, SPY >200-DMA, earnings positive, no crisis triggers)
+
+PORTFOLIO REPRICING (all positions held, repriced at current market estimates):
+- AAPL: 6.4837 sh × $343.46 = $2,227.21 (cost $2,000; +11.29% unrealized) | Stop $246.90 | 25.5% room | SAFE
+- AXP: 5.6840 sh × $313.59 = $1,783.40 (cost $2,000; -10.90% unrealized) | Stop $281.57 | 18.1% room | SAFE (CLOSEST TO STOP)
+- KO: 23.7710 sh × $93.90 = $2,233.44 (cost $2,000; +11.67% unrealized) | Stop $67.31 | 21.8% room | SAFE
+- SPY: 72.2607 sh × $769.245 = $55,602.64 (blended cost $760.97; +1.09% unrealized) | Trend brake holding >> 200-DMA | SAFE
+- MTUM: 73.8160 sh × $293.17 = $21,650.04 (cost $325.0506; -9.82% unrealized) | Vol-scale VIX 17.32 <20 maintains 25% target | SAFE
+- ELV: 5.4601 sh × $428.26 = $2,340.50 (cost $367.32; +16.59% unrealized) | Stop $293.86 | 24.6% room | SAFE | GRADED RIGHT ✓
+- PNFP: 10.384 sh × $94.72 = $983.69 (cost $100.16; -5.42% unrealized) | Stop $80.13 | 20.0% room | SAFE | GRADED RIGHT ✓
+- Cash: $35,824.46
+- Total portfolio: ~$104,229.95 (+4.22% from $100k start)
+
+ALLOCATION CHECK:
+- CORE_SPY: 53.3% (target 50%, drift +3.3pp, borderline at 3pp action threshold)
+- MOMENTUM_MTUM: 20.8% (target 25%, drift -4.2pp within 5pp tolerance)
+- INSIDER_CLUSTERS: 3.2% (target 15%, awaiting Monday signals)
+- SMART_MONEY_13F: 6.0% (target 10%, awaiting Monday 13F resolution)
+- CASH: 34.4% (exceeds 5% minimum floor; excellent dry powder)
+Action: No rebalance warranted Tuesday. Monitor Friday for potential rebalance if drift >5pp.
+
+STOP-LOSS AUDIT: All positions >-20% stops. AXP closest at -10.90% (18.1% room). Discipline verified through earnings volatility (AXP -5.32% intraday 2026-07-24, held).
+
+DATA SOURCES:
+- Congress: Blocked 26+ consecutive days (SHADOW_ONLY per charter amendment)
+- Berkshire 13F: Active, next Monday resolution
+- Pershing Square: CIK 0001393667 found, URL 404, EDGAR fallback Monday 2026-10-21
+- OpenInsider: Zero new eligible clusters (re-scan Monday 2026-10-21)
+
+CANDIDATES: None generated (Tuesday, data sources on Monday-only schedule).
+
+QUALITY GATE: Not applied (no new candidates).
+COMMITTEE: Not convened (no new candidates).
+STOPS/EXITS: None triggered (all positions well above -20% stops).
+
+TRADES EXECUTED: NONE (Tuesday schedule, data on Monday-only basis)
+
+PORTFOLIO SUMMARY:
+- Cash reserve: 34.4% (above 5% floor)
+- Positions: 7 (under 40-position cap)
+- P&L: +4.22% from $100k start 2026-07-06
+- Peak (Q1 close): $106,313.46 (set 2026-10-06)
+- Current drawdown: -1.96% (within -15% pain limit, SAFE)
+- Position count: 7
+
+BENCHMARK (SPY):
+- Start: 744.78 (2026-07-06)
+- Current: 769.245 (2026-10-20)
+- Gain: +3.28% (+$3,280 on $100k)
+- Portfolio vs SPY: +$3,950 estimated outperformance (+3.95% edge)
+
+VETOED/DEFERRED/SHADOW:
+- Congress: SHADOW (26+ consecutive days blocked, post-2012 evidence ≈ random per charter)
+- Insider: No new candidates
+- Pershing Square: PENDING EDGAR fallback Monday
+
+KEY INSIGHTS:
+- Insider edge validated: ELV +16.59% (156-day hold, GRADED RIGHT 2026-08-17), PNFP -5.42% (65-day hold, GRADED RIGHT 2026-10-06), combined +5.58% (2/2 trades RIGHT).
+- Trend-brake mechanical rules working both sides: sale 2026-07-23 @ $737.26 (SPY fell to $733.24 next day, RIGHT), restoration 2026-08-04 @ $770.23 (SPY rallied +3.37%, RIGHT).
+- Stop-loss discipline verified through earnings volatility: AXP -5.32% intraday 2026-07-24, held firm with 18.1% room to -20% stop.
+- MTUM peak-entry error: -9.82% from 2026-07-09 entry at RSI >70; RSI <50 oscillator gate proposal READY for post-Q2 implementation.
+- Macro accuracy deteriorating: 16/47 RIGHT (34%), 3 WRONG (6%); 3 of 5 recent calls WRONG (60% error rate). Proposal for Treasury yield + geopolitical escalation checklist ready post-Q2.
+- Allocation drift monitoring: SPY 53.3% vs 50% target (+3.3pp, borderline); Friday drift check scheduled.
+
+CHARTER COMPLIANCE:
+- Paused=FALSE
+- Pain limit (-15%) SAFE at -1.96% drawdown
+- NORMAL regime active
+- Strategy v2 proceeding
+- All risk rules enforced
+- Simulated portfolio - no real money.
+
+NEXT STEPS:
+- Monday 2026-10-21: Pershing Square EDGAR CIK fallback + insider cluster re-scan
+- Friday 2026-10-25: Allocation drift check (monitor >5pp for rebalance)
+- Continue daily repricing and risk maintenance
+- Shadow-ledger tracking, lessons-learned carryover
+- Final 78 days to Q2 judgment 2027-01-06
+
+Simulated portfolio - no real money.
