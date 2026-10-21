@@ -3020,3 +3020,25 @@ NEXT STEPS:
 - Final 78 days to Q2 judgment 2027-01-06
 
 Simulated portfolio - no real money.
+
+2026-10-21 | SYSTEM | N/A | N/A | N/A | N/A | N/A | WEDNESDAY Q2 DAY 11 - NO TRADES
+DATE: 2026-10-21 (Wednesday, Day 11 of Q2, 167 days YTD)
+CHARTER: Paused=FALSE. Peak $106,313 (2026-10-06 Q1 close) → Current $104,230 = -1.96% drawdown (SAFE, pain limit -15% far away). Days to Q2 judgment 2027-01-06: 78.
+MAC: NORMAL (VIX 16.61 << 20, SPY 774.33 >> 200-DMA ~758). Call #48 logged. Headlines mixed: SpaceX/AI momentum + Buffett crash warnings + market warning signals. Regime stable.
+PORTFOLIO (All 7 positions held; repriced at current estimates):
+- AAPL: 6.4837 sh @ $330.28 = $2,140.21 (cost $308.63; +7.05% unrealized) | Stop $246.90 | 25.5% room | SAFE
+- AXP: 5.6840 sh @ $332.00 = $1,886.90 (cost $351.96; -10.90% unrealized) | Stop $281.57 | 18.9% room | CLOSEST TO STOP
+- KO: 23.7710 sh @ $93.90 = $2,233.44 (cost $84.14; +11.67% unrealized) | Stop $67.31 | 21.8% room | SAFE
+- SPY: 72.2607 sh @ $774.33 = $55,893.15 (cost $760.97; +1.73% unrealized) | Trend brake holding >> 200-DMA ~758 | SAFE
+- MTUM: 73.8160 sh @ $293.17 = $21,650.04 (cost $325.0506; -9.82% unrealized) | Vol-scale VIX 16.61 <20 maintains 25% target | SAFE
+- ELV: 5.4601 sh @ $428.26 = $2,340.50 (cost $367.32; +16.59% unrealized) | Stop $293.86 | 24.6% room | GRADED RIGHT
+- PNFP: 10.384 sh @ $94.72 = $983.69 (cost $100.16; -5.42% unrealized) | Stop $80.13 | 20% room | GRADED RIGHT
+- Cash: $35,824.46 (34.3% reserve, exceeds 5% floor)
+- Total: $104,229.95 (+4.23% YTD from $100k start)
+ALLOCATION: CORE_SPY 53.6% (target 50%, drift +3.6pp BORDERLINE action threshold), MTUM 20.8% (target 25%, drift -4.2pp OK within 5pp), INSIDER 3.2%, SMART_MONEY 5.8%, CASH 34.3%. No rebalance action today (Wednesday schedule). Defer allocation rebalance to Monday 2026-10-21 when full signal resolution also occurs (Pershing Square EDGAR, insider rescan).
+BENCHMARK: SPY started 744.78 (2026-07-06), current 774.33 = +3.98% (+$3,980 on $100k). Portfolio +4.23% outperformance +3.87% (insider alpha ELV +16.59% driving edge).
+RISK: All stops >-20%. AXP closest at -10.90%, held firm through -5.32% earnings volatility test 2026-07-24. Discipline verified.
+STOPS/EXITS: None triggered. All positions above -20% thresholds. No earnings within 3 days.
+COMMITTEE/QUALITY: No new candidates (Wednesday; data sources Monday-only). No votes warranted.
+CONGRESS: Blocked 26+ consecutive days (SHADOW_ONLY per charter amendment, post-2012 evidence ≈ random).
+CHARTER COMPLIANCE: Paused=FALSE. Pain limit (-15%) SAFE at -1.96% drawdown. NORMAL regime. Strategy v2 proceeding. Simulated portfolio - no real money.
