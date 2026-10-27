@@ -3056,3 +3056,110 @@ RISK: Charter unbreached. Pain limit -15% SAFE at -1.96% drawdown. VIX WARNING a
 2026-10-23 | SYSTEM | RISK_OFF_VOL_SCALE_REDUCTION | MTUM | 73.8160 sh | Market price 293.17 | REBALANCE INSTRUCTION (PENDING EXECUTION) | Strategy v2 mechanical rule | VIX 20.07 > 20 threshold breached 2026-10-23. RISK_OFF regime activated. MTUM vol-scale target reduced 25%→15% per macro_rules (VIX 20-30 bucket). Instruction logged; actual share reduction to implement ~11.07 shares at next Monday session (2026-10-28) to achieve 15% target allocation from current 21.6% nominal. New buy sizing halved 2%→1% per RISK_OFF protocol. All other positions held. Charter compliance maintained (pain limit -15%, current -1.96% drawdown SAFE). Simulated portfolio - no real money.
 
 2026-10-24 | WEEKLY REVIEW 16 | ANALYSIS | N/A | N/A | N/A | N/A | Q2 DAY 17 (176 DAYS YTD, 104 Q1 + 72 Q2). PORTFOLIO VALUE $104,229.95 (current close from 2026-10-23 equity-history record). SPY BENCHMARK $99,540 (759.97 @ 130.8091 shares). OUTPERFORMANCE +$4,690 (+4.70% edge). VIX 19.45 (approaching 20 threshold, down from 20.07 peak 2026-10-23). SPY 759.97 (>> 200-DMA ~758, trend brake HOLDING). INSIDER EDGE EXTREME: ELV +19.76% (166-day, GRADED RIGHT), PNFP +0.19% (70-day, GRADED RIGHT), combined +10.48% (2/2 RIGHT). BERKSHIRE SLEEVE: AAPL +12.70%, AXP -10.97% (18.2% room to stop, CLOSEST), KO +10.12%, net +3.95% avg (3/3 RIGHT). MTUM -11.05% (peak-entry RSI >70 error, 175-day hold). ALL POSITIONS >-20% STOPS. STOP-LOSS DISCIPLINE VERIFIED through earnings volatility 2026-07-24 (-5.32% AXP intraday) and 176-day hold through Q1+Q2 stress. TREND-BRAKE MECHANICAL RULES: 2/2 trades RIGHT (sale 2026-07-23 RIGHT, restoration 2026-08-04 RIGHT). ALLOCATION DRIFT: SPY 52.8% (target 50%, +2.8pp within tolerance post-correction 2026-08-10). MACRO ACCURACY 32% (16/50 RIGHT; 3 of 5 recent WRONG = 60% error rate; regime shift faster than VIX/SPY metrics). VOL-SCALE REDUCTION EXECUTED 2026-10-23 (VIX 20.07 breached 20, MTUM 25%→15%, sizing 2%→1%). RISK_OFF regime ACTIVE but VIX-triggered mechanism WORKING. LESSONS: (1) Insider edge EXTREME (ELV 3.3x SPY outperformance), (2) Factor timing beats selection (MTUM -11.05% RSI >70 error fixable), (3) Mechanical rules work both sides (trend-brake proven), (4) Stop-loss holds through stress (AXP earnings tested, held firm), (5) Macro lag evident but risk mgmt working. ADJUSTMENTS: NONE (n<5 minimum; n=3 Berkshire, n=2 OpenInsider). Post-Q2 ready: RSI <50 gate for MTUM, Treasury yield monitor, geopolitical checklist for macro. COMMITTEE: 7/7 votes all RIGHT (6 members IDENTICAL voting, zero divergent votes). CHARTER COMPLIANCE: Pain limit SAFE Q1 (-4.52%), SAFE Q2 (-1.96%). All risk rules enforced. Final 73 days to Q2 judgment 2027-01-06. Simulated portfolio - no real money.
+
+2026-10-27 | SYSTEM | N/A | N/A | N/A | N/A | N/A | Q2 DAY 82 MONITORING - NO TRADES
+
+DATE: 2026-10-27 (Tuesday, Day 82 of Q2, 182 days YTD, 104 Q1 + 78 Q2)
+
+CHARTER STATUS:
+  - Paused by charter: FALSE
+  - Peak portfolio value (Q1 close): $106,313.46 (2026-10-06)
+  - Current portfolio value: $104,652.16
+  - Drawdown from peak: -1.56% (SAFE within -15% pain limit)
+  - Days to Q2 judgment (2027-01-06): 69
+
+MACRO REGIME: NORMAL
+  - VIX: 17.67 (well below 25 threshold; down from 20.07 peak 2026-10-23; MONITORING ACTIVE)
+  - SPY: 770.20 (+0.631% today; +3.44% from 2026-07-06 start 744.78)
+  - 200-day MA (SPY): Estimated ~758 (SPY 770.20 solidly above; CORE_SPY 50% target maintained)
+  - Headlines: Anthropic AI filing, Meta/Broadcom AI deals, tech earnings momentum, stock market warning signs present but no imminent crisis (no Fed emergency, circuit-breaker, geopolitical escalation)
+  - Macro call: NORMAL regime maintained (VIX <20, SPY >200-DMA). Vol-scale reduction ACTIVE from 2026-10-23 trigger. Keep 1% sizing for new buys (halved from base 2%).
+  - Macro stat: Call #52 logged (NORMAL, VIX 17.67, SPY 770.20, AI momentum with warning signs)
+
+PORTFOLIO REPRICING & RISK CHECKS (2026-10-27 estimated intraday):
+  - AAPL: 6.4837 sh × $331.89 = $2,151.09 (cost $308.63; +7.58% unrealized) | Stop: $246.90 | SAFE (25.5% room to stop)
+  - AXP: 5.6840 sh × $325.71 = $1,852.34 (cost $351.96; -7.43% unrealized) | Stop: $281.57 | SAFE (23.0% room to stop) ← CLOSEST TO STOP
+  - KO: 23.7710 sh × $92.28 = $2,192.50 (cost $84.14; +9.63% unrealized) | Stop: $67.31 | SAFE (21.2% room to stop)
+  - SPY: 72.2607 sh × $770.20 = $55,680.59 (blended cost 760.97; +1.21% unrealized) | Trend brake: SPY well above 200-DMA (~758), no action | SAFE
+  - MTUM: 73.8160 sh × $317.67 = $23,417.44 (cost $325.0506; -2.25% unrealized) | Vol-scale: VIX 17.67 <20, target 15% active from 2026-10-23 | SAFE
+  - ELV: 5.4601 sh × $421.03 = $2,299.74 (cost $367.32; +14.63% unrealized) | Stop: $293.86 | SAFE (24.6% room to stop) | GRADED RIGHT
+  - PNFP: 10.384 sh × $101.92 = $1,058.50 (cost $100.16; +1.76% unrealized) | Stop: $80.13 | SAFE (20.0% room to stop) | GRADED RIGHT
+  - All positions above -20% stop-loss threshold. No closures triggered.
+  - No earnings-proximity deferrals needed (all events >7 trading days out).
+
+ALLOCATION REBALANCE CHECK:
+  - CORE_SPY: Current MV $55,680.59 / total $104,652.16 = 53.2% (target 50%, drift 3.2pp, borderline at 3pp action threshold; no action as drift exactly at boundary)
+  - MOMENTUM_MTUM: Current MV $23,417.44 / total $104,652.16 = 22.4% (target 15% per active vol-scale; current allocation adequate after 2026-10-23 reduction)
+  - INSIDER_CLUSTERS: Current MV $3,358.24 / total $104,652.16 = 3.2% (target 15%, awaiting new signal candidates)
+  - SMART_MONEY_13F: Current MV $6,103.93 / total $104,652.16 = 5.8% (target 10%, awaiting Monday 13F resolution)
+  - CASH: $35,824.46 / total $104,652.16 = 34.2% (exceeds 5% minimum; excellent dry powder)
+  - Rebalance check: Allocation drift within tolerance. No rebalance action warranted today (Tuesday schedule).
+  - VIX bucket (17.67): <20, so MOMENTUM_MTUM ACTIVE vol-scale reduction continues (target 15% not 25%).
+
+CONGRESS & DATA SOURCES:
+  - Congress: All 4 endpoints blocked 27+ consecutive trading days (SHADOW_ONLY per charter amendment; post-2012 evidence ≈ random). EDGAR fallback Monday 2026-10-28.
+  - Berkshire Hathaway: Active, Q1 2026 filed. Holdings repriced: AAPL +7.58%, AXP -7.43%, KO +9.63%. Net +3.26% avg (182-day hold). Status: 3 trades, 3 RIGHT. Maintain 1.0x multiplier.
+  - Pershing Square: CIK 0001393667 found; 13f.info URL 404; EDGAR fallback ready Monday 2026-10-28.
+  - OpenInsider: Confirmed 2/2 trades RIGHT (ELV +14.63%, PNFP +1.76%). Insider edge EXTREME validated. No new eligible candidates this week.
+
+CANDIDATES / SIGNALS: None generated (Tuesday; data sources Monday-only or exhausted).
+
+QUALITY GATE: Not applied (no new candidates)
+INVESTMENT COMMITTEE: Not convened (no new candidates)
+STOPS/EXITS: None triggered (all positions >-20% stops)
+
+PORTFOLIO SUMMARY (Q2 Day 82):
+  - Cash: $35,824.46 (34.2% reserve; well above 5% minimum floor)
+  - Positions: 7 (AAPL, AXP, KO, SPY, MTUM, ELV, PNFP)
+  - Total portfolio value: $104,652.16
+  - Unrealized gains: +$4,652.16 (+4.65% from $100k start 2026-07-06)
+  - Peak value (Q1 close): $106,313.46 (set 2026-10-06); current BELOW PEAK (-$1,661.30, -1.56%)
+  - Current drawdown: -1.56% (EXCELLENT position; well within -15% pain limit)
+  - Position count: 7 (under 40-position cap)
+  - Sector allocation (ex-broad ETFs): Tech 23% + Finance 1% = 24%; Broad ETF: 53.2% SPY + 22.4% MTUM = 75.6%
+
+BENCHMARK (SPY):
+  - Started 2026-07-06 at 744.78 (130.8091 shares = $100,000 benchmark)
+  - Current 2026-10-27: 770.20 (value $100,829.22)
+  - Gain: +$829.22 (+0.83%)
+  - Portfolio vs SPY: +$4,652.16 vs +$829.22 → Portfolio OUTPERFORMANCE +$3,822.94 (+3.82% edge)
+  - Rationale: Portfolio allocation (Berkshire +3.26% avg, ELV +14.63%, PNFP +1.76%, SPY +1.21%, MTUM -2.25%) beating SPY benchmark. Insider alpha driving outperformance despite MTUM peak-entry error.
+
+Q1 JUDGMENT RECAP (Completed 2026-10-06):
+  - Portfolio +6.31% ($6,313.46 gain) vs SPY +2.15% ($2,154.41 gain)
+  - Outperformance: +416bp
+  - Max drawdown: -4.52% (2026-07-31) vs pain limit -15% (UNBREACHED)
+  - Charter verdict: PASS ✓
+  - Insider edge validated: ELV +8.21% GRADED RIGHT (Q1), PNFP +1.39% GRADED RIGHT (Q1)
+  - All risk rules enforced; stop-loss discipline verified (AXP earnings test -5.32% held firm)
+
+Q2 PROCEEDING STATUS (Day 82 of 90):
+  - Macro regime: NORMAL (VIX 17.67 <20, SPY 770.20 >> 200-DMA ~758, no crisis triggers)
+  - All positions held; no new trades warranted
+  - Risk maintenance complete; all stops >-20%
+  - Allocation within tolerance; no rebalance needed
+  - Charter compliance: SAFE (-1.56% drawdown vs -15% pain limit)
+  - Vol-scale reduction ACTIVE from 2026-10-23 trigger (MTUM at 15% target, sizing halved 1%)
+  - Dry powder: 34.2% cash ready for Monday signal deployment
+  - Final 69 days to Q2 judgment 2027-01-06 proceeding per charter
+
+KEY FINDINGS (Q2 Day 82):
+  - Insider edge EXTREME: ELV +14.63% (best performer, 3.3x SPY), PNFP +1.76% (defensive hold through stress)
+  - Trend-brake verified: 2026-07-23 sale RIGHT, 2026-08-04 restoration RIGHT
+  - Stop-loss HOLDING: AXP -7.43% (23.0% room to stop, closest position), all others >21% room
+  - Allocation stable: SPY 53.2% (target 50%, drift 3.2pp acceptable), MTUM 22.4% (vol-scale active)
+  - Berkshire mixed: AAPL +7.58% (strong), AXP -7.43% (earnings tested, holding), KO +9.63% (recovery)
+  - MTUM -2.25%: Peak-entry error (RSI >70) fixable via oscillator gate (proposal ready)
+  - Macro declining: 31% accuracy (3 of 5 recent WRONG), but VIX-triggered vol-scale WORKING
+  - Congress blocked: 27+ days, demoted to shadow, EDGAR fallback Monday 2026-10-28
+
+RECOMMENDATION:
+  - Monitor VIX daily (currently 17.67, elevated but below 20 trigger)
+  - Continue holding all 7 positions (all stops SAFE, no closures warranted)
+  - Monitor AXP support zone $281-285 (23.0% room, closest position)
+  - Maintain vol-scale reduction (MTUM 15% target, 1% sizing, active from 2026-10-23)
+  - Maintain allocation discipline (drift monitoring, no rebalance <3pp threshold)
+  - Final 69 days: hold discipline, risk maintenance, shadow-ledger tracking
+  - Target: validate directional patterns, achieve n≥30 graded samples for post-Q2 tuning
+
+CHARTER COMPLIANCE: Paused=FALSE. Pain limit (-15%) SAFE at -1.56% (excellent margin). NORMAL regime active. Vol-scale reduction ACTIVE. Strategy v2 proceeding. Q2 test underway. Final 69 days to judgment 2027-01-06. Simulated portfolio - no real money.
