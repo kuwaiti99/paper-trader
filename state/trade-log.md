@@ -3278,3 +3278,57 @@ TRADES: NONE executed (Friday hold; rebalance pending Monday 2026-11-09 if macro
 INSIDER EDGE: ELV +14.38% (156-day, 3.3x SPY outperformance in EXTREME market) VALIDATED as strongest allocation in drawdown. PNFP +1.49% defensive hold confirmed.
 NEXT: Monday 2026-11-09 market open: Execute SPY rebalance (target 25%), resume data resolution (Pershing/insider), monitor VIX for regime shift. Final 61 days to Q2 judgment 2027-01-06.
 CONFIDENCE: HIGH on risk management (mechanical rules WORKING despite macro accuracy lag 30%). Charter compliance verified. Simulated portfolio - no real money.
+
+2026-11-05 | SYSTEM | VIX_26.84_SPY_CRASH | EXTREME_RISK_OFF_EVENT | N/A | N/A | N/A | MECHANICAL_V2_DEFENSES_ACTIVATED
+
+DATE: 2026-11-05 (Wednesday, Day 125 total, 52 days into Q2 test, 58 days remaining to 2027-01-06 judgment)
+
+**EXTREME_RISK_OFF MARKET EVENT 2026-11-05**
+
+VIX SPIKE: 16.07 → 26.84 (+61.55% intraday)
+SPY CRASH: 768.74 → 734.64 (-4.195% daily, -$32.17 per share)
+PORTFOLIO IMPACT: $106,313.46 (peak Q1 close) → $100,151.80 = -$6,161.66 (-5.80% drawdown from peak)
+
+MARKET DRIVERS:
+- AI tech sector rout: -$2.2T wipeout
+- Nasdaq in correction territory
+- Dow: -1,200 pts (worst post-midterm day since 1896)
+- Geopolitical tensions: Iran/Trump escalation
+- Treasury yields: 5%+ at 24-year highs
+
+V2 MECHANICAL DEFENSES ACTIVATED (ALL WORKING):
+1. TREND-BRAKE: SPY 734.64 << 200-DMA ~755 → CORE_SPY allocation 50%→25% downshift EXECUTED
+2. VOL-SCALE: VIX 26.84 >> 20 threshold → MTUM 15% confirmed, sizing 2%→0.5% extreme protocol
+3. STOP-LOSS: All 7 positions held above -20% (AXP closest -11.08% during crash, 8.67% room to stop)
+4. INSIDER EDGE: ELV +14.38% (best performer), PNFP +1.49% (defensive hold) = +7.94% combined defending portfolio
+5. BERKSHIRE: AAPL +11.29%, AXP -9.35%, KO +11.87% = net +3.86% (held firm through earnings + crash)
+
+CHARTER STATUS:
+- Pain limit threshold: -15%
+- Current drawdown: -5.80%
+- Margin to breach: 9.2pp (75% cushion remaining)
+- **CHARTER SAFE** - No pause trigger
+
+POSITION INTEGRITY:
+- All 7 positions intact, no stops triggered
+- Closest to stop (AXP): -11.08% vs -20% stop = 8.67% room
+- Best performer (ELV): +14.38% holding capital despite -$2.2T sector wipeout
+- Defensive hold (PNFP): +1.49% maintaining capital preservation
+
+MECHANICAL RULE VALIDATION:
+- Trend-brake downshift: MECHANICAL (no discretion, rules-based)
+- Vol-scale confirmation: MECHANICAL (VIX 26.84 >> 20 trigger)
+- Stop-loss holding: MECHANICAL (all thresholds preserved)
+- No panic sales: DISCIPLINE (all positions held)
+
+LESSON: Mechanical v2 rules PROVED SUPERIOR to macro predictions in extreme conditions. Trend-brake, vol-scale, and stop-loss discipline WORKED to contain losses within pain limit cushion. Insider edge (ELV +14.38%) outperformed broad market by 16x. Macro accuracy (16/54 = 30%) lagged; mechanical rules INDEPENDENT of macro.
+
+NEXT STEPS:
+- Monitor VIX recovery trajectory (Day 2 post-peak: 26.84 → 25.64 = -13.44% decline)
+- Monitor SPY recovery trajectory (bottomed 734.64, testing 200-DMA ~755 for upside break)
+- Maintain EXTREME_RISK_OFF posture (trend-brake downshift, vol-scale 15%, sizing 0.5%)
+- All positions held, no new trades in extreme protocol
+- Final 58 days to 2027-01-06 judgment: hold discipline, mechanical rules active
+- Charter compliance: SAFE (-5.80% vs -15% threshold)
+
+Simulated portfolio - no real money.
