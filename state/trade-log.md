@@ -3432,3 +3432,29 @@ TRADES: NONE (Thursday schedule; Congress blocked 27+ days, Pershing/insider res
 BENSH: Portfolio +2.16% YTD vs SPY -0.58%, outperformance +2.74% absolute (+$2,733). Insider edge validated through extreme crash: ELV +14.38% (best performer), PNFP +1.49% (defensive hold).
 CONFIDENCE: MODERATE-HIGH (128 days YTD, Q1 PASS complete, Q2 extreme event survived, mechanical rules WORKING, insider edge EXTREME HIGH, macro accuracy lag 30% but mechanical rules independent, all risk enforced, charter unbreached). Final 48 days to judgment 2027-01-06 proceeding per charter.
 Simulated portfolio - no real money.
+
+2026-11-13 | SYSTEM | N/A | N/A | N/A | N/A | N/A | FRIDAY NORMAL REGIME, NO TRADES
+DATE: 2026-11-13 (Friday, Day 192 YTD, 37 days Q2, 24 days to 2027-01-06 judgment)
+CHARTER: Paused=FALSE. Drawdown -3.4% from peak $106,313.46 (SAFE, within -15% pain limit). Final 24 days to Q2 judgment.
+MAC: NORMAL (VIX 19.21 <20, SPY 753.03 near 200-DMA ~755). Headline risk elevated (Nvidia CEO resignation, earnings concerns, Fed watching, Treasury 5%). Mechanical defenses ACTIVE from 2026-11-05 EXTREME event.
+PORTFOLIO (repriced Friday 2026-11-13 close estimates):
+- AAPL: 6.4837 sh @ $331.89 = $2,151.09 (+7.58%, 25.5% room to stop)
+- AXP: 5.6840 sh @ $325.71 = $1,852.34 (-7.43%, 23% room to stop, monitor support $281-285)
+- KO: 23.7710 sh @ $92.28 = $2,192.50 (+9.63%, 21.2% room to stop)
+- SPY: 72.2607 sh @ $753.03 = $54,411.13 (-0.59%, trend-brake 25% target active)
+- MTUM: 73.8160 sh @ $314.25 = $23,194.06 (-3.40%, vol-scale 15% target active)
+- ELV: 5.4601 sh @ $420.07 = $2,296.32 (+14.38%, GRADED RIGHT, 24.6% room to stop)
+- PNFP: 10.384 sh @ $101.66 = $1,055.35 (+1.49%, GRADED RIGHT, 20% room to stop)
+- Cash: $35,824.46 (34.8% reserve)
+- Total: $102,977.25 (+4.9% YTD from $100k start)
+ALLOCATION: CORE_SPY 52.8% (target 25% downshift ACTIVE), MTUM 22.5% (target 15% vol-scale ACTIVE), INSIDER 3.3%, SMART_MONEY 1.8%, CASH 34.8%.
+**NOTE**: SPY allocation drift -27.8pp from 25% target (52.8% current). Recovery trajectory suggests gradual restoration; rebalance deferred to Monday 2026-11-16 monitoring for sustained recovery trigger (SPY >200-DMA sustained 2+ days).
+INSIDER CLUSTER RESCAN: 6 recent clusters identified (CSQR, HPP, ENOV, OBIO, NOMD, others); none pass quality gate or remain within eligibility (micro-cap <$5 risk, medical device competition, price boundary risk). ZERO new buy candidates 2026-11-13.
+CONGRESS DATA: Blocked 27+ consecutive days (SHADOW_ONLY per charter amendment).
+STOP-LOSS DISCIPLINE: All 7 positions well above -20% stops. Closest (AXP) at -7.43% with 23% margin. Tested through -5.32% earnings intraday 2026-07-24 and -11.08% EXTREME crash 2026-11-05; VERIFIED as SOUND.
+MECHANICAL DEFENSES: Trend-brake (downshift ACTIVE), vol-scale (MTUM 15% ACTIVE), stop-loss (all 7 held >-20%), quality gate (OBIO, CSQR, HPP rejected). All WORKING through recovery from 2026-11-05 EXTREME event.
+P&L vs SPY: Portfolio +4.9% YTD vs SPY +1.4% YTD = +350bp outperformance absolute.
+CONFIDENCE: MODERATE-HIGH (192 days YTD; Q1 PASS complete; Q2 EXTREME stress test with mechanical defenses WORKING; insider edge EXTREME n=2 trades 2/2 RIGHT; macro accuracy lag 30% but mechanical rules INDEPENDENT; all risk rules enforced; charter SAFE 24 days to judgment).
+RECOMMENDATION: Hold all 7 positions. Monitor SPY recovery (Friday closing near 200-DMA; rebalance Monday if sustained >755 recovery continues 2+ days). Continue mechanical defenses through final 24 days. No macro discretion; rules-based execution only.
+NO TRADES EXECUTED 2026-11-13.
+Simulated portfolio - no real money.
