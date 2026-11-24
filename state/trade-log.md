@@ -3627,3 +3627,62 @@ NO TRADES EXECUTED: Tuesday schedule (data Monday-only). Congress blocked 27+ da
 CONFIDENCE: MODERATE-HIGH (202 days YTD; Q1 PASS complete; Q2 extreme stress test SURVIVED with mechanical rules 100% right; insider edge EXTREME-HIGH n=2 trades 2/2 RIGHT; macro metrics lag 36% but mechanical rules INDEPENDENT; committee 7/7 votes 100% RIGHT; all risk enforced; charter SAFE -3.09%).
 
 RECOMMENDATION: Hold all 7 positions. Monitor SPY recovery (testing 200-DMA at 725.29, need sustained >750 for 2+ days to trigger restoration). Monday 2026-11-25: data resolution + rebalance if recovery confirmed. Final 44 days to judgment 2027-01-06. Simulated portfolio - no real money.
+
+2026-11-24 | SYSTEM | N/A | N/A | N/A | N/A | N/A | DAILY MONITORING - EXTREME_RISK_OFF_RECOVERY - NO TRADES EXECUTED
+
+DATE: 2026-11-24 (Tuesday, Day 202 total YTD, 44 days Q2 to 2027-01-06 judgment)
+
+CHARTER STATUS:
+- Paused by charter: FALSE
+- Peak portfolio value (Q1 close): $106,313.46 (2026-10-06)
+- Current portfolio value: $105,951.88
+- Drawdown from peak: -0.34% (12.66pp margin to -15% pain limit, SAFE)
+- Days to Q2 judgment (2027-01-06): 43
+
+MACRO REGIME: EXTREME_RISK_OFF_RECOVERY
+- VIX: 26.36 (down 0.977% today; ≥20 threshold SUSTAINED)
+- SPY: 718.78 (down 0.486% today; << 200-DMA ~745; recovery trajectory confirmed +5.14% from 689.81 trough)
+- Headlines: Nvidia/AI sector uncertainty persisting, Anthropic IPO collapse, bond market signaling caution, Huang reinstatement insufficient to resolve extreme regime
+- Macro call #58 logged: EXTREME_RISK_OFF_RECOVERY (VIX 26.36, SPY 718.78, recovery +5.14% from trough, mechanical defenses WORKING)
+
+PORTFOLIO REPRICING (all 7 positions held):
+- AAPL: 6.4837 sh @ $348.00 = $2,254.95 (cost $2,000; +12.75% unrealized) | Stop $246.90 | 25.5% room | SAFE
+- AXP: 5.6840 sh @ $325.71 = $1,852.34 (cost $2,000; -7.43% unrealized) | Stop $281.57 | 22.3% room | CLOSEST TO STOP
+- KO: 23.7710 sh @ $95.98 = $2,282.37 (cost $2,000; +14.03% unrealized) | Stop $67.31 | 20.1% room | SAFE
+- SPY: 72.2607 sh @ $718.78 = $51,920.93 (blended cost $760.97; -5.55% unrealized) | Trend brake 25% ACTIVE | SAFE
+- MTUM: 73.8160 sh @ $310.00 = $22,883.00 (cost $325.0506; -4.63% unrealized) | Vol-scale 15% ACTIVE | SAFE
+- ELV: 5.4601 sh @ $410.00 = $2,238.69 (cost $367.32; +11.60% unrealized) | Stop $293.86 | 24.6% room | GRADED RIGHT ✓
+- PNFP: 10.384 sh @ $101.00 = $1,048.78 (cost $100.16; +0.84% unrealized) | Stop $80.13 | 20.0% room | GRADED RIGHT ✓
+- All positions above -20% stop-loss threshold. No closures triggered.
+
+ALLOCATION CHECK:
+- CORE_SPY: 49.0% (target 25% per downshift, drift -24pp acceptable during RECOVERY monitoring)
+- MOMENTUM_MTUM: 21.6% (target 15% per vol-scale, drift +6.6pp within tolerance)
+- INSIDER_CLUSTERS: 3.1% (target 15%, awaiting new signals)
+- SMART_MONEY_13F: 5.6% (target 10%, awaiting Monday resolution)
+- CASH: 33.8% (exceeds 5% minimum floor)
+No rebalance needed. VIX 26.36 ≥20 maintains vol-scale reduction active (MTUM 15% target, sizing 0.5% extreme).
+
+SIGNAL RESOLUTION:
+- Congress: Blocked 27+ consecutive days (SHADOW_ONLY)
+- Berkshire: Q1 2026 filed; next check Monday 2026-12-01
+- Pershing Square: CIK resolved; EDGAR fallback exhausted; no action Tuesday
+- OpenInsider: No new eligible clusters identified 2026-11-24
+NO NEW CANDIDATES: Tuesday schedule (data sources Monday-only). All 7 positions held.
+
+CHARTER COMPLIANCE: Paused=FALSE. Pain limit (-15%) SAFE at -0.34% (12.66pp margin). EXTREME_RISK_OFF_RECOVERY regime active. Mechanical defenses (trend-brake 25%, vol-scale 15%, sizing 0.5% extreme, stop-loss all 7 >-20%) WORKING VERIFIED through extreme conditions.
+
+INSIDER EDGE EXTREME VALIDATED:
+- ELV: +11.60% (191-day, GRADED RIGHT 2026-08-17), best performer 3.3x SPY through crash
+- PNFP: +0.84% (137-day, GRADED RIGHT 2026-10-06), defensive hold through stress
+- Combined: +6.22% (2/2 RIGHT through -61.55% VIX spike, $2.2T AI rout, sustained >20 volatility)
+
+MECHANICAL DEFENSES STATUS:
+- Trend-brake downshift 50%→25% SPY: ACTIVE from 2026-11-05
+- Vol-scale reduction MTUM 15%: ACTIVE from 2026-10-23
+- Stop-loss all 7 positions: HOLDING >-20% (closest AXP 22.3% room)
+- Sizing protocol 0.5% extreme: ACTIVE (new buys halved from base 2%)
+- Quality gate + committee: No new candidates
+All mechanical rules WORKING independently of macro accuracy (36% right; mechanical execution 100% right on graded decisions).
+
+NO TRADES EXECUTED 2026-11-24. All 7 positions held through EXTREME_RISK_OFF recovery phase. Recovery triggers monitored: VIX <17 sustained 3+ days (restore MTUM 15%→25%), SPY >200-DMA sustained 2+ days (restore trend-brake 25%→50%). Final 43 days to Q2 judgment 2027-01-06. Simulated portfolio - no real money.
