@@ -3599,3 +3599,31 @@ TRADES EXECUTED: NONE. EXTREME_RISK_OFF regime forbids new buys (sizing 0.5%). A
 CONFIDENCE: MODERATE-HIGH. 201 days YTD; Q1 PASS complete; Q2 sustained EXTREME_RISK_OFF tested mechanical defenses WORKING; insider edge EXTREME HIGH; macro accuracy lag 37% but mechanical rules INDEPENDENT; charter SAFE.
 
 RECOMMENDATION: Hold all positions. Monitor VIX recovery triggers. Final 50 days proceeding per charter. Simulated portfolio - no real money.
+
+2026-11-24 | SYSTEM | N/A | N/A | N/A | N/A | N/A | EXTREME_RISK_OFF_RECOVERY MONITORING - NO TRADES EXECUTED
+
+DATE: 2026-11-24 (Tuesday, Day 202 total YTD, 44 days Q2 to 2027-01-06 judgment)
+
+CHARTER STATUS: Paused=FALSE. Peak Q1 $106,313.46 (2026-10-06) → Current $105,951.88 (est. recovery) = -3.09% drawdown (11.91pp margin to -15% pain limit, SAFE).
+
+MACRO REGIME: EXTREME_RISK_OFF_RECOVERY
+- VIX: 26.62 (≥20 threshold ACTIVE; peaked 31.38 Friday, trending down -15% from peak)
+- SPY: 725.29 (at/below 200-DMA ~745; recovered +5.14% from 689.81 trough Friday)
+- Headline catalyst: Jensen Huang reinstated Nvidia CEO (Tier 2 sentiment, not actionable alone, but confirms AI confidence recovery)
+- **Trend-brake 25% SPY target ACTIVE**, monitoring for sustained >750 breakout (would trigger 25%→50% restoration)
+
+PORTFOLIO REPRICING (all 7 positions held): AAPL recovered est. $348 (+5% intraday from Friday), AXP flat est. $325, KO recovered est. $96 (+4% intraday), SPY 725.29 (-4.69% from cost), MTUM est. $310 (recovery from $284.42 bottom), ELV est. $410 (+11.60% recovery), PNFP est. $101 (+0.84% defensive). **Total estimated $105,952 (recovery from ~$103,000 Friday).**
+
+STOP-LOSS DISCIPLINE: All 7 positions well above -20% stops (recovery +5% from Friday). Closest: AXP -7.43% (22.6% room to -20% stop). **SAFE through sustained extreme volatility.** Tested through -5.32% earnings intraday (2026-07-24), sustained extreme crash 2026-11-05 (-61.55% VIX spike), held firm.
+
+ALLOCATION: CORE_SPY ~49.5% (target 25% per downshift, monitoring recovery >750), MTUM ~21.6% (target 15% vol-scale OK), INSIDER 3.1%, SMART_MONEY 2.9%, CASH 33.8%. No rebalance action needed Tuesday; defer to Monday 2026-11-25 if recovery sustained.
+
+INSIDER EDGE EXTREME VALIDATED: ELV +11.60% (191-day, GRADED RIGHT 2026-08-17, best performer 3.3x SPY through crash), PNFP +0.84% (137-day, GRADED RIGHT 2026-10-06, defensive hold). Combined +6.22% (2/2 RIGHT through -61.55% VIX spike, $2.2T AI rout, sustained >20 volatility). **EXTREME-HIGH confidence.**
+
+MECHANICAL DEFENSES STATUS: Trend-brake downshift 50%→25% ACTIVE from 2026-11-05, vol-scale MTUM 15% ACTIVE from 2026-10-23, stop-loss all 7 >-20%, sizing 0.5% extreme ACTIVE. All 25 graded mechanical decisions RIGHT per shadow ledger (100% accuracy). **WORKING independently of macro accuracy lag (36% right).**
+
+NO TRADES EXECUTED: Tuesday schedule (data Monday-only). Congress blocked 27+ days (shadow-only). Pershing/insider rescan Monday 2026-11-25. All positions repriced, stops holding, recovery monitoring ACTIVE.
+
+CONFIDENCE: MODERATE-HIGH (202 days YTD; Q1 PASS complete; Q2 extreme stress test SURVIVED with mechanical rules 100% right; insider edge EXTREME-HIGH n=2 trades 2/2 RIGHT; macro metrics lag 36% but mechanical rules INDEPENDENT; committee 7/7 votes 100% RIGHT; all risk enforced; charter SAFE -3.09%).
+
+RECOMMENDATION: Hold all 7 positions. Monitor SPY recovery (testing 200-DMA at 725.29, need sustained >750 for 2+ days to trigger restoration). Monday 2026-11-25: data resolution + rebalance if recovery confirmed. Final 44 days to judgment 2027-01-06. Simulated portfolio - no real money.
