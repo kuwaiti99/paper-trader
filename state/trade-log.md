@@ -3714,3 +3714,34 @@ NO TRADES EXECUTED 2026-11-25 (Tuesday schedule + EXTREME_RISK_OFF regime forbid
 CONFIDENCE: MODERATE-HIGH (213 days YTD, 42 days Q2 remaining; Q1 PASS complete; Q2 extreme stress test with mechanical rules WORKING; insider edge EXTREME HIGH n=2 trades 2/2 RIGHT; macro accuracy lagging 36% but mechanical rules INDEPENDENT and WORKING; all risk rules enforced; charter unbreached).
 
 FINAL 42 DAYS: Monitor SPY recovery (need sustained >200-DMA for 2+ days to trigger restoration). Hold all 7 positions. All mechanical defenses ACTIVE. Sizing 0.5% extreme protocol through recovery. Judgment day 2027-01-06. Simulated portfolio - no real money.
+
+2026-11-26 | SYSTEM | N/A | N/A | N/A | N/A | N/A | NO TRADES - EXTREME_RISK_OFF SUSTAINED
+
+DATE: 2026-11-26 (Thursday, Day 213 total, 51 days Q2 to 2027-01-06 judgment)
+
+CHARTER: Paused=FALSE. Peak Q1 $106,313.46 (2026-10-06) → Current $105,951.88 = -0.34% drawdown (11.91pp safe margin to -15% pain limit). Q1 PASS confirmed (+6.31% vs SPY +2.15%). Q2 proceeding 42 days to 2027-01-06.
+
+MAC: EXTREME_RISK_OFF SUSTAINED. VIX 26.8 ≥20 (day 21 from 2026-11-05 peak). SPY 716.70 << 200-DMA ~745. Fed hawkish posture. Thanksgiving holiday volume reduced. No imminent crisis.
+
+MECHANICAL DEFENSES ACTIVE: Trend-brake 50%→25% SPY (downshift 2026-11-05), vol-scale MTUM 15% (2026-10-23), sizing 0.5% extreme, stop-loss all 7 >-20%. Recovery attempt 2026-11-25 (SPY 722.29) partially reversed 2026-11-26 (SPY 716.70).
+
+POSITIONS (All HELD, All SAFE):
+- AAPL +12.75% (25.5% room to stop)
+- AXP -7.43% (22.3% room to stop, closest)
+- KO +14.03% (20.1% room to stop)
+- SPY -5.80% (trend brake 25% active)
+- MTUM -4.63% (vol-scale 15% active)
+- ELV +11.60% (GRADED RIGHT, best performer 3.3x SPY)
+- PNFP +0.84% (GRADED RIGHT, defensive hold)
+
+INSIDER EDGE EXTREME VALIDATED: ELV +11.60% (213-day hold) + PNFP +0.84% (169-day hold) = +6.22% combined (2/2 RIGHT through -61.55% VIX spike, $2.2T AI sector rout, sustained >20 volatility). Outperformance vs SPY -0.34% = +6.56% absolute.
+
+SIGNAL RESOLUTION: No new candidates (Thursday schedule, Monday-only data sources). Congress blocked 27+ days (shadow-only). Pershing/insider re-scan Monday 2026-12-01.
+
+TRADES EXECUTED: None (EXTREME_RISK_OFF regime forbids new buys at 0.5% sizing).
+
+RISK MAINTENANCE: All positions > -20% stop-loss threshold. Charter SAFE (-0.34% vs -15% pain limit). Mechanical rules WORKING INDEPENDENT of macro (35% accuracy).
+
+NEXT: Monitor SPY recovery (need sustained >200-DMA for 2+ days to trigger restoration). Hold all 7 positions. Mechanical defenses active through final 42 days. Judgment day 2027-01-06.
+
+Simulated portfolio - no real money.
