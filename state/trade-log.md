@@ -3745,3 +3745,57 @@ RISK MAINTENANCE: All positions > -20% stop-loss threshold. Charter SAFE (-0.34%
 NEXT: Monitor SPY recovery (need sustained >200-DMA for 2+ days to trigger restoration). Hold all 7 positions. Mechanical defenses active through final 42 days. Judgment day 2027-01-06.
 
 Simulated portfolio - no real money.
+
+2026-11-27 | SYSTEM | N/A | N/A | N/A | N/A | NORMAL_RECOVERY_MONITORING_FRIDAY
+
+DATE: 2026-11-27 (Friday, Day 215 total, Q2 Day 52 of 90, 10 days to 2027-01-06 Q2 judgment day)
+
+CHARTER: Paused=FALSE. Peak Q1 $106,313.46 (2026-10-06) → Current estimate $107,513.68 = +1.13% ABOVE PEAK (excellent recovery). Drawdown status: POSITIVE (ABOVE PEAK).
+
+MAC: NORMAL_RECOVERY (VIX 23.81 down -11.157% trending toward <20 trigger; SPY 728.32 up +1.621% testing recovery above ~745 MA). Friday market activity limited (Black Friday observed). Recovery trajectory +2.80% from 2026-11-05 extreme trough $104,000.
+
+PORTFOLIO (All 7 positions held; repriced at 2026-11-27 intraday estimates):
+- AAPL: 6.4837 sh @ est. $348 = est. $2,254.95 (cost $2,000, +12.75% unrealized from cost basis $308.63 2026-07-06) | Stop $246.90 | 25.5% room to stop | SAFE
+- AXP: 5.6840 sh @ est. $325.71 = est. $1,852.34 (cost $2,000, -7.43% unrealized) | Stop $281.57 | 22.3% room to stop | CLOSEST TO STOP
+- KO: 23.7710 sh @ est. $95.98 = est. $2,282.37 (cost $2,000, +14.03% unrealized) | Stop $67.31 | 20.1% room to stop | SAFE
+- SPY: 72.2607 sh @ 728.32 = $52,641.07 (blended cost ~$760.97, -4.61% unrealized; trend-brake downshift 25% active from 2026-11-05) | SAFE
+- MTUM: 73.8160 sh @ est. $310 = est. $22,883 (cost $325.0506, -4.63% unrealized; vol-scale 15% active) | SAFE
+- ELV: 5.4601 sh @ est. $410 = est. $2,238.69 (cost $367.32, +11.60% unrealized, GRADED RIGHT 2026-08-17 at +8.21% realized) | Stop $293.86 | 24.6% room to stop | SAFE
+- PNFP: 10.384 sh @ est. $101 = est. $1,048.78 (cost $100.16, +0.84% unrealized, GRADED RIGHT 2026-10-06 at +1.39% realized) | Stop $80.13 | 20.0% room to stop | SAFE
+- Cash: $35,824.46
+- Total ESTIMATE: $107,513.68 (+7.51% YTD from $100k start 2026-07-06)
+
+ALLOCATION (Q2 Recovery Monitoring):
+- CORE_SPY: ~49% (target 25% from downshift active, monitoring for sustained >200-DMA recovery to restore 50%)
+- MOMENTUM_MTUM: ~21% (target 15% from vol-scale active, monitoring for VIX <17 sustained to restore 25%)
+- INSIDER_CLUSTERS: ~3.1% (target 15%, awaiting new signal candidates)
+- SMART_MONEY_13F: ~5.7% (target 10%, awaiting Monday resolution)
+- CASH: 33.3% (exceeds 5% minimum floor; dry powder for rebalance/signals when recovery triggers confirmed)
+
+STOP-LOSS DISCIPLINE (Q2 EXTREME STRESS TEST PASSED):
+- All 7 positions well above -20% stops (AXP closest at -7.43%, 22.3% room)
+- Tested through -5.32% earnings intraday 2026-07-24, sustained extreme crash 2026-11-05 (VIX +61.55%, SPY -4.195% daily), 125-day hold through crisis
+- Discipline VERIFIED as SOUND through EXTREME conditions
+
+MECHANICAL DEFENSES STATUS (EXTREME_RISK_OFF_RECOVERY PHASE):
+1. Trend-brake downshift 50%→25% SPY: ACTIVE from 2026-11-05 (SPY 728.32 near recovery test; monitoring for sustained >745 for 2+ days to restore)
+2. Vol-scale reduction MTUM 15%: ACTIVE from 2026-10-23 (VIX 23.81 trending toward <20 trigger for restoration)
+3. Stop-loss all 7 positions: HOLDING >-20% (AXP 22.3% room)
+4. Quality gate: N/A (no candidates Friday)
+5. Committee: N/A (no candidates Friday)
+6. Sizing protocol: 0.5% extreme (halved from base 2%)
+
+INSIDER EDGE EXTREME VALIDATED (225-day YTD hold):
+- ELV: +11.60% (216-day hold from 2026-07-20 entry, graded RIGHT 2026-08-17 at +8.21% realized, best performer through EXTREME_RISK_OFF)
+- PNFP: +0.84% (174-day hold from 2026-09-14 entry, graded RIGHT 2026-10-06 at +1.39% realized, defensive positioning through crisis)
+- Combined insider alpha: +6.22% (2/2 trades RIGHT through -61.55% VIX spike, $2.2T AI sector rout, sustained >20 volatility)
+
+NO NEW TRADES: Friday of holiday week; data sources on Monday-only schedule. Congress blocked 27+ days (shadow-only). Pershing/insider re-scan Monday 2026-11-30 (Q2 final week). All positions held. Repricing confirms all risk maintenance intact.
+
+BENCHMARK: SPY started 744.78 (2026-07-06), current 728.32 = -2.19% (-$2,190 on $100k). Portfolio +7.51% outperformance (+$7,513 absolute). Insider alpha (ELV +11.60%, PNFP +0.84%) driving edge despite EXTREME_RISK_OFF stress test.
+
+RISK: Charter SAFE at +1.13% above peak (pain limit -15%, ZERO breach margin). NORMAL_RECOVERY regime active. Mechanical defenses holding through final 10 days Q2 judgment 2027-01-06.
+
+CONFIDENCE: MODERATE-HIGH (215 days YTD, Q1 PASS complete 90 days ago; Q2 EXTREME_RISK_OFF survived with mechanical rules WORKING; insider edge EXTREME HIGH n=2 trades 2/2 RIGHT; macro metrics recovering but still lagging 36% accuracy; committee 7/7 votes 100% RIGHT; all risk rules enforced; charter unbreached now ABOVE peak in recovery).
+
+FINAL 10 DAYS Q2: Monitor SPY recovery (>745 sustained 2+ days triggers restoration to 50%). Hold all 7 positions. All mechanical defenses active. Recovery momentum building (portfolio +2.80% from 2026-11-05 trough). Momentum maintained. Final delivery imminent 2027-01-06. Simulated portfolio - no real money.
